@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="@color/abn_yueai_text_white" />
+    <padding
+        android:bottom="@dimen/dim_ailiulian_common_margin_half"
+        android:left="@dimen/dim_ailiulian_common_margin_half"
+        android:right="@dimen/dim_ailiulian_common_margin_half"
+        android:top="@dimen/dim_ailiulian_common_margin_half" />
+</shape>

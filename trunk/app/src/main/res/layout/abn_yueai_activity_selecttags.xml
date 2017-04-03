@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/abn_yueai_activity_selecttags"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/abn_yueai_common_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        style="@style/AbnYueAiText.Normal.Black"
+        android:layout_marginTop="@dimen/dim_ailiulian_common_margin_sextuple"
+        android:text="@string/abn_yueai_hint_compinfo_seltags"/>
+
+    <TextView
+        style="@style/AbnYueAiText.Medium.Gray"
+        android:layout_marginTop="@dimen/dim_ailiulian_common_margin"
+        android:text="@string/abn_yueai_hint_compinfo_seltags_sec"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        >
+
+        <cn.lankton.flowlayout.FlowLayout
+            android:id="@+id/flow_reg_selecttags_tags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+            android:layout_marginRight="@dimen/dim_ailiulian_common_margin"
+            android:layout_marginTop="@dimen/dim_ailiulian_common_margin_quard"
+            app:lineSpacing="@dimen/dim_ailiulian_common_margin"/>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_reg_select_tags_complete"
+        style="@style/AbnYueAiButton.CommonLarge"
+        android:layout_marginBottom="@dimen/dim_ailiulian_common_margin"
+        android:layout_marginTop="@dimen/dim_ailiulian_common_margin_quard"
+        android:background="@mipmap/abn_yueai_ic_register_btnbg"
+        android:text="@string/abn_yueai_complete"/>
+</LinearLayout>

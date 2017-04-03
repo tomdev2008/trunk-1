@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fragment_main_content"
+      android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
+
+     <android.support.design.widget.TabLayout
+         android:id="@+id/tablayout_main_bottom"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/dim_ailiulian_common_margin_septuple"
+         android:layout_alignParentBottom="true"
+         android:layout_gravity="bottom"
+         android:background="@drawable/abn_ya_tab_shape"
+         android:elevation="@dimen/dim_ailiulian_common_margin"
+         app:tabIndicatorColor="@color/abn_yueai_color_red_primary"
+         app:tabIndicatorHeight="0dp"
+         app:tabMode="fixed"
+         app:tabPaddingBottom="0dp"
+         app:tabPaddingEnd="@dimen/dim_ailiulian_common_margin"
+         app:tabPaddingStart="@dimen/dim_ailiulian_common_margin"
+         app:tabPaddingTop="0dp"
+         app:tabSelectedTextColor="@color/abn_yueai_color_red_second"
+         app:tabTextAppearance="@style/MainTabLayoutTextAppearance"
+         app:tabTextColor="@color/abn_yueai_color_red_primary"/>
+
+</FrameLayout>

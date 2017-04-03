@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="wrap_content"
+              android:layout_height="48dp"
+              android:background="@drawable/abn_yueai_shape_danmu_gift_bg"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:paddingRight="@dimen/dim_ailiulian_common_margin_double">
+
+
+    <com.fatalsignal.view.RoundAngleImageView
+        android:id="@+id/riv_danmu_gift_src_avatar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@mipmap/abn_yueai_ic_default_avatar"
+        app:isCircle="true"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_danmu_gift_src_nick"
+            style="@style/AbnYueAiText.Normal.Red"
+            android:text="某个人"
+            android:textColor="@color/abn_yueai_color_danmu_pink"
+            />
+
+        <TextView
+            android:id="@+id/tv_danmu_gift_content"
+            style="@style/AbnYueAiText.Normal.White"
+            android:text="送了xxx 1个xxx"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_danmu_gift_image"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:padding="@dimen/dim_ailiulian_common_margin_half"
+        tools:src="@drawable/ee_1"
+        />
+</LinearLayout>

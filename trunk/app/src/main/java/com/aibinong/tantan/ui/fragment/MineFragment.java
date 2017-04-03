@@ -1,0 +1,396 @@
+package com.aibinong.tantan.ui.fragment;
+
+import android.app.Activity;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v4.content.LocalBroadcastManager;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+
+import com.aibinong.tantan.R;
+import com.aibinong.tantan.broadcast.LocalBroadCastConst;
+import com.aibinong.tantan.constant.Constant;
+import com.aibinong.tantan.constant.IntentExtraKey;
+import com.aibinong.tantan.presenter.MineFragPresenter;
+import com.aibinong.tantan.ui.activity.ActivityListActivity;
+import com.aibinong.tantan.ui.activity.CommonWebActivity;
+import com.aibinong.tantan.ui.activity.RegisterActivity;
+import com.aibinong.tantan.ui.activity.RequireCertActivity;
+import com.aibinong.tantan.ui.activity.SettingActivity;
+import com.aibinong.tantan.ui.activity.SplashActivity;
+import com.aibinong.tantan.ui.activity.UserDetailActivity;
+import com.aibinong.tantan.ui.activity.UserInfoEditActivity;
+import com.aibinong.tantan.ui.activity.VipCertActivity;
+import com.aibinong.tantan.util.CommonUtils;
+import com.aibinong.yueaiapi.pojo.ConfigEntity;
+import com.aibinong.yueaiapi.pojo.MemberEntity;
+import com.aibinong.yueaiapi.pojo.OrderResultEntitiy;
+import com.aibinong.yueaiapi.pojo.ResponseResult;
+import com.aibinong.yueaiapi.pojo.UserEntity;
+import com.aibinong.yueaiapi.utils.ConfigUtil;
+import com.aibinong.yueaiapi.utils.UserUtil;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.bumptech.glide.load.resource.drawable.GlideDrawable;
+import com.bumptech.glide.request.animation.GlideAnimation;
+import com.bumptech.glide.request.target.SimpleTarget;
+import com.fatalsignal.util.DeviceUtils;
+import com.fatalsignal.util.Log;
+import com.fatalsignal.util.StringUtils;
+import com.fatalsignal.util.TimeUtil;
+import com.fatalsignal.view.RoundAngleImageView;
+import com.kogitune.activity_transition.ActivityTransitionLauncher;
+
+import butterknife.Bind;
+import butterknife.ButterKnife;
+import in.srain.cube.views.ptr.PtrClassicFrameLayout;
+import in.srain.cube.views.ptr.PtrDefaultHandler;
+import in.srain.cube.views.ptr.PtrFrameLayout;
+
+
+// _______________________________________________________________________________________________\
+//|                                                                                               |
+//| Created by yourfriendyang on 16/10/18.                                                                |
+//| yourfriendyang@163.com                                                                        |
+//|_______________________________________________________________________________________________|
+
+public class MineFragment extends FragmentBase implements PtrClassicFrameLayout.MyScrollViewListener, MineFragPresenter.IMineFrag {
+
+    @Bind(R.id.iv_fragment_mine_backimage)
+    ImageView mIvFragmentMineBackimage;
+    @Bind(R.id.iv_fragment_mine_maskimage)
+    ImageView mIvFragmentMineMaskimage;
+    @Bind(R.id.ll_fragment_mine_avatar_notlogin)
+    LinearLayout mLlFragmentMineAvatarNotlogin;
+    @Bind(R.id.riv_fragment_mine_avatar)
+    RoundAngleImageView mRivFragmentMineAvatar;
+    @Bind(R.id.iv_mine_level_symbol)
+    ImageView mIvMineLevelSymbol;
+    @Bind(R.id.fl_mine_avatar)
+    FrameLayout mFlMineAvatar;
+    @Bind(R.id.tv_fragment_mine_name)
+    TextView mTvFragmentMineName;
+    @Bind(R.id.iv_fragment_mine_sexsymbol)
+    ImageView mIvFragmentMineSexsymbol;
+    @Bind(R.id.tv_mine_top_age)
+    TextView mTvMineTopAge;
+    @Bind(R.id.tv_mine_top_constellation)
+    TextView mTvMineTopConstellation;
+    @Bind(R.id.tv_mine_top_occupation)
+    TextView mTvMineTopOccupation;
+    @Bind(R.id.ll_mine_top_info)
+    LinearLayout mLlMineTopInfo;
+    @Bind(R.id.ibtn_fragment_mine_edit)
+    ImageButton mIbtnFragmentMineEdit;
+    @Bind(R.id.rl_mine_top)
+    RelativeLayout mRlMineTop;
+    @Bind(R.id.tv_mine_vip_validdata)
+    TextView mTvMineVipValiddata;
+    @Bind(R.id.ll_mine_viptips)
+    LinearLayout mLlMineViptips;
+    @Bind(R.id.ibtn_mine_vip_buy)
+    ImageView mIbtnMineVipBuy;
+    @Bind(R.id.ll_fragment_mine_item_vip)
+    LinearLayout mLlFragmentMineItemVip;
+    @Bind(R.id.ll_mine_gifttips)
+    LinearLayout mLlMineGifttips;
+    @Bind(R.id.ibtn_mine_gift_buy)
+    ImageView mIbtnMineGiftBuy;
+    @Bind(R.id.ll_fragment_mine_item_gift)
+    LinearLayout mLlFragmentMineItemGift;
+    @Bind(R.id.ll_fragment_mine_item_require_vip)
+    LinearLayout mLlFragmentMineItemRequireVip;
+    @Bind(R.id.ll_fragment_mine_item_require_cert)
+    LinearLayout mLlFragmentMineItemRequireCert;
+    @Bind(R.id.ll_fragment_mine_item_activity_list)
+    LinearLayout mLlFragmentMineItemActivityList;
+    @Bind(R.id.ll_fragment_mine_item_setting)
+    LinearLayout mLlFragmentMineItemSetting;
+    @Bind(R.id.ll_fragment_mine_item_help)
+    LinearLayout mLlFragmentMineItemHelp;
+    @Bind(R.id.rotate_header_list_view_frame)
+    PtrClassicFrameLayout mRotateHeaderListViewFrame;
+    @Bind(R.id.fl_mine_top_parent)
+    FrameLayout mFlMineTopParent;
+    private int originalHeaderHeight;
+    private View mContentView;
+    private MineFragPresenter mMineFragPresenter;
+    private float pullHeight;
+    private int detailImgHeight;
+    private boolean isLoginValid = false;
+    private VIPGiftCanShowReceiver mVIPGiftCanShowReceiver;
+    private LocalBroadcastManager localBroadcastManager;
+
+    public static MineFragment newInstance() {
+        MineFragment fragment = new MineFragment();
+        return fragment;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        mMineFragPresenter = new MineFragPresenter(this);
+
+
+        mVIPGiftCanShowReceiver = new VIPGiftCanShowReceiver();
+        IntentFilter filter = new IntentFilter(LocalBroadCastConst.LocalBroadIntentAction_onCanVipGiftShow);
+        localBroadcastManager = LocalBroadcastManager.getInstance(getActivity());
+        localBroadcastManager.registerReceiver(mVIPGiftCanShowReceiver, filter);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        mMineFragPresenter.getMyInfo();
+//        bindData();
+    }
+
+    @Override
+    public void onHiddenChanged(boolean hidden) {
+        super.onHiddenChanged(hidden);
+        if (!hidden) {
+            bindData();
+        }
+    }
+
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        mContentView = inflater.inflate(R.layout.fragment_mine, container, false);
+        ButterKnife.bind(this, mContentView);
+        setupView(savedInstanceState);
+        mMineFragPresenter.onCreate();
+        return mContentView;
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        ButterKnife.unbind(this);
+        mMineFragPresenter.onDestoryView();
+        localBroadcastManager.unregisterReceiver(mVIPGiftCanShowReceiver);
+    }
+
+    @Override
+    protected void setupView(@Nullable Bundle savedInstanceState) {
+        mRotateHeaderListViewFrame.setPinContent(true);
+        mRotateHeaderListViewFrame.setMyOnScrollListener(this);
+        mRotateHeaderListViewFrame.setPullToRefresh(true);
+
+        mRotateHeaderListViewFrame.getHeader().setVisibility(View.INVISIBLE);
+        //顶部750:550
+        ViewGroup.LayoutParams topVlp = mFlMineTopParent.getLayoutParams();
+        topVlp.height = (int) (DeviceUtils.getScreenWidth(getActivity()) / Constant.IMAGE_MINE_RATIO_WH);
+        mFlMineTopParent.setLayoutParams(topVlp);
+
+        detailImgHeight = (int) (DeviceUtils.getScreenWidth(getActivity()) / Constant.IMAGE_CARD_RATIO_WH);
+
+        pullHeight = detailImgHeight - topVlp.height;
+        float headHeight = (60 * DeviceUtils.getScreenDensity(getActivity()));
+        float releaseRatio = (pullHeight) / headHeight;
+        mRotateHeaderListViewFrame.setRatioOfHeaderHeightToRefresh(releaseRatio);
+
+        Log.e("setupView", "detailImgHeight=" + detailImgHeight + ",topVlp.height=" + topVlp.height);
+
+//        ViewGroup.LayoutParams topVlpImage = mIvFragmentMineBackimage.getLayoutParams();
+//        topVlpImage.height = (int) (DeviceUtils.getScreenWidth(getActivity()) / Constant.IMAGE_MINE_RATIO_WH);
+//        mIvFragmentMineBackimage.setLayoutParams(topVlpImage);
+
+        originalHeaderHeight = (int) (DeviceUtils.getScreenWidth(getActivity()) / Constant.IMAGE_MINE_RATIO_WH);
+
+        mRotateHeaderListViewFrame.setPtrHandler(new PtrDefaultHandler() {
+            @Override
+            public void onRefreshBegin(PtrFrameLayout frame) {
+                if (isLoginValid) {
+                    Intent intent = new Intent(getActivity(), UserDetailActivity.class);
+                    intent.putExtra(IntentExtraKey.INTENT_EXTRA_KEY_USERINFO, UserUtil.getSavedUserInfoNotNull());
+                    intent.putExtra(UserDetailActivity.INTENT_EXTRA_KEY_IMAGE_WH_RATIO, Constant.IMAGE_CARD_RATIO_WH);
+                    ActivityTransitionLauncher.with((Activity) getActivity()).from(mIvFragmentMineBackimage).launch(intent);
+                }
+                mRotateHeaderListViewFrame.refreshComplete();
+
+            }
+        });
+        //设置
+        mLlFragmentMineItemSetting.setOnClickListener(this);
+        //购买vip
+        mLlFragmentMineItemVip.setOnClickListener(this);
+        //编辑
+        mIbtnFragmentMineEdit.setOnClickListener(this);
+        //头像
+        mRivFragmentMineAvatar.setOnClickListener(this);
+        //新手指南
+        mLlFragmentMineItemHelp.setOnClickListener(this);
+        //申请认证
+        mLlFragmentMineItemRequireCert.setOnClickListener(this);
+        //活动列表
+        mLlFragmentMineItemActivityList.setOnClickListener(this);
+        //申请vip
+        mLlFragmentMineItemRequireVip.setOnClickListener(this);
+        //购买礼物
+        mLlFragmentMineItemGift.setOnClickListener(this);
+        mLlFragmentMineAvatarNotlogin.setOnClickListener(this);
+    }
+
+    private void bindData() {
+        mLlMineViptips.setVisibility(View.VISIBLE);
+        mTvMineVipValiddata.setVisibility(View.GONE);
+        mIbtnMineVipBuy.setImageResource(R.mipmap.abn_yueai_ic_mine_vip_buy);
+
+        UserEntity userEntity = UserUtil.getSavedUserInfo();
+        if (userEntity != null && UserUtil.isLoginValid(true) != null) {
+            mRlMineTop.setVisibility(View.VISIBLE);
+            mLlFragmentMineAvatarNotlogin.setVisibility(View.INVISIBLE);
+            mIvFragmentMineBackimage.setVisibility(View.VISIBLE);
+            mTvFragmentMineName.setText(userEntity.nickname);
+            if (userEntity.pictureList != null) {
+                Glide.with(getActivity()).load(userEntity.getFirstPicture()).placeholder(R.mipmap.abn_yueai_ic_default_avatar).into(mRivFragmentMineAvatar);
+                Glide.with(getActivity()).load(userEntity.getFirstPicture()).diskCacheStrategy(DiskCacheStrategy.SOURCE).into(new SimpleTarget<GlideDrawable>() {
+                    @Override
+                    public void onResourceReady(GlideDrawable resource, GlideAnimation<? super GlideDrawable> glideAnimation) {
+                        mIvFragmentMineBackimage.setImageDrawable(resource);
+                    }
+                });
+            }
+            if (userEntity.sex == UserEntity.SEX_FEMALE) {
+                mIvFragmentMineSexsymbol.setImageResource(R.mipmap.abn_yueai_ic_sex_female);
+            } else {
+                mIvFragmentMineSexsymbol.setImageResource(R.mipmap.abn_yueai_ic_sex_male);
+            }
+
+            mTvMineTopAge.setText(userEntity.age + "");
+            mTvMineTopConstellation.setText(userEntity.constellation);
+            mTvMineTopOccupation.setText(userEntity.occupation);
+
+            ConfigEntity configEntity = ConfigUtil.getInstance().getConfig();
+            if (configEntity != null && configEntity.members != null) {
+                for (MemberEntity memberEntity : configEntity.members) {
+                    if (memberEntity.level == userEntity.memberLevel) {
+                        if (!StringUtils.isEmpty(memberEntity.icon)) {
+                            Glide.with(this).load(memberEntity.icon).into(mIvMineLevelSymbol);
+                        }
+                        break;
+                    }
+                }
+            }
+            if (userEntity.memberLevel > 0) {
+                mLlMineViptips.setVisibility(View.GONE);
+                mTvMineVipValiddata.setVisibility(View.VISIBLE);
+                mTvMineVipValiddata.setText(getString(R.string.abn_yueai_mine_vipvaliddata_fmt,
+                        TimeUtil.getFormatedDate(userEntity.memberDate, "yyyy-MM-dd")));
+                mIbtnMineVipBuy.setImageResource(R.mipmap.abn_yueai_ic_mine_vip_renew);
+            }
+            isLoginValid = true;
+        } else {
+            mRlMineTop.setVisibility(View.INVISIBLE);
+//            mLlFragmentMineAvatarNotlogin.setVisibility(View.VISIBLE);
+            mIvFragmentMineBackimage.setVisibility(View.INVISIBLE);
+            isLoginValid = false;
+        }
+    }
+
+    @Override
+    public void onClick(View view) {
+        if (view == mLlFragmentMineItemSetting) {
+            //设置
+            startActivity(SettingActivity.class);
+
+        } else if (view == mLlFragmentMineItemRequireVip) {
+//            if (isLoginValid) {
+                VipCertActivity.launchIntent(getActivity());
+//            } else {
+//                jumpToLogin();
+//            }
+        } else if (view == mLlFragmentMineItemVip) {
+//            if (isLoginValid) {
+                CommonWebActivity.launchIntent(getActivity(), CommonUtils.getCommonPageUrl(Constant._sUrl_vip_buy, null));
+//            } else {
+//                jumpToLogin();
+//            }
+        } else if (view == mIbtnFragmentMineEdit) {
+//            if (isLoginValid) {
+                startActivity(UserInfoEditActivity.class);
+//            } else {
+//                jumpToLogin();
+//            }
+        } else if (view == mRivFragmentMineAvatar) {
+//            if (isLoginValid) {
+                Intent intent = new Intent(getActivity(), UserDetailActivity.class);
+                intent.putExtra(IntentExtraKey.INTENT_EXTRA_KEY_USERINFO, UserUtil.getSavedUserInfoNotNull());
+                intent.putExtra(UserDetailActivity.INTENT_EXTRA_KEY_IMAGE_WH_RATIO, Constant.IMAGE_CARD_RATIO_WH);
+                ActivityTransitionLauncher.with((Activity) getActivity()).from(mRivFragmentMineAvatar).launch(intent);
+//            } else {
+//                jumpToLogin();
+//            }
+        } else if (view == mLlFragmentMineItemHelp) {
+            CommonWebActivity.launchIntent(getActivity(), Constant._sUrl_help);
+        } else if (view == mLlFragmentMineItemGift) {
+//            if (isLoginValid) {
+//                CommonWebActivity.launchIntent(getActivity(), Constant._sUrl_gift_buy);
+            CommonWebActivity.launchIntent(getActivity(), CommonUtils.getCommonPageUrl(Constant._sUrl_gift_buy, null));
+//            } else {
+//                jumpToLogin();
+//            }
+
+        } else if (view == mLlFragmentMineAvatarNotlogin) {
+//            jumpToLogin();
+        } else if (view == mLlFragmentMineItemRequireCert) {
+//            if (isLoginValid) {
+            RequireCertActivity.launchIntent(getActivity());
+//            } else {
+//                jumpToLogin();
+//            }
+        } else if (view == mLlFragmentMineItemActivityList) {
+            ActivityListActivity.launchIntent(getActivity());
+        } else {
+            super.onClick(view);
+        }
+    }
+
+    private void jumpToLogin() {
+        SplashActivity.launchIntent(getActivity(), true);
+    }
+
+    @Override
+    public void onScrollChanged(int curY, int oldy) {
+        if (curY > detailImgHeight - originalHeaderHeight) {
+            curY = detailImgHeight - originalHeaderHeight;
+        }
+        ViewGroup.LayoutParams llp = mFlMineTopParent
+                .getLayoutParams();
+        llp.height = originalHeaderHeight + curY;
+        mFlMineTopParent.setLayoutParams(llp);
+        if (isLoginValid) {
+            mIvFragmentMineMaskimage.setAlpha(1 - curY / pullHeight);
+        }
+    }
+
+    @Override
+    public void onGetMyInfoFailed(ResponseResult e) {
+        mRotateHeaderListViewFrame.refreshComplete();
+    }
+
+    @Override
+    public void onGetMyInfoSuccess(UserEntity userEntity) {
+        mRotateHeaderListViewFrame.refreshComplete();
+        bindData();
+    }
+
+    class VIPGiftCanShowReceiver extends BroadcastReceiver {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            mMineFragPresenter.getMyInfo();
+        }
+    }
+}

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/abn_yueai_common_toolbar"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/dim_ailiulian_common_divider"
+        android:layout_weight="1.0"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_pay_select_none"
+            style="@style/AbnYueAiText.Normal.Gray"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="该商品暂不支持购买"
+            android:visibility="gone"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_selectpay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_selectpay_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/abn_yueai_text_white"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:elevation="@dimen/dim_ailiulian_common_margin_half"
+        android:orientation="horizontal"
+        >
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/dim_ailiulian_common_margin">
+
+            <TextView
+                style="@style/AbnYueAiText.Normal.Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="总计:"/>
+
+            <TextView
+                android:id="@+id/tv_selectpay_price"
+                style="@style/AbnYueAiText.Normal.Gray"
+                android:layout_marginLeft="@dimen/dim_ailiulian_common_margin_half"
+                android:text="￥0.00"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_selectpay_buy"
+            style="@style/AbnYueAiText.Normal.White"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/abn_yueai_gradient_horizontal_red"
+            android:clickable="true"
+            android:gravity="center"
+            android:minHeight="@dimen/dim_actionbar_height"
+            android:onClick="onClick"
+            android:paddingBottom="@dimen/dim_ailiulian_common_margin"
+            android:paddingLeft="@dimen/dim_ailiulian_common_margin_double"
+            android:paddingRight="@dimen/dim_ailiulian_common_margin_double"
+            android:paddingTop="@dimen/dim_ailiulian_common_margin"
+            android:text="确定支付"/>
+    </LinearLayout>
+</LinearLayout>

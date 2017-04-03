@@ -1,0 +1,382 @@
+package com.aibinong.tantan.ui.activity.message;
+
+// _______________________________________________________________________________________________\
+//|                                                                                               |
+//| Created by yourfriendyang on 16/11/6.                                                                |
+//| yourfriendyang@163.com                                                                        |
+//|_______________________________________________________________________________________________|
+
+import android.app.Activity;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.os.Bundle;
+import android.os.SystemClock;
+import android.support.annotation.Nullable;
+import android.support.v4.content.LocalBroadcastManager;
+import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.widget.FrameLayout;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import com.aibinong.tantan.R;
+import com.aibinong.tantan.broadcast.GlobalLocalBroadCastManager;
+import com.aibinong.tantan.broadcast.LocalBroadCastConst;
+import com.aibinong.tantan.constant.IntentExtraKey;
+import com.aibinong.tantan.presenter.FollowPresenter;
+import com.aibinong.tantan.presenter.SayHiPresenter;
+import com.aibinong.tantan.presenter.UserDetailPresenter;
+import com.aibinong.tantan.presenter.message.ChatActivityPresenter;
+import com.aibinong.tantan.ui.activity.ActivityBase;
+import com.aibinong.tantan.ui.activity.UserDetailActivity;
+import com.aibinong.tantan.ui.dialog.SelectItemIOSDialog;
+import com.aibinong.tantan.ui.fragment.message.ChatMsgListFragment;
+import com.aibinong.tantan.ui.fragment.message.PMListFragment;
+import com.aibinong.tantan.ui.widget.EmptyView;
+import com.aibinong.tantan.util.DialogUtil;
+import com.aibinong.tantan.util.message.EMChatHelper;
+import com.aibinong.yueaiapi.pojo.GiftEntity;
+import com.aibinong.yueaiapi.pojo.ReportEntity;
+import com.aibinong.yueaiapi.pojo.ResponseResult;
+import com.aibinong.yueaiapi.pojo.UserEntity;
+import com.aibinong.yueaiapi.utils.ConfigUtil;
+import com.aibinong.yueaiapi.utils.UserUtil;
+import com.fatalsignal.util.Log;
+import com.fatalsignal.util.StringUtils;
+import com.hyphenate.chat.EMClient;
+
+import java.util.ArrayList;
+
+import butterknife.Bind;
+import butterknife.ButterKnife;
+import rx.Subscriber;
+import rx.android.schedulers.AndroidSchedulers;
+
+public class ChatActivity extends ActivityBase implements ChatActivityPresenter.IChatActivity, UserDetailPresenter.IuserDetail {
+    @Bind(R.id.fl_chat_msglist_fragment)
+    FrameLayout mFlChatMsglistFragment;
+    @Bind(R.id.tv_toolbar_title)
+    TextView mTvToolbarTitle;
+    @Bind(R.id.toolbar)
+    Toolbar mToolbar;
+    @Bind(R.id.abn_yueai_activity_chat)
+    LinearLayout mAbnYueaiActivityChat;
+    @Bind(R.id.ibtn_toolbar_dots)
+    ImageButton mIbtnToolbarDots;
+    @Bind(R.id.emptyview_chat)
+    EmptyView mEmptyviewChat;
+    private ChatMsgListFragment mChatMsgListFragment;
+    private String mCurrentUUID;
+    private UserEntity mCurrentUser;
+    //    private FollowListPresenter mAttentionListPresenter;
+    private ArrayList<ReportEntity> reportResons;
+    private ChatActivityPresenter mMineFragPresenter;
+    private UserDetailPresenter mUserDetailPresenter;
+    private FollowStateChangeBroadReceiver mFollowStateChangeBroadReceiver;
+    private LocalBroadcastManager broadcastManager;
+
+    public static Intent launchIntent(final Context context, String uuid, UserEntity userEntity, boolean isHelper, boolean autoStart) {
+        final Intent intent = new Intent(context, ChatActivity.class);
+        Bundle bundle = new Bundle();
+        bundle.putSerializable(IntentExtraKey.INTENT_EXTRA_KEY_USERINFO, userEntity);
+        bundle.putString(IntentExtraKey.INTENT_EXTRA_KEY_UUUID, uuid);
+        intent.putExtras(bundle);
+        if (autoStart) {
+            //先登录到聊天服务器
+            if (!EMClient.getInstance().isLoggedInBefore()) {
+                DialogUtil.showIndeternimateDialog((Activity) context, null);
+                EMChatHelper.getInstance().loginChat().observeOn(AndroidSchedulers.mainThread()).subscribe(new Subscriber() {
+                    @Override
+                    public void onCompleted() {
+                        //登录成功
+                        DialogUtil.hideDialog((Activity) context);
+                        context.startActivity(intent);
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+                        DialogUtil.showDialog((Activity) context, e.getMessage(), true);
+                    }
+
+                    @Override
+                    public void onNext(Object o) {
+
+                    }
+                });
+            } else {
+                context.startActivity(intent);
+            }
+        }
+
+        return intent;
+    }
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.abn_yueai_activity_chat);
+        ButterKnife.bind(this);
+        mEmptyviewChat.loadingComplete();
+        mCurrentUUID = getIntent().getExtras().getString(IntentExtraKey.INTENT_EXTRA_KEY_UUUID);
+        mCurrentUser = (UserEntity) getIntent().getExtras().getSerializable(IntentExtraKey.INTENT_EXTRA_KEY_USERINFO);
+
+        if (StringUtils.isEmpty(mCurrentUUID) && mCurrentUser != null) {
+            mCurrentUUID = mCurrentUser.id;
+        }
+        if (StringUtils.isEmpty(mCurrentUUID)) {
+            finish();
+            return;
+        }
+        setupToolbar(mToolbar, mTvToolbarTitle, true);
+        requireTransStatusBar();
+        setupView(savedInstanceState);
+//        mAttentionListPresenter = new FollowListPresenter(this);
+        mMineFragPresenter = new ChatActivityPresenter(this);
+        mUserDetailPresenter = new UserDetailPresenter(mCurrentUUID, this);
+        if (mCurrentUser.nickname.equals("客服小助手")){  //如果是客服小助手 就将顶部的查看资料 举报等功能收起来
+            mIbtnToolbarDots.setVisibility(View.GONE);
+        }
+        if (mCurrentUser == null) {
+            mEmptyviewChat.startLoading();
+            mMineFragPresenter.getUserInfo(mCurrentUUID);
+        } else {
+            mChatMsgListFragment = ChatMsgListFragment.newInstance(mCurrentUUID, mCurrentUser);
+            getFragmentManager().beginTransaction().replace(R.id.fl_chat_msglist_fragment, mChatMsgListFragment).commit();
+            mIbtnToolbarDots.setOnClickListener(this);
+            mMineFragPresenter.getUserInfo(mCurrentUUID);
+            mTvToolbarTitle.setText(mCurrentUser.nickname);
+        }
+
+    }
+
+    @Override
+    protected boolean swipeBackEnable() {
+        return true;
+    }
+
+    @Override
+    protected void setupView(@Nullable Bundle savedInstanceState) {
+
+    }
+
+    @Override
+    public void onClick(View view) {
+        if (view == mIbtnToolbarDots) {
+            ArrayList<String> itemDatas = new ArrayList<>(3);
+            itemDatas.add("查看个人资料");
+            itemDatas.add("清除聊天记录");
+            if (!UserUtil.isHelper(mCurrentUser)) {
+//                itemDatas.add("解除匹配");
+                if (ConfigUtil.getInstance().getConfig() != null && ConfigUtil.getInstance().getConfig().reports != null) {
+                    reportResons = (ArrayList<ReportEntity>) ConfigUtil.getInstance().getConfig().reports;
+                    if (reportResons.size() > 0) {
+                        itemDatas.add("举报");
+                    }
+                    if (mCurrentUser.follow == 0) {  //未关注 那么应该显示关注
+                        itemDatas.add("关注");
+                    } else {
+                        itemDatas.add("取消关注");
+                    }
+
+                }
+            }
+            SelectItemIOSDialog selectItemIOSDialog = SelectItemIOSDialog.newInstance(itemDatas);
+            selectItemIOSDialog.show(new SelectItemIOSDialog.SelectItemCallback() {
+                @Override
+                public void onSelectItem(int position) {
+                    if (position == 0) {
+                        //查看个人资料
+                        UserDetailActivity.launchIntent(ChatActivity.this, mCurrentUser);
+                    } else if (position == 1) {
+                        //清除聊天记录
+                        mChatMsgListFragment.clearMessageLog();
+
+                        mChatMsgListFragment.deleteChatRecord();
+                        SayHiPresenter.getInstance().onSayNoHiSended(mCurrentUser);
+                        //同时通知首页刷新数据   同时 私信界面也刷新下数据
+                        GlobalLocalBroadCastManager.getInstance().onHomeDateFlush(mCurrentUser);
+
+                    } else if (position == 2) {
+                        showReportDialog();
+                    } /*else if (position == 3) {
+                        //接触匹配
+                        DialogUtil.showIndeternimateDialog(ChatActivity.this, null);
+//                        mAttentionListPresenter.cancelPair(mCurrentUUID);
+                    }*/ else if (position == 3) {
+                        if (mCurrentUser.follow == 0) {  //未关注状态 点击应该调关注接口
+                            FollowPresenter.getInstance().follow(mCurrentUser);
+                        } else {
+                            FollowPresenter.getInstance().unfollow(mCurrentUser);
+                        }
+                    }
+                }
+
+                @Override
+                public void onSelectNone() {
+
+                }
+            }, getFragmentManager(), null);
+        } else {
+            super.onClick(view);
+        }
+    }
+
+    private void showReportDialog() {
+        if (reportResons == null || reportResons.size() <= 0) {
+            return;
+        }
+        ArrayList<String> resons = new ArrayList<>(reportResons.size());
+        for (ReportEntity meportEntity : reportResons) {
+            resons.add(meportEntity.content);
+        }
+        SelectItemIOSDialog itemIOSDialog = SelectItemIOSDialog.newInstance(resons);
+        itemIOSDialog.show(new SelectItemIOSDialog.SelectItemCallback() {
+            @Override
+            public void onSelectItem(int position) {
+                if (position < reportResons.size()) {
+                    ReportEntity reportEntity = reportResons.get(position);
+                    DialogUtil.showIndeternimateDialog(ChatActivity.this, null);
+                    mUserDetailPresenter.report(mCurrentUUID, reportEntity);
+                }
+            }
+
+            @Override
+            public void onSelectNone() {
+
+            }
+        }, getFragmentManager(), null);
+    }
+
+//    @Override
+//    public void onReportSuccess() {
+//        DialogUtil.hideDialog(this);
+//        showErrToast(new ResponseResult(-1, "举报成功"));
+//    }
+//
+//    @Override
+//    public void onReportFailed(ResponseResult e) {
+//        DialogUtil.hideDialog(this);
+//        showErrToast(e);
+//    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        mChatMsgListFragment.onActivityResult(requestCode, resultCode, data);
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (mChatMsgListFragment.onBackPressed()) {
+            super.onBackPressed();
+        }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        mFollowStateChangeBroadReceiver = new FollowStateChangeBroadReceiver();
+        IntentFilter intentFilter = new IntentFilter();
+        intentFilter.addAction(LocalBroadCastConst.LocalBroadIntentAction_onFllowActivityChange);
+        broadcastManager = LocalBroadcastManager.getInstance(this);
+        broadcastManager.registerReceiver(mFollowStateChangeBroadReceiver, intentFilter);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if (mFollowStateChangeBroadReceiver != null) {
+            broadcastManager.unregisterReceiver(mFollowStateChangeBroadReceiver);
+            mFollowStateChangeBroadReceiver = null;
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+//        Intent intent = new Intent(Intent.ACTION_MAIN);
+//        intent.addCategory(Intent.CATEGORY_LAUNCHER);
+//        intent.setComponent(getPackageManager().getLaunchIntentForPackage(getPackageName()).getComponent());
+//        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);//关键的一步，设置启动模式
+//        startActivity(intent);
+    }
+
+//    @Override
+//    public void onMachingListStart() {
+//
+//    }
+//
+//    @Override
+//    public void onMachingListFailed(Throwable e) {
+//
+//    }
+//
+//    @Override
+//    public void onMachingListSuccess(ArrayList<UserEntity> userEntities, Page page) {
+//
+//    }
+
+
+    @Override
+    public void onGetGiftListSuccess(ArrayList<GiftEntity> giftEntities) {
+
+    }
+
+    @Override
+    public void onGetGiftListFailed(ResponseResult e) {
+
+    }
+
+    @Override
+    public void onReportSuccess() {
+        DialogUtil.hideDialog(this);
+        showErrToast(new ResponseResult(-1, "举报成功"));
+    }
+
+    @Override
+    public void onReportFailed(ResponseResult e) {
+        DialogUtil.hideDialog(this);
+        showErrToast(e);
+    }
+
+    @Override
+    public void onGetUserSuc(UserEntity userEntity) {
+        mEmptyviewChat.loadingComplete();
+        if (mCurrentUser == null) {
+            mCurrentUser = userEntity;
+            mChatMsgListFragment = ChatMsgListFragment.newInstance(mCurrentUUID, mCurrentUser);
+            getFragmentManager().beginTransaction().replace(R.id.fl_chat_msglist_fragment, mChatMsgListFragment).commit();
+            mIbtnToolbarDots.setOnClickListener(this);
+        } else {
+            mCurrentUser = userEntity;
+            mChatMsgListFragment.setUser(mCurrentUser);
+        }
+        mTvToolbarTitle.setText(mCurrentUser.nickname);
+
+    }
+
+    @Override
+    public void onGetUserFailed(ResponseResult e) {
+        if (mCurrentUser == null) {
+            DialogUtil.showDialog(this, e.getMessage(), true).setOnDismissListener(new DialogInterface.OnDismissListener() {
+                @Override
+                public void onDismiss(DialogInterface dialog) {
+                    finish();
+                }
+            });
+        }
+    }
+
+    class FollowStateChangeBroadReceiver extends BroadcastReceiver {
+
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            int intExtra = intent.getIntExtra(IntentExtraKey.INTENT_EXTRA_FOLLOW_STATE, 0);
+            mCurrentUser.follow = intExtra;
+        }
+    }
+}

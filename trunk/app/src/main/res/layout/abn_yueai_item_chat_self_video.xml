@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.fatalsignal.view.RoundAngleImageView
+        android:id="@+id/tv_item_chat_self_video_content"
+        style="@style/AbnYueAiText.Normal.White"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/abn_yueai_selector_round_littlegray"
+        android:scaleType="centerCrop"
+        app:radius="@dimen/dim_ailiulian_common_radius"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_item_chat_self_video_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/dim_ailiulian_common_margin"
+        >
+
+        <ImageView
+            android:id="@+id/ibtn_item_chat_self_video_load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@mipmap/abn_yueai_ic_chat_video_start"
+            />
+
+        <TextView
+            android:id="@+id/tv_item_chat_self_video_load"
+            style="@style/AbnYueAiText.Medium.White"
+            android:layout_below="@id/ibtn_item_chat_self_video_load"
+            android:layout_marginTop="@dimen/dim_ailiulian_common_margin"
+            android:text="@string/abn_yueai_chat_video_touchload"
+            />
+    </LinearLayout>
+</RelativeLayout>

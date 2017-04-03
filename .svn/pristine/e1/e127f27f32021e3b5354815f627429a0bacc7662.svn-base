@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@mipmap/abn_yueai_pairsuccess_bg"
+             android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/abn_yueai_pairsuccess_log"/>
+
+        <TextView
+            android:id="@+id/tv_pair_success_title"
+            style="@style/AbnYueAiText.Normal.White"
+            android:layout_marginTop="@dimen/dim_ailiulian_common_margin_double"
+            tools:text="你和xx相互喜欢了对方"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_ailiulian_common_margin_triple"
+            android:orientation="horizontal">
+
+            <com.fatalsignal.view.RoundAngleImageView
+                android:id="@+id/riv_pair_success_lavatar"
+                android:layout_width="@dimen/abn_yueai_dimen_pairsuccess_avatar_width"
+                android:layout_height="@dimen/abn_yueai_dimen_pairsuccess_avatar_width"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/abn_yueai_ic_default_avatar"
+                app:isCircle="true"
+                app:ringColor="@color/abn_yueai_text_white"
+                app:ringWidth="@dimen/abn_yueai_dimen_pairsuccess_avatar_ringwidth"/>
+
+            <com.fatalsignal.view.RoundAngleImageView
+                android:id="@+id/riv_pair_success_ravatar"
+                android:layout_width="@dimen/abn_yueai_dimen_pairsuccess_avatar_width"
+                android:layout_height="@dimen/abn_yueai_dimen_pairsuccess_avatar_width"
+                android:layout_marginLeft="-12dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/abn_yueai_ic_default_avatar"
+                app:isCircle="true"
+                app:ringColor="@color/abn_yueai_text_white"
+                app:ringWidth="@dimen/abn_yueai_dimen_pairsuccess_avatar_ringwidth"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_pair_success_chat"
+            style="@style/AbnYueAiText.Normal.White"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/dim_ailiulian_common_margin_quard"
+            android:background="@mipmap/abn_yueai_pairsuccess_chatbtn"
+            android:gravity="center"
+            android:minHeight="@dimen/dim_ailiulian_common_btnheight"
+            android:text="发送消息"/>
+
+        <Button
+            android:id="@+id/btn_pair_success_continue"
+            style="@style/AbnYueAiText.Normal.White"
+            android:layout_width="@dimen/abn_yueai_dimen_pairsuccess_btnwidth"
+            android:layout_marginTop="@dimen/dim_ailiulian_common_margin_double"
+            android:background="@mipmap/abn_yueai_pairsuccess_continuebtn"
+            android:gravity="center"
+            android:minHeight="@dimen/dim_ailiulian_common_btnheight"
+            android:text="我知道了"/>
+    </LinearLayout>
+</FrameLayout>

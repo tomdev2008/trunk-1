@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/abn_yueai_common_toolbar"/>
+
+    <TextView
+        style="@style/AbnYueAiText.Normal.Gray"
+        android:layout_margin="@dimen/dim_ailiulian_common_margin_double"
+        android:text="@string/abn_yueai_privacy_setting_tips"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_ailiulian_common_divider_wide"
+        android:background="?android:attr/listDivider"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_privacy_setting_blur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/abn_yueai_common_ripple"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dim_ailiulian_common_margin_double"
+        >
+
+        <TextView
+            style="@style/AbnYueAiText.Normal.Black"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:text="@string/abn_yueai_privacy_setting_picblur"
+            />
+
+        <TextView
+            android:id="@+id/tv_privacy_setting_blurstatus"
+            style="@style/AbnYueAiText.Normal.Black"
+            android:text="@string/abn_yueai_on"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+            android:src="@mipmap/abn_yueai_ic_arr_right_gray"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_ailiulian_common_divider_wide"
+        android:background="?android:attr/listDivider"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_privacy_setting_receivelimit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/abn_yueai_common_ripple"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dim_ailiulian_common_margin_double"
+        >
+
+        <TextView
+            style="@style/AbnYueAiText.Normal.Black"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:text="@string/abn_yueai_privacy_setting_receivelimit"
+            />
+
+        <TextView
+            android:id="@+id/tv_privacy_setting_receivelimit_level"
+            style="@style/AbnYueAiText.Normal.Black"
+            android:text="普通会员"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+            android:src="@mipmap/abn_yueai_ic_arr_right_gray"
+            />
+    </LinearLayout>
+
+    <TextView
+        style="@style/AbnYueAiText.Normal.Gray"
+        android:layout_marginLeft="@dimen/dim_ailiulian_common_margin_double"
+        android:layout_marginTop="@dimen/dim_ailiulian_common_margin_double"
+        android:text="@string/abn_yueai_register_tips"
+        />
+
+    <TextView
+        style="@style/AbnYueAiText.Medium.Gray"
+        android:layout_marginLeft="@dimen/dim_ailiulian_common_margin_double"
+        android:layout_marginRight="@dimen/dim_ailiulian_common_margin_double"
+        android:layout_marginTop="@dimen/dim_ailiulian_common_margin"
+        android:text="@string/abn_yueai_privacy_tips"
+        />
+</LinearLayout>

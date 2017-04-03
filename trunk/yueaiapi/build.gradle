@@ -1,0 +1,47 @@
+apply plugin: 'com.android.library'
+Map<String, String> getuiConfig = [
+        GETUI_APP_ID    : "TpI5ycgOS59gWaB7hQADUA",
+        'GETUI_APP_KEY'   : "SXfuPTyMxTAkJjbMzgTsM8",
+        'GETUI_APP_SECRET': "6b8FfkR3iT6AEGm9S5doAA"
+        //masterSec AdoW6tHBJM7rLkykAOtiE
+]
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+//        manifestPlaceholders.putAll(getuiConfig)
+//        manifestPlaceholders.put("PACKAGE_NAME", "com.aibinong.yueai")
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:22+'
+    testCompile 'junit:junit:4.12'
+    compile 'io.reactivex:rxandroid:1.2.0'
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+
+    compile project(':yangcommonlib')
+    compile 'com.squareup.sqlbrite:sqlbrite:0.8.0'
+}

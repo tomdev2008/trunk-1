@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/abn_yueai_gradient_horizontal_red"
+    android:elevation="@dimen/abn_yueai_dimen_card_eveation"
+    android:fitsSystemWindows="true"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:contentInsetStartWithNavigation="0dp">
+
+        <TextView
+            android:id="@+id/tv_toolbar_title"
+            style="@style/AbnYueAiText.Normal.White"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            tools:text="标题"
+            />
+    </android.support.v7.widget.Toolbar>
+
+
+</FrameLayout>

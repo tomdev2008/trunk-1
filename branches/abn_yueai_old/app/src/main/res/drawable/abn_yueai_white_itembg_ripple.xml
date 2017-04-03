@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- pressed -->
+    <item android:drawable="@mipmap/abn_yueai_bg_whiteitem" android:state_pressed="true"></item>
+
+    <!-- focus -->
+    <item android:drawable="@mipmap/abn_yueai_bg_whiteitem" android:state_focused="true">
+
+    </item>
+    <item android:drawable="@mipmap/abn_yueai_bg_whiteitem"></item>
+
+</selector>

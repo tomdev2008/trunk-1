@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <ImageView
+        android:id="@+id/iv_album_img_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_common_bordergray"
+        android:scaleType="centerCrop"
+
+        />
+
+    <android.support.v4.widget.ContentLoadingProgressBar
+        android:id="@+id/cpb_album_img_progress"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        />
+
+    <ImageView
+        android:id="@+id/iv_album_img_uploadfailed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@mipmap/abn_yueai_ic_chat_video_loadfailed"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/iv_album_img_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:src="@mipmap/abn_yueai_ic_album_add"
+        />
+
+    <View
+        android:id="@+id/drag_item_mask_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:scaleType="fitXY"/>
+</FrameLayout>

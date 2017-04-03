@@ -1,0 +1,5 @@
+include ':app', ':easeui', ':redpacketlibrary', ':yueaiapi', ':ptrlib', ':easemobcore', ':HeaderAndFooterRecyclerViewLibrary', ':yangcommonlib', ':nineOldLib', ':MediaPickerLibrary', ':iapppay_nopay', ':nowpaylib', ':viewPagerIndicatorlibrary', ':shimmer-android', ':MaskLibrary', ':DanmakuFlameMaster'
+include ':easeUIDemo_CN'
+include ':videorecorder'
+include ':MaterialBadgeLib'
+include ':SwipeCardsViewLibrary'

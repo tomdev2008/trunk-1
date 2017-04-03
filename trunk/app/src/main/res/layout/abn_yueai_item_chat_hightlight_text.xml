@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@id/tv_item_chat_self_base_tips"
+        style="@style/AbnYueAiText.Micro.Gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        tools:text="对方设置了只接受白金以上会员信息，你的消息将不能发送，会员特权无视免打扰，点击查看更多详情"
+        />
+</LinearLayout>

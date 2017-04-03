@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/abn_yueai_activity_chat"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/abn_yueai_gradient_horizontal_red"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:contentInsetStartWithNavigation="0dp">
+
+        <TextView
+            android:id="@+id/tv_toolbar_title"
+            style="@style/AbnYueAiText.Normal.White"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            tools:text="标题"
+            />
+
+        <ImageButton
+            android:id="@+id/ibtn_toolbar_dots"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:background="@null"
+            android:minWidth="@dimen/dim_actionbar_height"
+            android:src="@mipmap/abn_yueai_menu_dots"
+            />
+    </android.support.v7.widget.Toolbar>
+
+
+    <FrameLayout
+        android:id="@+id/fl_chat_msglist_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:windowBackground"
+        />
+
+    <com.aibinong.tantan.ui.widget.EmptyView
+        android:id="@+id/emptyview_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

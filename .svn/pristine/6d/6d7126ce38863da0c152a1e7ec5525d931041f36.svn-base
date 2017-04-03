@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_common_translucent_black_60"
+              android:fitsSystemWindows="true"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:paddingBottom="@dimen/dim_ailiulian_common_margin"
+              android:paddingTop="@dimen/dim_ailiulian_common_margin"
+    >
+
+    <com.fatalsignal.view.RoundAngleImageView
+        android:id="@+id/riv_view_appmsg_avatar"
+        android:layout_width="@dimen/abn_yueai_appmsg_avatar_size"
+        android:layout_height="@dimen/abn_yueai_appmsg_avatar_size"
+        android:layout_marginLeft="@dimen/dim_ailiulian_common_margin_double"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/abn_yueai_ic_default_avatar"
+        app:isCircle="true"
+        app:ringWidth="@dimen/dim_ailiulian_common_divider_wide"/>
+
+    <ImageView
+        android:id="@+id/iv_view_appmsg_icon"
+        android:layout_width="@dimen/abn_yueai_appmsg_avatar_size"
+        android:layout_height="@dimen/abn_yueai_appmsg_avatar_size"
+        android:layout_marginLeft="@dimen/dim_ailiulian_common_margin_double"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+        android:layout_weight="1.0"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_view_appmsg_title"
+            style="@style/AbnYueAiText.Medium.White"
+            android:text="你有一个新的配对"
+            />
+
+        <TextView
+            android:id="@+id/tv_view_appmsg_content"
+            style="@style/AbnYueAiText.Micro.White"
+            android:layout_marginTop="@dimen/dim_ailiulian_common_margin_half"
+            android:text="也喜欢了你"
+            />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ibtn_view_appmsg_close"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="@dimen/dim_ailiulian_common_margin_double"
+        android:background="@drawable/abn_yueai_selector_circle_white"
+        android:src="@mipmap/common_close"
+        android:tint="@color/abn_yueai_text_gray"
+        />
+</LinearLayout>

@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    >
+
+    <com.aibinong.tantan.ui.widget.EmptyView
+        android:id="@+id/empty_userdetail_empty"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:layout_height="match_parent"
+        android:background="@color/abn_yueai_color_windowbg"/>
+
+    <com.nirhart.parallaxscroll.views.ParallaxScrollView
+        android:id="@+id/parallaxScroll_userdetail_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:inner_parallax_factor="1.9"
+        app:parallax_factor="1.9"
+        app:parallax_views_num="1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                tools:visibility="gone">
+
+                <com.bigkoo.convenientbanner.ConvenientBanner
+                    android:id="@+id/vpg_userdetail_images"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@color/abn_yueai_color_windowbg"
+                    android:clipToPadding="false"
+                    android:orientation="vertical"
+                    />
+
+                <com.aibinong.tantan.ui.widget.BlurTipsView
+                    android:id="@+id/btv_userdetail_blurtips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginBottom="60dp"
+                    android:layout_marginRight="@dimen/dim_ailiulian_common_margin_double"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    />
+
+                <com.aibinong.tantan.ui.widget.CircleNoPageIndicator
+                    android:id="@+id/cpi_userdetail_imgindicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_margin="@dimen/dim_ailiulian_common_margin_half"
+                    android:minHeight="@dimen/dim_ailiulian_common_margin"
+                    android:padding="@dimen/dim_ailiulian_common_margin_half"
+                    app:fillColor="@color/abn_yueai_text_white"
+                    app:radius="@dimen/dim_ailiulian_common_margin_half"
+                    />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_userdetail_detailinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/abn_yueai_color_windowbg"
+                    android:orientation="vertical"
+                    android:paddingBottom="84dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2.0">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:background="@mipmap/abn_yueai_ic_detail_agebg"
+                            android:gravity="center"
+                            android:minHeight="@dimen/dim_ailiulian_common_btnheight"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_person_detail_age"
+                                style="@style/AbnYueAiText.Big.Red"
+                                android:text="25"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                style="@style/AbnYueAiText.Medium.Red"
+                                android:text=" / 年龄"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:background="@mipmap/abn_yueai_ic_detail_xingzuobg"
+                            android:gravity="center"
+                            android:minHeight="@dimen/dim_ailiulian_common_btnheight"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_person_detail_constellation"
+                                style="@style/AbnYueAiText.Normal.White"
+                                android:text="狮子座"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                style="@style/AbnYueAiText.Medium.White"
+                                android:text=" / 星座"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim_ailiulian_common_margin"
+                        android:background="@color/abn_yueai_text_white"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dim_ailiulian_common_margin_double"
+                        tools:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical"
+                            >
+
+                            <LinearLayout
+                                android:id="@+id/ll_userdetail_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:padding="0dp">
+
+                                <TextView
+                                    android:id="@+id/tv_userdetail_name"
+                                    style="@style/AbnYueAiText.Big.Black"
+                                    tools:text="姓名"/>
+
+                                <ImageView
+                                    android:id="@+id/iv_userdetail_sexsymbol"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+                                    android:src="@mipmap/abn_yueai_ic_detail_female"/>
+
+                                <ImageView
+                                    android:id="@+id/iv_userdetail_levelsymbol"
+                                    android:layout_width="48dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+                                    android:adjustViewBounds="true"
+                                    />
+
+                            </LinearLayout>
+
+
+                            <com.aibinong.tantan.ui.widget.AuthenticationView
+                                android:id="@+id/atv_userdetail_cert"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_ailiulian_common_margin"/>
+
+
+                            <TextView
+                                android:id="@+id/tv_userdetail_job"
+                                style="@style/AbnYueAiText.Medium.Black"
+                                android:layout_marginTop="@dimen/dim_ailiulian_common_margin"
+                                android:drawableLeft="@mipmap/abn_yueai_ic_detail_job"
+                                android:drawablePadding="@dimen/dim_ailiulian_common_margin_half"
+                                android:gravity="center_vertical"
+                                android:text="设计师"
+                                android:textColor="@color/abn_yueai_text_deep_gray"
+                                />
+
+                            <LinearLayout
+                                android:id="@+id/ll_userdetail_location_activetime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_ailiulian_common_margin"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                >
+
+                                <TextView
+                                    android:id="@+id/tv_userdetail_location"
+                                    style="@style/AbnYueAiText.Micro.Gray"
+                                    android:drawableLeft="@mipmap/abn_yueai_ic_card_pos"
+                                    android:drawablePadding="@dimen/dim_ailiulian_common_margin_half"
+                                    android:text="2km,"/>
+
+                                <TextView
+                                    android:id="@+id/tv_userdetail_activeTime"
+                                    style="@style/AbnYueAiText.Micro.Gray"
+                                    android:text="40分钟前活跃"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/iv_userdetail_big_viplogo"
+                            android:layout_width="@dimen/abn_yueai_dimen_main_viplogo_width"
+                            android:layout_height="@dimen/abn_yueai_dimen_main_viplogo_width"
+                            android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+                            tools:src="@mipmap/abn_yueai_ic_default_avatar"
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/AbnYueAiText.Medium.Gray"
+                        android:layout_marginLeft="@dimen/dim_ailiulian_common_margin_double"
+                        android:layout_marginTop="@dimen/dim_ailiulian_common_margin"
+                        android:text="内心独白"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_userdetail_declaration"
+                        style="@style/AbnYueAiText.Medium.Gray"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/dim_ailiulian_common_margin"
+                        android:background="@color/abn_yueai_text_white"
+                        android:hint="@string/abn_yueai_hint_no_declaration"
+                        android:paddingBottom="@dimen/dim_ailiulian_common_margin"
+                        android:paddingLeft="@dimen/dim_ailiulian_common_margin_double"
+                        android:paddingRight="@dimen/dim_ailiulian_common_margin_double"
+                        android:paddingTop="@dimen/dim_ailiulian_common_margin"
+                        tools:text="这是个人独白"
+                        />
+
+                    <TextView
+                        style="@style/AbnYueAiText.Medium.Gray"
+                        android:layout_marginLeft="@dimen/dim_ailiulian_common_margin_double"
+                        android:layout_marginTop="@dimen/dim_ailiulian_common_margin"
+                        android:text="TA的标签"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim_ailiulian_common_margin"
+                        android:background="@color/abn_yueai_text_white"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dim_ailiulian_common_margin_double"
+                            android:layout_marginTop="@dimen/dim_ailiulian_common_margin"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/dim_ailiulian_common_margin_half"
+                                android:src="@mipmap/abn_yueai_ic_detail_tag"/>
+
+                            <TextView
+                                android:id="@+id/tv_person_detail_tags_count"
+                                style="@style/AbnYueAiText.Micro.Red"
+                                android:text="0"/>
+
+                            <TextView
+                                style="@style/AbnYueAiText.Micro.Gray"
+                                android:text="个标签"/>
+                        </LinearLayout>
+
+                        <cn.lankton.flowlayout.FlowLayout
+                            android:id="@+id/flowl_person_detail_mytags"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dim_ailiulian_common_margin"
+                            android:layout_marginTop="@dimen/dim_ailiulian_common_margin"
+                            app:lineSpacing="@dimen/dim_ailiulian_common_margin_half"
+                            app:maxLine="3"/>
+                    </LinearLayout>
+
+
+                    <TextView
+                        style="@style/AbnYueAiText.Medium.Gray"
+                        android:layout_marginLeft="@dimen/dim_ailiulian_common_margin_double"
+                        android:layout_marginTop="@dimen/dim_ailiulian_common_margin"
+                        android:text="收到的礼物"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim_ailiulian_common_margin"
+                        android:background="@color/abn_yueai_text_white"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dim_ailiulian_common_margin_double">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycler_userdetail_giftlist"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:visibility="gone"/>
+
+                        <LinearLayout
+                            android:id="@+id/ll_userdetail_nogifts"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-32dp"
+                            android:clipChildren="false"
+                            android:clipToPadding="false"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleX="0.5"
+                                android:scaleY="0.5"
+                                android:src="@mipmap/abn_yueai_ic_empty"
+                                android:id="@+id/imageView2" />
+
+                            <TextView
+                                style="@style/AbnYueAiText.Medium.Gray"
+                                android:text="TA当前还未收到礼物"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.nirhart.parallaxscroll.views.ParallaxScrollView>
+
+    <FrameLayout
+        android:id="@+id/fl_userdetail_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        >
+
+        <ImageButton
+            android:id="@+id/ibtn_userdetail_back"
+            android:layout_width="60dp"
+            android:layout_height="32dp"
+            android:layout_margin="@dimen/dim_ailiulian_common_margin"
+            android:background="@drawable/abn_yueai_selector_round_more_tran_fourty"
+            android:src="@mipmap/abn_yueai_ic_back"
+            />
+
+        <Button
+            android:id="@+id/ibtn_userdetail_edit"
+            style="@style/AbnYueAiButton.Medium"
+            android:layout_width="60dp"
+            android:layout_height="32dp"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/dim_ailiulian_common_margin"
+            android:background="@drawable/abn_yueai_selector_round_more_tran_fourty"
+            android:text="编辑"
+            android:visibility="invisible"
+            />
+
+        <Button
+            android:id="@+id/ibtn_userdetail_report"
+            style="@style/AbnYueAiButton.Medium"
+            android:layout_width="60dp"
+            android:layout_height="32dp"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/dim_ailiulian_common_margin"
+            android:background="@drawable/abn_yueai_selector_round_more_tran_fourty"
+            android:text="举报"
+            android:visibility="invisible"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:visibility="invisible"
+        android:id="@+id/ll_person_detail_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/abn_yueai_layerlist_userdetail_bottom"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:elevation="@dimen/dim_ailiulian_common_margin_half"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dim_ailiulian_common_margin"
+        android:paddingLeft="@dimen/dim_ailiulian_common_margin_double"
+        android:paddingRight="@dimen/dim_ailiulian_common_margin_double"
+        android:paddingTop="@dimen/dim_ailiulian_common_margin"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            >
+
+            <ImageButton
+                android:id="@+id/ibtn_person_detail_like"
+                android:layout_width="@dimen/dim_ailiulian_common_btnheight_large"
+                android:layout_height="@dimen/dim_ailiulian_common_btnheight_large"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@mipmap/abn_yueai_ic_detail_like"/>
+
+            <ImageButton
+                android:id="@+id/ibtn_person_detail_hi"
+                android:layout_width="@dimen/dim_ailiulian_common_btnheight_large"
+                android:layout_height="@dimen/dim_ailiulian_common_btnheight_large"
+                android:layout_marginLeft="70dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/abn_yueai_selector_icon_detail_hi"/>
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

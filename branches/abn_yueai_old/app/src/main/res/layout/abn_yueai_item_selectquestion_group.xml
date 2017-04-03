@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/abn_yueai_common_ripple"
+              android:clipChildren="false"
+              android:clipToPadding="false"
+              android:descendantFocusability="blocksDescendants"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:paddingBottom="@dimen/dim_ailiulian_common_margin"
+              android:paddingLeft="@dimen/dim_ailiulian_common_margin_double"
+              android:paddingRight="@dimen/dim_ailiulian_common_margin_double"
+              android:paddingTop="@dimen/dim_ailiulian_common_margin"
+    >
+
+    <CheckBox
+        android:id="@+id/checkbox_item_selectquestion_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/abn_yueai_selector_checkbox_red"
+        />
+
+    <TextView
+        android:id="@+id/tv_item_selectquestion_group_text"
+        style="@style/AbnYueAiText.Normal.Black"
+        android:layout_width="0dp"
+        android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+        android:layout_weight="1.0"
+        tools:text="@string/abn_yueai_setting_appsetting"
+        />
+
+    <ImageView
+        android:id="@+id/iv_item_selectquestion_group_arr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+        android:src="@mipmap/abn_yueai_ic_arr_right_gray"
+        />
+</LinearLayout>

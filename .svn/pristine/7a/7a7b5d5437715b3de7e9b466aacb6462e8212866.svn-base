@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/abn_yueai_common_ripple"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dim_ailiulian_common_margin"
+                android:paddingLeft="@dimen/dim_ailiulian_common_margin_double"
+                android:paddingRight="@dimen/dim_ailiulian_common_margin_double"
+                android:paddingTop="@dimen/dim_ailiulian_common_margin">
+
+    <ImageView
+        android:id="@+id/iv_item_selectpay_icon"
+        android:layout_width="@dimen/dim_aliulian_common_avatar_size_middle"
+        android:layout_height="@dimen/dim_aliulian_common_avatar_size_middle"
+        android:layout_centerVertical="true"/>
+
+    <LinearLayout
+        android:id="@+id/ll_item_selectpay_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+        android:layout_toRightOf="@id/iv_item_selectpay_icon"
+        android:orientation="vertical"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_item_selectpay_name"
+            style="@style/AbnYueAiText.Normal.Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="榴莲币"/>
+
+        <TextView
+            android:id="@+id/tv_item_selectpay_totalbill"
+            style="@style/AbnYueAiText.Medium.Gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="共100"/>
+    </LinearLayout>
+
+
+    <RadioButton
+        android:id="@+id/rbtn_item_selectpay_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:button="@drawable/abn_yueai_selector_checkbox_red"/>
+
+
+    <TextView
+        android:id="@+id/tv_item_selectpay_needamount"
+        style="@style/AbnYueAiText.Normal.Red"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dim_ailiulian_common_margin"
+        android:layout_toLeftOf="@id/rbtn_item_selectpay_check"
+        android:background="@null"
+        android:clickable="false"
+        tools:text="$100"/>
+</RelativeLayout>

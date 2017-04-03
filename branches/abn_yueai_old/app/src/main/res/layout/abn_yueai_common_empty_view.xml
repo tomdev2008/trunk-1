@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       xmlns:tools="http://schemas.android.com/tools"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_common_empty_failed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        >
+
+        <ImageView
+            android:id="@+id/iv_common_empty_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/abn_yueai_ic_empty"
+            />
+
+        <TextView
+            android:id="@+id/tv_common_empty_info"
+            style="@style/AbnYueAiText.Medium.Gray"
+            android:layout_marginTop="@dimen/dim_ailiulian_common_margin_triple"
+            android:text="@string/abn_yueai_loaderror"
+            />
+
+        <Button
+            android:id="@+id/btn_common_empty_retry"
+            style="@style/AbnYueAiButton.Medium"
+            android:layout_marginTop="@dimen/dim_ailiulian_common_margin_triple"
+            android:text="@string/abn_yueai_loading_click_retry"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_common_empty_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avindicator_common_empty_progress"
+            android:layout_width="@dimen/abn_yueai_common_loading_width"
+            android:layout_height="@dimen/abn_yueai_common_loading_width"
+            app:indicatorColor="@color/abn_yueai_color_red_primary"
+            app:indicatorName="BallClipRotateMultipleIndicator"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_common_empty_loading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tv_common_empty_loading"
+                style="@style/AbnYueAiText.Medium.Gray"
+                android:text="@string/abn_yueai_loading"
+                />
+
+            <pl.tajchert.sample.DotsTextView
+                android:id="@+id/tv_common_empty_loadingdots"
+                style="@style/AbnYueAiText.Normal.Gray"
+                app:period="1000"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

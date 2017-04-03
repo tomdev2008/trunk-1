@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/black">
+
+    <RelativeLayout
+        android:id="@+id/inner_rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:id="@+id/ib_shot_close"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_shot_ibtnselector"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:src="@drawable/shot_close"/>
+
+        <ImageButton
+            android:id="@+id/ib_shot_cameraswitch"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_shot_ibtnselector"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:src="@drawable/shot_changecamera"/>
+
+        <ImageButton
+            android:id="@+id/ib_shot_flashtollgate"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/ib_shot_cameraswitch"
+            android:background="@drawable/selector_shot_ibtnselector"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:src="@drawable/shot_flash_on"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/inner_ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2.0">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            >
+
+            <CheckedTextView
+                android:id="@+id/ct_shot_delete"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/record_delete_selector"
+                android:button="@null"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:visibility="invisible"/>
+
+
+        </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/civ_shot_video_shot"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/drawable_shotbtn"
+            android:clickable="true"
+            />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            >
+
+            <ImageButton
+                android:id="@+id/ibtn_shot_complete"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/selector_shot_finish_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:src="@drawable/shot_finish"
+                android:visibility="invisible"
+                tools:visibility="visible"/>
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.yang.camera.record.ProgressView
+        android:id="@+id/record_progress"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_above="@id/inner_ll_bottom"/>
+
+    <RelativeLayout
+        android:id="@+id/camera_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/record_progress"
+        android:layout_below="@id/inner_rl_top">
+
+        <SurfaceView
+            android:id="@+id/surface_shot_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:id="@+id/iv_shot_focusing"
+            android:layout_width="64dip"
+            android:layout_height="64dip"
+            android:scaleType="fitXY"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</RelativeLayout>

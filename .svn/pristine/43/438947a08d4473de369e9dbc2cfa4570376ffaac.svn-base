@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.srain.cube.views.ptr.PtrClassicFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                               xmlns:app="http://schemas.android.com/apk/res-auto"
+                                               xmlns:tools="http://schemas.android.com/tools"
+                                               android:id="@+id/rotate_header_list_view_frame"
+                                               android:layout_width="match_parent"
+                                               android:layout_height="match_parent"
+                                               android:layout_marginBottom="@dimen/dim_actionbar_height_small"
+                                               android:clipChildren="false"
+                                               android:clipToPadding="false"
+                                               app:ptr_duration_to_close="200"
+                                               app:ptr_duration_to_close_header="1000"
+                                               app:ptr_keep_header_when_refresh="true"
+                                               app:ptr_pull_to_fresh="false"
+                                               app:ptr_ratio_of_header_height_to_refresh="0.5"
+                                               app:ptr_resistance="1.7"
+    >
+
+    <ScrollView
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <RelativeLayout
+                android:id="@+id/rl_mine_top"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/abn_yueai_mine_top_height"
+                android:layout_gravity="bottom"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_fragment_mine_backimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/temp_avatar"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_fragment_mine_maskimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/abn_yueai_bg_mine"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/abn_yueai_mine_topbg"
+                    />
+
+                <FrameLayout
+                    android:id="@+id/fl_mine_avatar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dim_ailiulian_common_margin_double"
+                    android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+                    android:layout_marginRight="@dimen/dim_ailiulian_common_margin"
+                    >
+
+                    <com.fatalsignal.view.RoundAngleImageView
+                        android:id="@+id/riv_fragment_mine_avatar"
+                        android:layout_width="@dimen/abn_yueai_mine_avatar_width"
+                        android:layout_height="@dimen/abn_yueai_mine_avatar_width"
+
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/temp_avatar"
+                        app:isCircle="true"
+                        app:ringColor="@color/color_common_bordergray"
+                        app:ringWidth="2dp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/iv_mine_level_symbol"
+                        android:layout_width="@dimen/abn_yueai_member_level_iconsize_small"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:adjustViewBounds="true"
+                        />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/fl_mine_avatar"
+                    android:layout_marginBottom="@dimen/dim_ailiulian_common_margin"
+                    android:layout_marginLeft="@dimen/dim_ailiulian_common_margin_double"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_fragment_mine_name"
+                        style="@style/AbnYueAiText.Normal.White"
+                        android:text="Olive"
+                        />
+
+                    <ImageView
+                        android:id="@+id/iv_fragment_mine_sexsymbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+                        android:src="@mipmap/abn_yueai_ic_sex_female"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_mine_top_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dim_ailiulian_common_margin_double"
+                    android:layout_toRightOf="@id/fl_mine_avatar"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="3.0">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/tv_mine_top_age"
+                            style="@style/AbnYueAiText.Normal.Black"
+                            android:text="25"
+                            android:textColor="@drawable/abn_yueai_selector_color_text_deep_gray"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            style="@style/AbnYueAiText.Medium.Gray"
+                            android:layout_marginTop="@dimen/dim_ailiulian_common_margin_half"
+                            android:text="年龄"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/dim_ailiulian_common_divider_wide"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/dim_ailiulian_common_margin"
+                        android:layout_marginTop="@dimen/dim_ailiulian_common_margin"
+                        android:background="@color/color_common_bordergray"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_mine_top_constellation"
+                            style="@style/AbnYueAiText.Normal.Black"
+                            android:text="狮子座"
+                            android:textColor="@drawable/abn_yueai_selector_color_text_deep_gray"
+                            />
+
+                        <TextView
+                            style="@style/AbnYueAiText.Medium.Gray"
+                            android:layout_marginTop="@dimen/dim_ailiulian_common_margin_half"
+                            android:text="星座"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/dim_ailiulian_common_divider_wide"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/dim_ailiulian_common_margin"
+                        android:layout_marginTop="@dimen/dim_ailiulian_common_margin"
+                        android:background="@color/color_common_bordergray"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/tv_mine_top_occupation"
+                            style="@style/AbnYueAiText.Normal.Black"
+                            android:singleLine="true"
+
+                            android:text="工业/制造业"
+                            android:textColor="@drawable/abn_yueai_selector_color_text_deep_gray"
+                            />
+
+                        <TextView
+                            style="@style/AbnYueAiText.Medium.Gray"
+                            android:layout_marginTop="@dimen/dim_ailiulian_common_margin_half"
+                            android:text="职业"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/ibtn_fragment_mine_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/ll_mine_top_info"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginRight="@dimen/dim_ailiulian_common_margin"
+                    android:background="@null"
+                    android:scaleX="0.95"
+                    android:scaleY="0.95"
+                    android:src="@mipmap/abn_yueai_ic_mine_edit"
+                    />
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/ll_mine_top_info"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="36dp"
+                    app:auto_start="true"
+                    app:duration="1000"
+                    app:repeat_delay="1000"
+                    app:angle="cw_90"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/abn_yueai_mine_arr"
+                        />
+                </com.facebook.shimmer.ShimmerFrameLayout>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_fragment_mine_item_vip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_ailiulian_common_divider"
+                android:background="@drawable/abn_yueai_common_ripple"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dim_ailiulian_common_margin_double"
+                android:paddingLeft="@dimen/dim_ailiulian_common_margin_double"
+                android:paddingRight="@dimen/dim_ailiulian_common_margin_double"
+                android:paddingTop="@dimen/dim_ailiulian_common_margin_double"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/abn_yueai_ic_mine_vip"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        style="@style/AbnYueAiText.Normal.Black"
+                        android:text="@string/abn_yueai_mine_item_vipservice"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_mine_vip_validdata"
+                        style="@style/AbnYueAiText.Medium.Gray"
+                        android:text="@string/abn_yueai_mine_vipvaliddata_fmt"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/ll_mine_viptips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <!--<TextView-->
+                        <!--style="@style/AbnYueAiText.Medium.Red"-->
+                        <!--android:text="8"-->
+                        <!--/>-->
+
+                        <TextView
+                            style="@style/AbnYueAiText.Medium.Gray"
+                            android:text="多项特权，开通和续费"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/ibtn_mine_vip_buy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:src="@mipmap/abn_yueai_ic_mine_vip_buy"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_fragment_mine_likeme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_ailiulian_common_margin"
+                android:background="@drawable/abn_yueai_common_ripple"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dim_ailiulian_common_margin_double"
+                android:paddingLeft="@dimen/dim_ailiulian_common_margin_double"
+                android:paddingRight="@dimen/dim_ailiulian_common_margin_double"
+                android:paddingTop="@dimen/dim_ailiulian_common_margin_double"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/abn_yueai_ic_mine_wholikeme"
+                    />
+
+                <TextView
+                    style="@style/AbnYueAiText.Normal.Black"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+                    android:layout_weight="1.0"
+                    android:text="@string/abn_yueai_mine_likeme"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_fragment_mine_fanscount"
+                    style="@style/AbnYueAiText.Medium.Red"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="@dimen/dim_ailiulian_common_margin_half"
+                    android:gravity="center"
+                    android:minWidth="32dp"
+                    android:paddingLeft="@dimen/dim_ailiulian_common_margin"
+                    android:paddingRight="@dimen/dim_ailiulian_common_margin"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/abn_yueai_ic_arr_right_gray"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_fragment_mine_item_giftshop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_ailiulian_common_divider"
+
+                android:background="@drawable/abn_yueai_common_ripple"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dim_ailiulian_common_margin_double"
+                android:paddingLeft="@dimen/dim_ailiulian_common_margin_double"
+                android:paddingRight="@dimen/dim_ailiulian_common_margin_double"
+                android:paddingTop="@dimen/dim_ailiulian_common_margin_double"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/abn_yueai_ic_mine_giftshop"
+                    />
+
+                <TextView
+                    style="@style/AbnYueAiText.Normal.Black"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+                    android:layout_weight="1.0"
+                    android:text="@string/abn_yueai_mine_item_giftshop"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/abn_yueai_ic_arr_right_gray"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_fragment_mine_item_privacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_ailiulian_common_divider"
+
+                android:background="@drawable/abn_yueai_common_ripple"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dim_ailiulian_common_margin_double"
+                android:paddingLeft="@dimen/dim_ailiulian_common_margin_double"
+                android:paddingRight="@dimen/dim_ailiulian_common_margin_double"
+                android:paddingTop="@dimen/dim_ailiulian_common_margin_double"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/abn_yueai_ic_mine_privacy"
+                    />
+
+                <TextView
+                    style="@style/AbnYueAiText.Normal.Black"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+                    android:layout_weight="1.0"
+                    android:text="@string/abn_yueai_mine_item_privacy"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/abn_yueai_ic_arr_right_gray"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_fragment_mine_item_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_ailiulian_common_divider"
+                android:background="@drawable/abn_yueai_white_itembg_ripple"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dim_ailiulian_common_margin_double"
+                android:paddingLeft="@dimen/dim_ailiulian_common_margin_double"
+                android:paddingRight="@dimen/dim_ailiulian_common_margin_double"
+                android:paddingTop="@dimen/dim_ailiulian_common_margin_double"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/abn_yueai_ic_mine_setting"
+                    />
+
+                <TextView
+                    style="@style/AbnYueAiText.Normal.Black"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+                    android:layout_weight="1.0"
+                    android:text="@string/abn_yueai_mine_item_setting"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/abn_yueai_ic_arr_right_gray"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_fragment_mine_item_help"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dim_ailiulian_common_margin"
+                android:layout_marginTop="@dimen/dim_ailiulian_common_margin"
+                android:background="@drawable/abn_yueai_white_itembg_ripple"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dim_ailiulian_common_margin_double"
+                android:paddingLeft="@dimen/dim_ailiulian_common_margin_double"
+                android:paddingRight="@dimen/dim_ailiulian_common_margin_double"
+                android:paddingTop="@dimen/dim_ailiulian_common_margin_double"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/abn_yueai_ic_mine_help"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        style="@style/AbnYueAiText.Normal.Black"
+                        android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+                        android:text="@string/abn_yueai_mine_item_help"
+                        />
+
+                    <TextView
+                        style="@style/AbnYueAiText.Medium.White"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+                        android:background="@drawable/abn_yueai_shape_retangle_badge_bg"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dim_ailiulian_common_margin"
+                        android:paddingRight="@dimen/dim_ailiulian_common_margin"
+                        android:text="NEW"
+                        />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/abn_yueai_ic_arr_right_gray"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</in.srain.cube.views.ptr.PtrClassicFrameLayout>

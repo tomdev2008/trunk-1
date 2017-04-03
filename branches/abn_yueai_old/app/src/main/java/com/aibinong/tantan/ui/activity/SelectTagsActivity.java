@@ -1,0 +1,166 @@
+package com.aibinong.tantan.ui.activity;
+
+// _______________________________________________________________________________________________\
+//|                                                                                               |
+//| Created by yourfriendyang on 16/11/3.                                                                |
+//| yourfriendyang@163.com                                                                        |
+//|_______________________________________________________________________________________________|
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.design.widget.AppBarLayout;
+import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.aibinong.tantan.R;
+import com.aibinong.tantan.constant.Constant;
+import com.aibinong.tantan.constant.IntentExtraKey;
+import com.aibinong.tantan.presenter.CompleteInfoPresenter;
+import com.aibinong.tantan.util.DialogUtil;
+import com.aibinong.yueaiapi.pojo.LoginRetEntity;
+import com.aibinong.yueaiapi.pojo.TagsEntity;
+import com.aibinong.yueaiapi.pojo.UserEntity;
+import com.fatalsignal.util.DeviceUtils;
+
+import java.util.ArrayList;
+
+import butterknife.Bind;
+import butterknife.ButterKnife;
+import cn.lankton.flowlayout.FlowLayout;
+
+public class SelectTagsActivity extends ActivityBase implements CompleteInfoPresenter.ICompleteInfoPresenter, CompoundButton.OnCheckedChangeListener {
+
+    @Bind(R.id.toolbar)
+    Toolbar mToolbar;
+    @Bind(R.id.flow_reg_selecttags_tags)
+    FlowLayout mFlowRegSelecttagsTags;
+    @Bind(R.id.btn_reg_select_tags_complete)
+    Button mBtnRegSelectTagsComplete;
+    @Bind(R.id.tv_toolbar_title)
+    TextView mTvToolbarTitle;
+    @Bind(R.id.abn_yueai_activity_selecttags)
+    LinearLayout mAbnYueaiActivitySelecttags;
+    private CompleteInfoPresenter mCompleteInfoPresenter;
+    private UserEntity mCurrUserEntity;
+    private ArrayList<String> mSelectedTags = new ArrayList<>();
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.abn_yueai_activity_selecttags);
+        ButterKnife.bind(this);
+        setupToolbar(mToolbar, mTvToolbarTitle, true);
+        requireTransStatusBar();
+        setupView(savedInstanceState);
+        mCurrUserEntity = (UserEntity) getIntent().getSerializableExtra(IntentExtraKey.INTENT_EXTRA_KEY_USERINFO);
+        mCompleteInfoPresenter = new CompleteInfoPresenter(this);
+        mCompleteInfoPresenter.getTags();
+    }
+
+    @Override
+    protected boolean swipeBackEnable() {
+        return true;
+    }
+
+    protected void setupView(@Nullable Bundle savedInstanceState) {
+        mBtnRegSelectTagsComplete.setOnClickListener(this);
+
+    }
+
+    @Override
+    public void onClick(View view) {
+        if (view == mBtnRegSelectTagsComplete) {
+            //至少选一个
+            if (mSelectedTags.size() <= 0) {
+                Toast.makeText(this, "请至少选一个标签", Toast.LENGTH_SHORT).show();
+                return;
+            }
+            //完成注册
+            DialogUtil.showIndeternimateDialog(this, null);
+            mCompleteInfoPresenter.register(mCurrUserEntity.pictureList, mCurrUserEntity.nickname, mCurrUserEntity.birthdate, mCurrUserEntity.sex, mCurrUserEntity.occupation, mSelectedTags);
+        } else {
+            super.onClick(view);
+        }
+    }
+
+    @Override
+    public void onRegisterFailed(Throwable e) {
+        DialogUtil.showDialog(this, e.getMessage(), true);
+    }
+
+    @Override
+    public void onREgisterSuccess(LoginRetEntity ret) {
+        DialogUtil.hideDialog(this);
+        Constant.registerMsg = ret.registerMsg;
+        //完成信息，进入首页
+        Intent intent = new Intent(this, MainActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+    }
+
+    @Override
+    public void onGetTagFailed(Throwable e) {
+        DialogUtil.showDialog(this, e.getMessage(), true);
+    }
+
+    @Override
+    public void onGetTagSuccess(TagsEntity tags) {
+        mAbnYueaiActivitySelecttags.measure(View.MeasureSpec.makeMeasureSpec(DeviceUtils.getScreenWidth(this), View.MeasureSpec.EXACTLY), View.MeasureSpec.makeMeasureSpec(DeviceUtils.getScreenHeight(this), View.MeasureSpec.EXACTLY));
+        mFlowRegSelecttagsTags.removeAllViews();
+        if (tags.common != null) {
+            addTagsView(tags.common);
+        }
+        if (mCurrUserEntity.sex == UserEntity.SEX_FEMALE) {
+            if (tags.female != null) {
+                addTagsView(tags.female);
+            }
+        } else {
+            if (tags.male != null) {
+                addTagsView(tags.male);
+            }
+        }
+    }
+
+    private void addTagsView(ArrayList<String> tags) {
+        for (String tag : tags) {
+            View tagsView = LayoutInflater.from(this).inflate(R.layout.abn_yueai_item_completeinfo_tag, mFlowRegSelecttagsTags, false);
+            CheckBox tagTextView = (CheckBox) tagsView.findViewById(R.id.ctv_item_completeinfo_tag);
+            tagTextView.setText(tag);
+            tagTextView.setTag(tag);
+            tagTextView.setOnCheckedChangeListener(this);
+
+            ViewGroup.LayoutParams vlp = new AppBarLayout.LayoutParams((int) (mFlowRegSelecttagsTags.getMeasuredWidth() / 4.0f), ViewGroup.LayoutParams.WRAP_CONTENT);
+            mFlowRegSelecttagsTags.addView(tagsView, vlp);
+        }
+    }
+
+    @Override
+    public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+        if (compoundButton.getTag() != null) {
+            String tag = (String) compoundButton.getTag();
+            if (b) {
+                if (!mSelectedTags.contains(tag)) {
+                    if (mSelectedTags.size() >= 10) {
+                        Toast.makeText(this, "最多选择10个标签", Toast.LENGTH_SHORT).show();
+                        compoundButton.setChecked(false);
+                        return;
+                    }
+                    mSelectedTags.add(tag);
+                }
+            } else {
+                if (mSelectedTags.contains(tag)) {
+                    mSelectedTags.remove(tag);
+                }
+            }
+        }
+    }
+}

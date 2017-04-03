@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_auth_verify_vip"
+        android:layout_width="44dp"
+        android:layout_height="17dp"
+        android:background="@drawable/abn_yueai_selector_detail_verify_vip"
+        android:enabled="false"/>
+
+    <TextView
+        android:id="@+id/tv_auth_verify_phone"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="@dimen/dim_ailiulian_common_margin_half"
+        android:background="@drawable/abn_yueai_selector_detail_verify_phone"
+        android:enabled="false"/>
+
+    <TextView
+        android:id="@+id/tv_auth_verify_wx"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="@dimen/dim_ailiulian_common_margin_half"
+        android:background="@drawable/abn_yueai_selector_detail_verify_wx"
+        android:enabled="false"/>
+<!--
+    <TextView
+        android:id="@+id/tv_auth_verify_video"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="@dimen/dim_ailiulian_common_margin_half"
+        android:background="@drawable/abn_yueai_selector_detail_verify_video"
+        android:enabled="false"/>-->
+</LinearLayout>

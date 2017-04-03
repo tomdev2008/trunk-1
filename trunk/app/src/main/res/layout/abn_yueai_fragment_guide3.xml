@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_guide_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/abn_ya_guide_three"
+        />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            style="@style/AbnYueAiText.Big.White"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:text="告诉我们你的信息"
+            />
+
+        <TextView
+            style="@style/AbnYueAiText.Medium.White"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dim_ailiulian_common_margin"
+            android:alpha="0.8"
+            android:text="为您筛选适合你的另一半"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                >
+
+                <RadioButton
+                    android:id="@+id/rbtn_guide3_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/abn_yueai_selector_guide_male"
+                    android:checked="true"
+                    />
+
+                <TextView
+                    style="@style/AbnYueAiText.Medium.White"
+                    android:layout_marginTop="@dimen/dim_ailiulian_common_margin"
+                    android:text="@string/abn_yueai_sex_male"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_ailiulian_common_margin_quard"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                >
+
+                <RadioButton
+                    android:id="@+id/rbtn_guide3_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/abn_yueai_selector_guide_female"
+                    />
+
+                <TextView
+                    style="@style/AbnYueAiText.Medium.White"
+                    android:layout_marginTop="@dimen/dim_ailiulian_common_margin"
+                    android:text="@string/abn_yueai_sex_female"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+
+            <com.aibinong.tantan.ui.widget.WheelView
+                android:id="@+id/loopview_guide3_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:lineColor="@android:color/transparent"
+                app:normalTextColor="@color/color_common_translucent_white_30"
+                app:normalTextSize="@dimen/abn_yueai_dimen_text_micro"
+                app:selectedTextColor="@color/abn_yueai_text_white"
+                app:selectedTextSize="@dimen/abn_yueai_dimen_text_big"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/abn_yueai_ic_agepicker_bg"
+                />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btn_guide3_start"
+            style="@style/AbnYueAiButton.CommonLarge"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:background="@mipmap/abn_yueai_ic_register_btnbg"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="立即体验"
+            />
+    </LinearLayout>
+</FrameLayout>

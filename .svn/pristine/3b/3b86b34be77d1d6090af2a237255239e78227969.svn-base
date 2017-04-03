@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/tv_item_chat_opposite_gift_content"
+        style="@style/AbnYueAiText.Normal.White"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/dim_ailiulian_common_margin_triple"
+        android:scaleType="fitCenter"
+        />
+
+    <TextView
+        android:id="@+id/tv_item_chat_opposite_gift_text"
+        style="@style/AbnYueAiText.Medium.Gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:lineSpacingExtra="@dimen/dim_ailiulian_common_margin_half"
+        android:textColor="@color/abn_yueai_text_deep_gray"
+        tools:text="对方设置了只接受白金以上会员信息，你的消息将不能发送，会员特权无视免打扰，点击查看更多详情"
+        tools:visibility="visible"
+        />
+</LinearLayout>

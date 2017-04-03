@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abn_yueai_label_wholikeme">喜欢我的人</string>
+    <string name="abn_yueai_label_setting">设置</string>
+    <string name="abn_yueai_label_completeinfo">完善个人资料</string>
+    <string name="abn_yueai_label_register">注册</string>
+    <string name="abn_yueai_label_login">登录</string>
+    <string name="abn_yueai_label_vip">会员服务</string>
+    <string name="abn_yueai_label_selecttag">选择标签</string>
+    <string name="abn_yueai_label_editinfo">编辑资料</string>
+    <string name="abn_yueai_label_selectquestion">选择问题</string>
+    <string name="abn_yueai_label_tagsedit">编辑标签</string>
+    <string name="abn_yueai_label_feedback">意见反馈</string>
+    <string name="abn_yueai_label_selectPayType">选择支付方式</string>
+    <string name="abn_yueai_label_privacysetting">隐私保护设置</string>
+</resources>

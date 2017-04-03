@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DanmakuFlameMaster/DanmakuFlameMaster.iml" filepath="$PROJECT_DIR$/DanmakuFlameMaster/DanmakuFlameMaster.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HeaderAndFooterRecyclerViewLibrary/HeaderAndFooterRecyclerViewLibrary.iml" filepath="$PROJECT_DIR$/HeaderAndFooterRecyclerViewLibrary/HeaderAndFooterRecyclerViewLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MaskLibrary/MaskLibrary.iml" filepath="$PROJECT_DIR$/MaskLibrary/MaskLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MaterialBadgeLib/MaterialBadgeLib.iml" filepath="$PROJECT_DIR$/MaterialBadgeLib/MaterialBadgeLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MediaPickerLibrary/MediaPickerLibrary.iml" filepath="$PROJECT_DIR$/MediaPickerLibrary/MediaPickerLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SwipeCardsViewLibrary/SwipeCardsViewLibrary.iml" filepath="$PROJECT_DIR$/SwipeCardsViewLibrary/SwipeCardsViewLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easeUIDemo_CN/easeUIDemo_CN.iml" filepath="$PROJECT_DIR$/easeUIDemo_CN/easeUIDemo_CN.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easemobcore/easemobcore.iml" filepath="$PROJECT_DIR$/easemobcore/easemobcore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easeui/easeui.iml" filepath="$PROJECT_DIR$/easeui/easeui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iapppay_nopay/iapppay_nopay.iml" filepath="$PROJECT_DIR$/iapppay_nopay/iapppay_nopay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nineOldLib/nineOldLib.iml" filepath="$PROJECT_DIR$/nineOldLib/nineOldLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nowpaylib/nowpaylib.iml" filepath="$PROJECT_DIR$/nowpaylib/nowpaylib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ptrlib/ptrlib.iml" filepath="$PROJECT_DIR$/ptrlib/ptrlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redpacketlibrary/redpacketlibrary.iml" filepath="$PROJECT_DIR$/redpacketlibrary/redpacketlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shimmer-android/shimmer-android.iml" filepath="$PROJECT_DIR$/shimmer-android/shimmer-android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trunk.iml" filepath="$PROJECT_DIR$/trunk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/videorecorder/videorecorder.iml" filepath="$PROJECT_DIR$/videorecorder/videorecorder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewPagerIndicatorlibrary/viewPagerIndicatorlibrary.iml" filepath="$PROJECT_DIR$/viewPagerIndicatorlibrary/viewPagerIndicatorlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yangcommonlib/yangcommonlib.iml" filepath="$PROJECT_DIR$/yangcommonlib/yangcommonlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yueaiapi/yueaiapi.iml" filepath="$PROJECT_DIR$/yueaiapi/yueaiapi.iml" />
+    </modules>
+  </component>
+</project>

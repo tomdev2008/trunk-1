@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+    >
+
+    <View
+        android:id="@+id/tv_widget_func_badge_point"
+        android:layout_width="@dimen/abn_yueai_userlist_badge_point_size"
+        android:layout_height="@dimen/abn_yueai_userlist_badge_point_size"
+        android:layout_gravity="center"
+        android:background="@drawable/abn_yueai_shape_red_badge"
+        android:visibility="invisible"
+        tools:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/tv_widget_func_badge_badge"
+        style="@style/AbnYueAiText.Micro.White"
+        android:layout_gravity="center"
+        android:background="@drawable/abn_yueai_shape_red_badge"
+        android:gravity="center"
+        android:minHeight="@dimen/abn_yueai_userlist_badge_size"
+        android:minWidth="@dimen/abn_yueai_userlist_badge_size"
+        android:text="9"
+        android:textColor="@color/abn_yueai_text_white"
+        android:visibility="invisible"
+        tools:visibility="invisible"
+        />
+</FrameLayout>

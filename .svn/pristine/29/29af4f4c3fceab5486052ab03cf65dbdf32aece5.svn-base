@@ -1,0 +1,152 @@
+apply plugin: 'com.android.application'
+apply from: "flavorConfig.gradle"
+  def host_http_ip = "http://101.201.116.97:8090";  //测试环境发版
+  def host_http = 'http://api.yueaiapp.cn';  //正式环境发版
+//def host_http_ip = "http://api.yueaiapp.cn";  //测试环境测试
+//def host_http = '\'http://api.yueaiapp.cn';  //正式环境测试
+android {
+    signingConfigs {
+        release {
+//            keyAlias 'aliulian'
+//            keyPassword 'aliulian'
+//            storeFile file('../liulianClientKey')
+//            storePassword 'aliulian'
+        }
+        debug {
+//            keyAlias 'aliulian'
+//            keyPassword 'aliulian'
+//            storeFile file('../liulianClientKey')
+//            storePassword 'aliulian'
+        }
+    }
+
+    compileSdkVersion 24
+    buildToolsVersion "24.0.0"
+
+    defaultConfig {
+        applicationId "com.aibinong.aim001"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 1
+        versionName "2.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+//        manifestPlaceholders.put("EASEMOB_APPKEY", "1159161017178564#ceshi01")
+    }
+
+
+    if (!null.equals(project.ext.duobaoFlavorMap)) {
+        project.ext.duobaoFlavorMap.each {
+            flavor ->
+                productFlavors.create(flavor.key, {
+                    versionCode flavor.value.versionCode
+                    versionName flavor.value.versionName
+                    applicationId flavor.value.packageName
+                    buildConfigField("String", "DUOBAO_URL_SCHEME", "\"${flavor.value.urlScheme}\"");
+                    buildConfigField("String", "CLIENT_ID", "\"${flavor.value.clientId}\"");
+                    buildConfigField("String", "ENVIRONMENT", "\"${flavor.value.environment}\"");
+                    manifestPlaceholders.putAll(flavor.value.getuiConfig)
+                    manifestPlaceholders.putAll(flavor.value.umengConfig)
+                    manifestPlaceholders.put("DUOBAO_URL_SCHEME", flavor.value.urlScheme)
+                    manifestPlaceholders.put("PACKAGE_NAME", flavor.value.packageName)
+                    manifestPlaceholders.put("APP_NAME", flavor.value.appName)
+
+                    setDescription(flavor.value.description)
+                });
+        }
+    }
+
+
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            manifestPlaceholders.put("UMENG_CHANNEL", 'aibinong')
+//            signingConfig signingConfigs.release
+            buildConfigField("String", "HOST_ROOT", "\"${host_http}\"");
+            manifestPlaceholders.put("EASEMOB_APPKEY", "1113161203178464#ya001")
+//            System.out.println("－－－－－－－－－－－－－－－－－－－－－－－－－－－－\n"+productFlavors.buildConfigFields+"\n--------------------------------------------------------------------");
+//            def clientId = productFlavors.buildConfigFields.get("CLIENT_ID");
+//            def flavorMap = project.ext.duobaoFlavorMap.get(clientId);
+//            manifestPlaceholders.putAll(flavorMap.value.getuiConfig);
+//            applicationId flavorMap.value.packageName;
+        }
+        debug {
+            minifyEnabled false
+            manifestPlaceholders.put("UMENG_CHANNEL", 'aibinong')
+//            signingConfig signingConfigs.release
+            buildConfigField("String", "HOST_ROOT", "\"${host_http_ip}\"");
+            manifestPlaceholders.put("EASEMOB_APPKEY", "1159161017178564#yatest")
+//
+//
+//            def clientId = productFlavors.buildConfigFields.get("CLIENT_ID");
+//            def flavorMap = project.ext.duobaoFlavorMap.get(clientId);
+//            manifestPlaceholders.putAll(flavorMap.value.getuiConfigDebug);
+//            applicationId flavorMap.value.packageNameDebug;
+
+        }
+    }
+
+
+}
+//
+
+    dependencies {
+        compile fileTree(include: ['*.jar'], dir: 'libs')
+        androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+            exclude group: 'com.android.support', module: 'support-annotations'
+        })
+        testCompile 'junit:junit:4.12'
+        compile 'com.android.support:support-v4:24+'
+        compile 'com.android.support:support-v13:24+'
+        compile 'com.android.support:appcompat-v7:24+'
+        compile 'com.android.support:recyclerview-v7:24+'
+        compile 'com.android.support:design:24+'
+        compile 'com.android.support:cardview-v7:24+'
+        compile 'com.android.support:multidex:+'
+        compile 'com.github.bumptech.glide:glide:3.6.1'
+        compile 'com.jakewharton:butterknife:7.0.1'
+        compile 'com.kogitune:pre-lollipop-activity-transition:1.0.0'
+        compile 'cn.lankton:flowlayout:2.0.0'
+        compile 'com.mikhaellopez:circularprogressbar:1.1.1'
+        compile project(':yueaiapi')
+        compile 'com.fatalsignal.moudle:ucrop:1.0'
+        compile project(':ptrlib')
+        compile project(':easemobcore')
+        compile 'io.apptik.widget:multislider:1.2'
+        compile project(':HeaderAndFooterRecyclerViewLibrary')
+        compile project(path: ':MediaPickerLibrary')
+        compile 'com.jude:swipebackhelper:3.1.2'
+        compile 'com.wang.avi:library:2.1.3'
+        compile 'com.github.tajchert:WaitingDots:0.3.2'
+        compile 'jp.wasabeef:recyclerview-animators:2.2.4'
+        //    compile 'jp.wasabeef:blurry:2.0.3'
+        compile 'jp.wasabeef:glide-transformations:2.0.1'
+        // If you want to use the GPU Filters
+        compile 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.3.0'
+        compile 'com.facebook.rebound:rebound:0.3.8'
+        compile 'com.kyleduo.switchbutton:library:1.4.4'
+        compile project(':nowpaylib')
+        compile project(':iapppay_nopay')
+        compile project(':viewPagerIndicatorlibrary')
+        compile 'com.github.devlight.pulseview:library:1.0.2'
+        compile 'com.github.nirhart:parallaxscroll:1.0'
+        compile 'com.bigkoo:convenientbanner:2.0.5'
+        compile project(':MaterialBadgeLib')
+        compile 'com.getui:sdk:2.7.0.0'
+        compile 'com.getui:ext:2.0.3'
+        compile project(':SwipeCardsViewLibrary')
+        compile project(':shimmer-android')
+        compile 'com.rengwuxian.materialedittext:library:2.1.4'
+        compile 'com.umeng.analytics:analytics:latest.integration'
+//    compile 'com.android.support.constraint:constraint-layout:latest.integration'
+        compile 'com.readystatesoftware.systembartint:systembartint:1.0.4'
+        compile 'org.greenrobot:eventbus:3.0.0'
+//        compile 'org.apache.commons.io.IOUtils'
+//        compile project(':leakcanary')
+        compile 'com.jaydenxiao:guider:1.0.0'
+    }

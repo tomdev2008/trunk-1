@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="dim_actionbar_height">48dp</dimen>
+    <dimen name="dim_actionbar_height_small">42dp</dimen>
+    <dimen name="dim_bottom_text_size">11dp</dimen>
+
+    <dimen name="abn_yueai_dimen_text_micro">11.5dp</dimen>
+    <dimen name="abn_yueai_dimen_text_medium">13dp</dimen>
+    <dimen name="abn_yueai_dimen_text_normal">16.32dp</dimen>
+    <dimen name="abn_yueai_dimen_text_big">19dp</dimen>
+    <dimen name="abn_yueai_dimen_text_large">25dp</dimen>
+    <dimen name="abn_yueai_dimen_text_larger">29dp</dimen>
+
+    <dimen name="dim_yang_common_avatar_size">30dp</dimen>
+    <dimen name="dim_yang_video_avatar_size">50dp</dimen>
+
+    <dimen name="dim_ailiulian_common_margin_triple">24dp</dimen>
+    <dimen name="dim_ailiulian_common_margin_quard">32dp</dimen>
+    <dimen name="dim_ailiulian_common_margin_quintuple">40dp</dimen>
+    <dimen name="dim_ailiulian_common_margin_sextuple">48dp</dimen>
+    <dimen name="dim_ailiulian_common_margin_septuple">56dp</dimen>
+    <dimen name="dim_ailiulian_common_margin_double">16dp</dimen>
+    <dimen name="dim_ailiulian_common_margin">8dp</dimen>
+    <dimen name="dim_ailiulian_common_margin_half">4dp</dimen>
+
+
+    <dimen name="dim_aliulian_common_avatar_size_small">30dp</dimen>
+    <dimen name="dim_aliulian_common_avatar_size_middle">42dp</dimen>
+    <dimen name="dim_aliulian_common_avatar_size_big">52dp</dimen>
+    <dimen name="dim_aliulian_common_avatar_size_bigger">64dp</dimen>
+
+    <dimen name="dim_aliulian_common_avatar_size_small_half">15dp</dimen>
+    <dimen name="dim_aliulian_common_avatar_size_middle_half">20dp</dimen>
+    <dimen name="dim_aliulian_common_avatar_size_big_half">25dp</dimen>
+    <dimen name="dim_aliulian_common_avatar_size_bigger_half">32dp</dimen>
+
+    <dimen name="dim_ailiulian_common_divider">0.8dp</dimen>
+    <dimen name="dim_ailiulian_common_divider_wide">1.3dp</dimen>
+    <dimen name="dim_ailiulian_common_radius">5dp</dimen>
+    <dimen name="dim_ailiulian_common_radius_large">8dp</dimen>
+    <dimen name="dim_ailiulian_common_radius_maincard">10dp</dimen>
+
+    <dimen name="dim_ailiulian_common_btnheight">42dp</dimen>
+    <dimen name="dim_ailiulian_common_btnheight_half">21dp</dimen>
+
+    <dimen name="dim_ailiulian_common_btnheight_small">36dp</dimen>
+    <dimen name="dim_ailiulian_common_btnheight_small_half">18dp</dimen>
+
+    <dimen name="dim_ailiulian_common_btnwidth_small">64dp</dimen>
+    <dimen name="dim_ailiulian_common_btnwidth">120dp</dimen>
+    <dimen name="dim_ailiulian_common_btnheight_large">50dp</dimen>
+    <dimen name="dim_ailiulian_common_btnheight_large_half">25dp</dimen>
+
+    <dimen name="abn_yueai_dimen_card_namelabel_width">214dp</dimen>
+    <dimen name="abn_yueai_dimen_card_namelabel_height">52dp</dimen>
+
+    <dimen name="abn_yueai_dimen_main_like_width">70dp</dimen>
+    <dimen name="abn_yueai_dimen_main_viplogo_width">80dp</dimen>
+    <dimen name="abn_yueai_dimen_detail_like_width">50dp</dimen>
+
+    <dimen name="abn_yueai_dimen_pairsuccess_avatar_width">120dp</dimen>
+    <dimen name="abn_yueai_dimen_pairsuccess_avatar_ringwidth">2dp</dimen>
+    <dimen name="abn_yueai_dimen_pairsuccess_btnwidth">288.67dp</dimen>
+
+    <dimen name="abn_yueai_dimen_completeinfo_avatar_width">116dp</dimen>
+    <dimen name="abn_yueai_dimen_completeinfo_avatar_pb_width">118dp</dimen>
+    <dimen name="abn_yueai_dimen_completeinfo_labeltop">22dp</dimen>
+
+    <dimen name="abn_yueai_dimen_large_redbtn_width_withshadow">276dp</dimen>
+    <dimen name="abn_yueai_dimen_large_redbtn_width">259dp</dimen>
+
+    <dimen name="abn_yueai_dimen_card_eveation">4dp</dimen>
+    <dimen name="abn_yueai_dimen_video_thumb">200dp</dimen>
+
+    <dimen name="abn_yueai_mine_avatar_width">95dp</dimen>
+    <dimen name="abn_yueai_mine_top_height">260dp</dimen>
+
+    <dimen name="abn_yueai_userlist_avatar_size">54dp</dimen>
+    <dimen name="abn_yueai_userlist_badge_size">20dp</dimen>
+    <dimen name="abn_yueai_userlist_badge_point_size">16dp</dimen>
+    <dimen name="abn_yueai_userlist_badge_size_half">10dp</dimen>
+    <dimen name="abn_yueai_chat_bottominput_height">51dp</dimen>
+    <dimen name="abn_yueai_chat_bottominput_coreheight">35dp</dimen>
+    <dimen name="abn_yueai_chat_avatar_size">60dp</dimen>
+    <dimen name="abn_yueai_appmsg_avatar_size">45dp</dimen>
+    <dimen name="abn_yueai_chat_avatar_ringwidth">2dp</dimen>
+
+    <dimen name="abn_yueai_common_loading_width">72dp</dimen>
+
+    <dimen name="abn_yueai_common_max_click_move">4dp</dimen>
+    <dimen name="abn_yueai_member_level_iconsize">64dp</dimen>
+    <dimen name="abn_yueai_member_level_iconsize_small">48dp</dimen>
+</resources>

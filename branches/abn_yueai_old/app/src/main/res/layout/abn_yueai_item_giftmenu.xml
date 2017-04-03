@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:foreground="?android:attr/selectableItemBackground"
+             android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/iv_item_giftmenu_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="@dimen/dim_ailiulian_common_margin_half"
+            android:scaleType="fitCenter"
+            />
+
+        <TextView
+            android:id="@+id/tv_item_giftmenu_name"
+            style="@style/AbnYueAiText.Medium.Gray"
+            android:layout_gravity="center_horizontal"
+            tools:text="礼物名称"
+            />
+    </LinearLayout>
+
+    <com.matrixxun.starry.badgetextview.MaterialBadgeTextView
+        android:id="@+id/badge_item_giftmenu_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="@dimen/dim_ailiulian_common_margin_half"
+        android:textColor="@color/abn_yueai_text_white"
+
+        app:mbtv_backgroundColor="@color/color_aliulian_light_red"
+        />
+</FrameLayout>

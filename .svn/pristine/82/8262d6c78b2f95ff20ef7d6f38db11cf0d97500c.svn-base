@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/dim_actionbar_height_small"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/radiogroup_fragment_msg_list"
+        android:layout_width="215dp"
+        android:layout_height="39dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dim_ailiulian_common_margin"
+        android:background="@mipmap/abn_yueai_ic_chat_tab_bg"
+        android:orientation="horizontal"
+        android:weightSum="2.0">
+
+        <RadioButton
+            android:id="@+id/rbtn_fragment_msg_pm"
+            style="@style/AbnYueAiText.Normal"
+            android:layout_width="107.5dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/abn_yueai_selector_chattab_left"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/abn_yueai_msg_tab_pm"
+            android:textColor="@drawable/abn_yueai_selector_color_text_red_white"/>
+
+
+        <RadioButton
+            android:id="@+id/rbtn_fragment_msg_pair"
+            style="@style/AbnYueAiText.Normal"
+            android:layout_width="107.5dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/abn_yueai_selector_chattab_right"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/abn_yueai_msg_tab_follow"
+            android:textColor="@drawable/abn_yueai_selector_color_text_red_white"/>
+    </RadioGroup>
+
+    <com.aibinong.tantan.ui.widget.NoScrollViewPager
+        android:id="@+id/viewpager_msg_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dim_ailiulian_common_margin"/>
+</LinearLayout>

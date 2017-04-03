@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MainTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/abn_yueai_dimen_text_large</item>
+        <item name="android:textColor">@color/abn_yueai_text_white</item>
+    </style>
+
+
+    <style name="AbnYueAiText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColorHint">@color/abn_yueai_text_input_hint</item>
+    </style>
+
+    <style name="AbnYueAiText.Micro">
+        <item name="android:textSize">@dimen/abn_yueai_dimen_text_micro</item>
+    </style>
+
+    <style name="AbnYueAiText.Micro.Black">
+        <item name="android:textColor">@drawable/abn_yueai_selector_color_text_black</item>
+    </style>
+
+    <style name="AbnYueAiText.Micro.White">
+        <item name="android:textColor">@drawable/abn_yueai_selector_color_text_white</item>
+    </style>
+
+    <style name="AbnYueAiText.Micro.Gray">
+        <item name="android:textColor">@drawable/abn_yueai_selector_color_text_gray</item>
+    </style>
+
+    <style name="AbnYueAiText.Micro.Red">
+        <item name="android:textColor">@drawable/abn_yueai_selector_color_text_red</item>
+    </style>
+
+    <style name="AbnYueAiText.Micro.Orange">
+        <item name="android:textColor">@drawable/abn_yueai_selector_color_text_orange</item>
+    </style>
+
+    <style name="AbnYueAiText.Normal">
+        <item name="android:textSize">@dimen/abn_yueai_dimen_text_normal</item>
+    </style>
+
+    <style name="AbnYueAiText.Normal.Black">
+        <item name="android:textColor">@drawable/abn_yueai_selector_color_text_black</item>
+    </style>
+    <style name="AbnYueAiText.Normal.DeepGray">
+        <item name="android:textColor">@drawable/abn_yueai_selector_color_text_deep_gray</item>
+    </style>
+
+    <style name="AbnYueAiText.Normal.White">
+        <item name="android:textColor">@drawable/abn_yueai_selector_color_text_white</item>
+    </style>
+
+
+    <style name="AbnYueAiText.Normal.Gray">
+        <item name="android:textColor">@drawable/abn_yueai_selector_color_text_gray</item>
+    </style>
+    <style name="AbnYueAiText.Normal.Red">
+        <item name="android:textColor">@drawable/abn_yueai_selector_color_text_red</item>
+    </style>
+
+    <style name="AbnYueAiText.Normal.Orange">
+        <item name="android:textColor">@drawable/abn_yueai_selector_color_text_orange</item>
+    </style>
+
+    <style name="AbnYueAiText.Big">
+        <item name="android:textSize">@dimen/abn_yueai_dimen_text_big</item>
+    </style>
+
+    <style name="AbnYueAiText.Big.Black">
+        <item name="android:textColor">@drawable/abn_yueai_selector_color_text_black</item>
+    </style>
+
+    <style name="AbnYueAiText.Big.White">
+        <item name="android:textColor">@drawable/abn_yueai_selector_color_text_white</item>
+    </style>
+
+    <style name="AbnYueAiText.Big.Gray">
+        <item name="android:textColor">@drawable/abn_yueai_selector_color_text_gray</item>
+    </style>
+
+    <style name="AbnYueAiText.Big.Red">
+        <item name="android:textColor">@drawable/abn_yueai_selector_color_text_red</item>
+    </style>
+
+    <style name="AbnYueAiText.Big.Orange">
+        <item name="android:textColor">@drawable/abn_yueai_selector_color_text_orange</item>
+    </style>
+
+    <style name="AbnYueAiText.Medium">
+        <item name="android:textSize">@dimen/abn_yueai_dimen_text_medium</item>
+    </style>
+
+    <style name="AbnYueAiText.Medium.Black">
+        <item name="android:textColor">@drawable/abn_yueai_selector_color_text_black</item>
+    </style>
+
+    <style name="AbnYueAiText.Medium.White">
+        <item name="android:textColor">@drawable/abn_yueai_selector_color_text_white</item>
+    </style>
+
+    <style name="AbnYueAiText.Medium.Gray">
+        <item name="android:textColor">@drawable/abn_yueai_selector_color_text_gray</item>
+    </style>
+
+    <style name="AbnYueAiText.Medium.Red">
+        <item name="android:textColor">@drawable/abn_yueai_selector_color_text_red</item>
+    </style>
+
+    <style name="AbnYueAiText.Medium.Orange">
+        <item name="android:textColor">@drawable/abn_yueai_selector_color_text_orange</item>
+    </style>
+
+    <style name="AbnYueAiText.Large">
+        <item name="android:textSize">@dimen/abn_yueai_dimen_text_large</item>
+    </style>
+
+    <style name="AbnYueAiText.Large.Black">
+        <item name="android:textColor">@drawable/abn_yueai_selector_color_text_black</item>
+    </style>
+
+    <style name="AbnYueAiText.Large.White">
+        <item name="android:textColor">@drawable/abn_yueai_selector_color_text_white</item>
+    </style>
+
+    <style name="AbnYueAiText.Large.Gray">
+        <item name="android:textColor">@drawable/abn_yueai_selector_color_text_gray</item>
+    </style>
+
+    <style name="AbnYueAiText.Large.Red">
+        <item name="android:textColor">@drawable/abn_yueai_selector_color_text_red</item>
+    </style>
+
+    <style name="AbnYueAiText.Large.Orange">
+        <item name="android:textColor">@drawable/abn_yueai_selector_color_text_orange</item>
+    </style>
+
+    <style name="AbnYueAiText.Larger">
+        <item name="android:textSize">@dimen/abn_yueai_dimen_text_larger</item>
+    </style>
+
+    <style name="AbnYueAiText.Larger.Black">
+        <item name="android:textColor">@drawable/abn_yueai_selector_color_text_black</item>
+    </style>
+
+    <style name="AbnYueAiText.Larger.White">
+        <item name="android:textColor">@drawable/abn_yueai_selector_color_text_white</item>
+    </style>
+
+    <style name="AbnYueAiText.Larger.Gray">
+        <item name="android:textColor">@drawable/abn_yueai_selector_color_text_gray</item>
+    </style>
+
+    <style name="AbnYueAiText.Larger.Red">
+        <item name="android:textColor">@drawable/abn_yueai_selector_color_text_red</item>
+    </style>
+
+    <style name="AbnYueAiText.Larger.Orange">
+        <item name="android:textColor">@drawable/abn_yueai_selector_color_text_orange</item>
+    </style>
+
+</resources>

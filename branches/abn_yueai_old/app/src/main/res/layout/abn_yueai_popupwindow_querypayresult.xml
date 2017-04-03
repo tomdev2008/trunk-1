@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:background="@color/color_common_translucent_black_10"
+             android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dim_ailiulian_common_margin_quard"
+        android:layout_marginRight="@dimen/dim_ailiulian_common_margin_quard"
+        app:cardCornerRadius="@dimen/dim_ailiulian_common_radius"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/abn_yueai_color_red_primary"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/AbnYueAiText.Normal.White"
+                    android:layout_gravity="center"
+                    android:maxLines="2"
+                    android:padding="@dimen/dim_ailiulian_common_margin"
+                    android:text="请根据您的支付情况选择操作"/>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:padding="@dimen/dim_ailiulian_common_margin_double">
+
+                <com.aibinong.tantan.ui.widget.LoadingFooter
+                    android:id="@+id/abn_cwd_lf_pop_checkpayresult_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dim_ailiulian_common_margin"/>
+
+                <TextView
+                    android:id="@+id/abn_cwd_tv_pop_checkpayresult_tips"
+                    style="@style/AbnYueAiText.Normal.Gray"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dim_ailiulian_common_margin"
+                    android:text="@string/str_payresult_tips"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/abn_cwd_ll_pop_checkpayresult_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2.0">
+
+                <TextView
+                    android:id="@+id/abn_cwd_tv_pop_checkpayresult_change"
+                    style="@style/AbnYueAiText.Normal.Black"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dim_ailiulian_common_margin"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/abn_yueai_selector_round_orangeborder_white"
+                    android:gravity="center"
+                    android:padding="@dimen/dim_ailiulian_common_margin"
+                    android:text="更换支付方式"/>
+
+                <TextView
+                    android:id="@+id/abn_cwd_tv_pop_checkpayresult_paysuccess"
+                    style="@style/AbnYueAiText.Normal.White"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dim_ailiulian_common_margin"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/abn_yueai_selector_round_red_gradient"
+                    android:gravity="center"
+                    android:padding="@dimen/dim_ailiulian_common_margin"
+                    android:text="我已成功支付"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="2.0">
+
+                <TextView
+                    android:id="@+id/abn_cwd_tv_pop_checkpayresult_cancel"
+                    style="@style/AbnYueAiText.Normal.Black"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/dim_ailiulian_common_margin"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/abn_yueai_selector_round_orangeborder_white"
+                    android:gravity="center"
+                    android:padding="@dimen/dim_ailiulian_common_margin"
+                    android:text="取消"
+                    android:visibility="gone"
+                    tools:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/abn_cwd_tv_pop_checkpayresult_requery"
+                    style="@style/AbnYueAiText.Normal.Black"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/dim_ailiulian_common_margin"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/abn_yueai_selector_round_orangeborder_white"
+                    android:gravity="center"
+                    android:padding="@dimen/dim_ailiulian_common_margin"
+                    android:text="重新查询"
+                    android:visibility="gone"
+                    tools:visibility="visible"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

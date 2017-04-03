@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/abn_yueai_main_cardbg"
+    android:elevation="@dimen/dim_ailiulian_common_margin_half"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    tools:background="@null"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_item_pair_card_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+        android:layout_marginRight="@dimen/dim_ailiulian_common_margin"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dim_ailiulian_common_margin_double"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_par_card_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+            android:layout_marginTop="@dimen/dim_ailiulian_common_margin"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="0dp">
+
+            <TextView
+                android:id="@+id/tv_item_pair_card_name"
+                style="@style/AbnYueAiText.Big.Black"
+                tools:text="姓名"/>
+
+            <ImageView
+                android:id="@+id/iv_item_pair_card_sexsymbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+                android:src="@mipmap/abn_yueai_ic_detail_female"/>
+
+            <ImageView
+                android:id="@+id/iv_item_pair_card_levelsymbol"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+                android:adjustViewBounds="true"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_par_card_location_activetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+            android:layout_marginTop="@dimen/dim_ailiulian_common_margin"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tv_item_pair_card_location"
+                style="@style/AbnYueAiText.Micro.Gray"
+                android:drawableLeft="@mipmap/abn_yueai_ic_card_pos"
+                android:drawablePadding="@dimen/dim_ailiulian_common_margin_half"
+                android:text="2km,"/>
+
+            <TextView
+                android:id="@+id/tv_item_pair_card_activeTime"
+                style="@style/AbnYueAiText.Micro.Gray"
+
+                android:text="40分钟前活跃"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_ailiulian_common_margin"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3.0">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_item_pair_card_age"
+                    style="@style/AbnYueAiText.Normal.Black"
+                    android:text="25"
+                    android:textColor="@drawable/abn_yueai_selector_color_text_deep_gray"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    style="@style/AbnYueAiText.Medium.Gray"
+                    android:layout_marginTop="@dimen/dim_ailiulian_common_margin"
+                    android:text="年龄"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/dim_ailiulian_common_divider_wide"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dim_ailiulian_common_margin"
+                android:layout_marginTop="@dimen/dim_ailiulian_common_margin"
+                android:background="@color/color_common_bordergray"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_item_pair_card_constellation"
+                    style="@style/AbnYueAiText.Normal.Black"
+                    android:text="狮子座"
+                    android:textColor="@drawable/abn_yueai_selector_color_text_deep_gray"
+                    />
+
+                <TextView
+                    style="@style/AbnYueAiText.Medium.Gray"
+                    android:layout_marginTop="@dimen/dim_ailiulian_common_margin"
+                    android:text="星座"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/dim_ailiulian_common_divider_wide"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dim_ailiulian_common_margin"
+                android:layout_marginTop="@dimen/dim_ailiulian_common_margin"
+                android:background="@color/color_common_bordergray"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_item_pair_card_occupation"
+                    style="@style/AbnYueAiText.Normal.Black"
+                    android:singleLine="true"
+                    android:text="白领"
+                    android:textColor="@drawable/abn_yueai_selector_color_text_deep_gray"
+                    />
+
+                <TextView
+                    style="@style/AbnYueAiText.Medium.Gray"
+                    android:layout_marginTop="@dimen/dim_ailiulian_common_margin"
+                    android:text="职业"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_item_pair_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_item_pair_card_bottom"
+        >
+
+        <ImageView
+            android:id="@+id/iv_item_pair_card_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            />
+
+        <com.aibinong.tantan.ui.widget.BlurTipsView
+            android:id="@+id/btv_item_pair_card_blurtips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="60dp"
+            android:layout_marginRight="@dimen/dim_ailiulian_common_margin_double"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            />
+
+        <ImageView
+            android:id="@+id/iv_item_pair_card_like"
+            android:layout_width="@dimen/abn_yueai_dimen_main_like_width"
+            android:layout_height="@dimen/abn_yueai_dimen_main_like_width"
+            android:layout_margin="@dimen/dim_ailiulian_common_margin"
+            android:alpha="0"
+            android:src="@mipmap/card_badge_like"
+            />
+
+        <ImageView
+            android:id="@+id/iv_item_pair_card_dislike"
+            android:layout_width="@dimen/abn_yueai_dimen_main_like_width"
+            android:layout_height="@dimen/abn_yueai_dimen_main_like_width"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/dim_ailiulian_common_margin"
+            android:alpha="0"
+            android:src="@mipmap/card_badge_dislike"
+            />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/iv_pair_card_big_viplogo"
+        android:layout_width="@dimen/abn_yueai_dimen_main_viplogo_width"
+        android:layout_height="@dimen/abn_yueai_dimen_main_viplogo_width"
+        android:layout_above="@id/ll_item_pair_card_bottom"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="-40dp"
+        android:scaleType="fitCenter"
+        tools:src="@mipmap/abn_yueai_ic_default_avatar"
+        />
+
+</RelativeLayout>

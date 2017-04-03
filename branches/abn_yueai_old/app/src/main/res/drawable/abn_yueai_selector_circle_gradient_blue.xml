@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="oval">
+            <gradient android:angle="90" android:endColor="@color/abn_yueai_color_blue_primary" android:startColor="@color/abn_yueai_color_blue_second" android:type="linear" />
+        </shape>
+    </item>
+    <item android:state_selected="true">
+        <shape android:shape="oval">
+            <gradient android:angle="90" android:endColor="@color/abn_yueai_color_blue_primary" android:startColor="@color/abn_yueai_color_blue_second" android:type="linear" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <gradient android:angle="90" android:endColor="@color/abn_yueai_color_blue_second" android:startColor="@color/abn_yueai_color_blue_primary" android:type="linear" />
+        </shape>
+    </item>
+</selector>

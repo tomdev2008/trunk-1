@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/ctv_item_completeinfo_tag"
+        style="@style/AbnYueAiText.Medium"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+        android:layout_marginRight="@dimen/dim_ailiulian_common_margin"
+        android:background="@drawable/abn_yueai_selector_round_redborder_red"
+        android:button="@null"
+        android:gravity="center"
+        android:minHeight="30dp"
+        android:paddingLeft="@dimen/dim_ailiulian_common_margin"
+        android:paddingRight="@dimen/dim_ailiulian_common_margin"
+        android:textColor="@drawable/abn_yueai_selector_color_text_red_white"
+        tools:text="标签"
+        />
+</LinearLayout>

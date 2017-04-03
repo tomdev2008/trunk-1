@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abn_yueai_tag_fragment_recommend">abn_yueai_tag_fragment_recommend</string>
+    <string name="abn_yueai_tag_fragment_msg">abn_yueai_tag_fragment_msg</string>
+    <string name="abn_yueai_tag_fragment_plaza">abn_yueai_tag_fragment_plaza</string>
+    <string name="abn_yueai_tag_fragment_mine">abn_yueai_tag_fragment_mine</string>
+</resources>

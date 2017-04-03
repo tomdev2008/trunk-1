@@ -1,0 +1,654 @@
+[
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_text_select_handle_left_mtrl_dark.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ee_18.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ee_18.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ee_8.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ee_8.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_question_yellow.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_question_yellow.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_alipay_icon.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_alipay_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ee_35.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ee_35.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ease_chatto_voice_playing_f2.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ease_chatto_voice_playing_f2.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ee_21.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ee_21.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_upload_add.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_upload_add.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ee_34.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ee_34.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ease_chatto_voice_playing_f1.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ease_chatto_voice_playing_f1.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\em_transfer_chatto_bg_focused.9.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\em_transfer_chatto_bg_focused.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ee_19.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ee_19.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ee_9.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ee_9.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ee_20.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ee_20.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_change_icon.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_change_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_exclusive_icon.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_exclusive_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_picture_flash_strong.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_picture_flash_strong.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_refresh.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_refresh.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_search_bar_input.9.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_search_bar_input.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_error_page_icon.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_error_page_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_pop_bg.9.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_pop_bg.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_change_icon_grey.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_change_icon_grey.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_text_select_handle_middle_mtrl_light.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ease_chatto_voice_playing_f3.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ease_chatto_voice_playing_f3.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\em_red_packet_chatto_bg_normal.9.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\em_red_packet_chatto_bg_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_back_arrow_black.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_back_arrow_black.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ease_chatfrom_voice_playing_f1.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ease_chatfrom_voice_playing_f1.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_forget_pwd.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_forget_pwd.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_packet_detail_bg.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_packet_detail_bg.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\em_chat_transfer_normal.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\em_chat_transfer_normal.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\em_chat_transfer_pressed.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\em_chat_transfer_pressed.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ee_29.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ee_29.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_pressed_holo_dark.9.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\em_transfer_chatto_bg_normal.9.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\em_transfer_chatto_bg_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_load_dark.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_load_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_iv_my_agreement.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_iv_my_agreement.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_upload_frame.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_upload_frame.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ee_24.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ee_24.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\em_transfer_chatfrom_bg_focused.9.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\em_transfer_chatfrom_bg_focused.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_upload_fail.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_upload_fail.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ease_chatfrom_voice_playing_f2.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ease_chatfrom_voice_playing_f2.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_avatar.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_avatar.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ee_23.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ee_23.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_text_select_handle_left_mtrl_light.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_star_black_36dp.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_back_arrow_grey.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_back_arrow_grey.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_add_card_icon.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_add_card_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\em_transfer_chatfrom_bg_normal.9.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\em_transfer_chatfrom_bg_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_verify_identity.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_verify_identity.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ee_11.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ee_11.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ee_1.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ee_1.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_star_half_black_36dp.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ee_4.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ee_4.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ee_7.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ee_7.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\em_red_packet_chatto_bg_focused.9.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\em_red_packet_chatto_bg_focused.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\em_chat_red_packet_normal.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\em_chat_red_packet_normal.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_title_back.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_title_back.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ee_17.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ee_17.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\em_red_packet_chatfrom_bg_focused.9.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\em_red_packet_chatfrom_bg_focused.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ee_14.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ee_14.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ee_30.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ee_30.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_wxpay_icon.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_wxpay_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\em_red_packet_chatfrom_bg_normal.9.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\em_red_packet_chatfrom_bg_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\em_red_packet_icon.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\em_red_packet_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ee_33.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ee_33.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_user.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_user.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_exclusive_sender_avatar_bg.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_exclusive_sender_avatar_bg.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_jd_grey_icon.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_jd_grey_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ee_26.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ee_26.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ee_2.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ee_2.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_divider_mtrl_alpha.9.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_picture_right.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_picture_right.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_back_arrow_blue.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_back_arrow_blue.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_group_everyone.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_group_everyone.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ee_27.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ee_27.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ee_12.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ee_12.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_exclusive_avatar.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_exclusive_avatar.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_red_packet_records.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_red_packet_records.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ee_3.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ee_3.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_star_half_black_48dp.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_star_black_48dp.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ease_chatfrom_voice_playing.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ease_chatfrom_voice_playing.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\em_chat_red_packet_pressed.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\em_chat_red_packet_pressed.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ease_chatto_voice_playing.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ease_chatto_voice_playing.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_text_select_handle_right_mtrl_dark.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_change_details.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_change_details.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_my_bankcard.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_my_bankcard.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ee_13.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ee_13.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_bg_circular_yellow.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_bg_circular_yellow.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ee_10.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ee_10.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_pass_authentication.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_pass_authentication.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_question_white.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_question_white.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\em_red_packet_ack_message_icon.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\em_red_packet_ack_message_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_search_icon.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_search_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_transfer_success.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_transfer_success.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_no_verify_identity.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_no_verify_identity.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_no_bankcard.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_no_bankcard.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_packet_group_detail_bg.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_packet_group_detail_bg.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_popup_background_mtrl_mult.9.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_question_black.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_question_black.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_picture_frame_lack.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_picture_frame_lack.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ee_15.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ee_15.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ee_5.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ee_5.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_back_arrow_yellow.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_back_arrow_yellow.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ee_32.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ee_32.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_titlebar_bg.9.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_titlebar_bg.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_star_black_16dp.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ee_16.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ee_16.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ee_6.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ee_6.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ee_31.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ee_31.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_icon_best.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_icon_best.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_picture_vague.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_picture_vague.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_closed_icon.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_closed_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_back_arrow_white.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_back_arrow_white.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ee_22.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ee_22.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_longpressed_holo.9.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_question_blue.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_question_blue.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ee_28.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ee_28.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_light.9.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_closed_yellow_icon.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_closed_yellow_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ease_chatfrom_voice_playing_f3.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ease_chatfrom_voice_playing_f3.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\em_transfer_icon.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\em_transfer_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_arrow_forward.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_arrow_forward.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_focused_holo.9.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_bg_circular.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_bg_circular.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_open_packet_bg.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_open_packet_bg.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_upload_success.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_upload_success.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_star_half_black_16dp.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_pressed_holo_light.9.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_text_select_handle_right_mtrl_light.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_jd_icon.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_jd_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rp_random_icon.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\redpacketlibrary\\unspecified\\res\\drawable-xxhdpi-v4\\rp_random_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ee_25.png",
+        "source": "C:\\Users\\hubin\\Desktop\\ya_t\\trunk\\easeUIDemo_CN\\build\\intermediates\\exploded-aar\\trunk\\easemobcore\\unspecified\\res\\drawable-xxhdpi-v4\\ee_25.png"
+    }
+]

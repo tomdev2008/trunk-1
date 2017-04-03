@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:clipChildren="false"
+             android:clipToPadding="false"
+             android:fitsSystemWindows="false"
+    >
+
+    <com.aibinong.tantan.ui.widget.MyViewPager
+        android:id="@+id/viewpager_fullscreen_imagebrowser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/viewpager_fullscreen_indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="@dimen/dim_ailiulian_common_margin_double"
+        android:fitsSystemWindows="true"
+        android:padding="2dp"
+        app:fillColor="@color/abn_yueai_text_gray"
+        app:pageColor="@color/abn_yueai_text_white"
+        app:radius="@dimen/dim_ailiulian_common_margin_half"
+        app:strokeColor="@color/color_common_bordergray"
+        app:strokeWidth="1dp"/>
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:contentInsetStartWithNavigation="0dp">
+    </android.support.v7.widget.Toolbar>
+
+
+</FrameLayout>

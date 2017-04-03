@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundAngleImageView">
+        <attr name="roundWidth" format="dimension"/>
+        <attr name="roundHeight" format="dimension"/>
+        <attr name="isCircle" format="boolean"/>
+        <attr name="ringWidth" format="dimension"/>
+        <attr name="ringColor" format="color"/>
+
+        <attr name="radius_LB" format="dimension"/>
+        <attr name="radius_LT" format="dimension"/>
+        <attr name="radius_RB" format="dimension"/>
+        <attr name="radius_RT" format="dimension"/>
+        <attr name="radius" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="EmptyView">
+        <attr name="errorText" format="string"/>
+        <attr name="emptyText" format="string"/>
+        <attr name="loadingText" format="string"/>
+        <attr name="retryBtnText" format="string"/>
+        <attr name="emptyBtnText" format="string"/>
+        <attr name="needRetryBtn" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="SelectableRoundedImageView">
+        <attr name="sriv_left_top_corner_radius" format="dimension" />
+        <attr name="sriv_right_top_corner_radius" format="dimension" />
+        <attr name="sriv_left_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_right_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_border_width" format="dimension" />
+        <attr name="sriv_border_color" format="color" />
+        <attr name="sriv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+</resources>

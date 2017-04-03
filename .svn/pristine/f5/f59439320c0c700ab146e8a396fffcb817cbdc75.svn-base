@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="common_actionbar_back" type="id">id_common_actionbar_back</item>
+    <item name="common_actionbar_title" type="id">id_common_actionbar_title</item>
+    <item name="common_actionbar_right" type="id">id_common_actionbar_right</item>
+
+    <item name="common_actionbar_id" type="id">id_common_actionbar_id</item>
+
+    <item name="common_nonetwork" type="id">id_common_nonetwork</item>
+
+    <item name="view_common_emptydata_view" type="id">view_common_emptydata_view</item>
+    <item name="tv_common_emptydata_msg" type="id">tv_common_emptydata_msg</item>
+
+    <item name="abn_yueai_chat_extendsmenu_pic" type="id">abn_yueai_chat_extendsmenu_pic</item>
+    <item name="abn_yueai_chat_extendsmenu_shot" type="id">abn_yueai_chat_extendsmenu_shot</item>
+    <item name="abn_yueai_chat_extendsmenu_video" type="id">abn_yueai_chat_extendsmenu_video</item>
+    <item name="abn_yueai_chat_extendsmenu_trueword" type="id">abn_yueai_chat_extendsmenu_trueword</item>
+    <item name="abn_yueai_chat_extendsmenu_gift" type="id">abn_yueai_chat_extendsmenu_gift</item>
+
+    <item name="rl_item_chat_self_base_content" type="id"></item>
+    <item name="tv_item_chat_self_base_time" type="id"></item>
+    <item name="pb_item_chat_self_base_sendpb" type="id"></item>
+    <item name="ibtn_item_chat_self_base_senderr" type="id"></item>
+    <item name="fl_item_chat_self_base_content" type="id"></item>
+    <item name="riv_item_chat_self_base_avatar" type="id"></item>
+    <item name="tv_item_chat_self_base_tips" type="id"></item>
+    <item name="fl_item_chat_self_base_status" type="id"></item>
+    <item name="iv_item_chat_memberlevel" type="id"></item>
+
+    <item name="common_tag" type="id"></item>
+    <item name="tag_questionId" type="id"></item>
+    <item name="abn_yueai_default_menu_group" type="id"></item>
+    <item name="abn_yueai_menuItem_commonRight" type="id"></item>
+    <item name="abn_yueai_menuItem_close" type="id"></item>
+    <item name="abn_yueai_menuItem_refresh" type="id"></item>
+    <item name="abn_yueai_menuItem_openBrownser" type="id"></item>
+
+
+    <item name="abn_yueai_imgplaza_item_img1" type="id"/>
+    <item name="abn_yueai_imgplaza_item_img2" type="id"/>
+    <item name="abn_yueai_imgplaza_item_img3" type="id"/>
+
+</resources>

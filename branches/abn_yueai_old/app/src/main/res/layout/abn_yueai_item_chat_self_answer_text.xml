@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AbnYueAiText.Medium.Gray"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_marginBottom="@dimen/dim_ailiulian_common_margin_half"
+    android:layout_marginTop="@dimen/dim_ailiulian_common_margin_half"
+    android:background="@drawable/abn_yueai_selector_round_white"
+    android:padding="@dimen/dim_ailiulian_common_margin"
+    android:paddingBottom="@dimen/dim_ailiulian_common_margin_half"
+    android:textColor="@color/abn_yueai_text_deep_gray"
+    tools:text="你好美女，"
+    />
+

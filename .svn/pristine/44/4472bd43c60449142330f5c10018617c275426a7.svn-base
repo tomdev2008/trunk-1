@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/abn_yueai_gradient_horizontal_red"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical"
+
+    >
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="@dimen/abn_yueai_dimen_card_eveation"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:contentInsetStartWithNavigation="0dp">
+
+        <TextView
+            android:id="@+id/tv_toolbar_title"
+            style="@style/AbnYueAiText.Normal.White"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            tools:text="标题"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/abn_yueai_color_windowbg">
+
+        <com.aibinong.tantan.ui.widget.EmptyView
+            android:id="@+id/empty_require_cert"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_require_cert_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/AbnYueAiText.Micro.Gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_ailiulian_common_margin_double"
+                    android:background="@color/abn_yueai_text_white"
+                    android:elevation="2dp"
+                    android:padding="@dimen/dim_ailiulian_common_margin_double"
+                    android:text="认证会员具有更多的推荐显示机会，具有醒目的认证标识，更容易获得异性的TA的搭讪和青睐。"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_ailiulian_common_margin_double"
+                    android:background="@color/abn_yueai_text_white"
+                    android:elevation="2dp"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dim_ailiulian_common_margin_double"
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_require_cert_icon_mobile"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/abn_yueai_selector_detail_verify_phone"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            style="@style/AbnYueAiText.Normal.Black"
+                            android:text="电话认证"
+                            />
+
+                        <TextView
+                            style="@style/AbnYueAiText.Micro.Gray"
+                            android:text="使用真实有效的手机号码注册本软件"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dim_ailiulian_common_margin_double"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            >
+
+                            <com.aibinong.tantan.ui.widget.AIEditText
+                                android:id="@+id/edit_require_cert_mobile"
+                                style="@style/AbnYueAiEdit.EditInfo"
+                                android:layout_width="140dp"
+                                android:layout_height="36dp"
+                                android:background="@drawable/abn_yueai_selector_cert_editbg"
+                                android:gravity="center_vertical"
+                                android:hint="请输入手机号码"
+                                android:inputType="phone"
+                                android:maxLength="11"
+                                android:paddingLeft="@dimen/dim_ailiulian_common_margin"
+                                android:paddingRight="@dimen/dim_ailiulian_common_margin"
+                                android:singleLine="true"
+                                android:textColor="@color/abn_yueai_text_gray"
+                                android:textColorHint="@color/abn_yueai_text_input_hint"
+                                android:textSize="@dimen/abn_yueai_dimen_text_medium"
+                                />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <Button
+                                    android:id="@+id/btn_require_cert_mobile"
+                                    style="@style/AbnYueAiButton.CommonMicro"
+                                    android:layout_gravity="right"
+                                    android:text="申请认证"
+                                    />
+                            </FrameLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_ailiulian_common_margin_double"
+                    android:background="@color/abn_yueai_text_white"
+                    android:elevation="2dp"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dim_ailiulian_common_margin_double"
+                    >
+
+                    <ImageView
+                        android:id="@+id/_require_cert_icon_wx"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/abn_yueai_selector_detail_verify_wx"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            style="@style/AbnYueAiText.Normal.Black"
+                            android:text="微信认证"
+                            />
+
+                        <TextView
+                            style="@style/AbnYueAiText.Micro.Gray"
+                            android:text="使用真实有效的微信号申请认证"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dim_ailiulian_common_margin_double"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            >
+
+                            <com.aibinong.tantan.ui.widget.AIEditText
+                                android:id="@+id/edit_require_cert_wx"
+                                style="@style/AbnYueAiEdit.EditInfo"
+                                android:layout_width="140dp"
+                                android:layout_height="36dp"
+                                android:background="@drawable/abn_yueai_selector_cert_editbg"
+                                android:gravity="center_vertical"
+                                android:hint="请输入微信号"
+                                android:maxLength="20"
+                                android:paddingLeft="@dimen/dim_ailiulian_common_margin"
+                                android:paddingRight="@dimen/dim_ailiulian_common_margin"
+                                android:singleLine="true"
+                                android:textColor="@color/abn_yueai_text_gray"
+                                android:textColorHint="@color/abn_yueai_text_input_hint"
+                                android:textSize="@dimen/abn_yueai_dimen_text_medium"
+                                app:met_hideUnderline="true"
+                                />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <Button
+                                    android:id="@+id/btn_require_cert_wx"
+                                    style="@style/AbnYueAiButton.CommonMicro"
+                                    android:layout_gravity="right"
+                                    android:text="申请认证"
+                                    />
+                            </FrameLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>

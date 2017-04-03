@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical">
+
+
+    <com.fatalsignal.view.RoundAngleImageView
+        android:id="@+id/tv_item_chat_opposite_image_content"
+        style="@style/AbnYueAiText.Normal.White"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/abn_yueai_selector_round_bordergray"
+        android:scaleType="centerCrop"
+        app:radius="@dimen/dim_ailiulian_common_radius"/>
+
+    <LinearLayout
+        android:id="@+id/ll_item_chat_opposite_image_blurtips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <View
+            android:layout_width="@dimen/dim_ailiulian_common_margin_double"
+            android:layout_height="@dimen/dim_ailiulian_common_margin_double"
+            android:background="@drawable/abn_yueai_shape_card_blur_tips_dot"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/abn_yueai_ic_card_blur_tips"
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>

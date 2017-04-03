@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:descendantFocusability="beforeDescendants"
+              android:foreground="?android:attr/selectableItemBackground"
+              android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/dim_ailiulian_common_margin_half"
+        >
+
+        <com.fatalsignal.view.RoundAngleImageView
+            android:id="@+id/riv_item_select_sayhi"
+            android:layout_width="@dimen/abn_yueai_chat_avatar_size"
+            android:layout_height="@dimen/abn_yueai_chat_avatar_size"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            app:isCircle="true"
+            tools:src="@mipmap/temp_avatar"
+            />
+
+        <CheckBox
+            android:id="@+id/checkbox_item_selectquestion_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:button="@drawable/abn_yueai_selector_checkbox_red"
+            />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_item_select_sayhi_job"
+        style="@style/AbnYueAiText.Micro.Gray"
+        android:layout_gravity="center_horizontal"
+        tools:text="职业"
+        />
+</LinearLayout>

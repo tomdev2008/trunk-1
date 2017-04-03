@@ -1,0 +1,190 @@
+<resources>
+    <string name="abn_yueai_app_name">魅惑</string>
+    <string name="abn_yueai_app_slogon">左划右划 揭晓缘分</string>
+
+
+    <string name="abn_yueai_loading">正在加载中</string>
+    <string name="abn_yueai_nomore">已全部加载完毕</string>
+    <string name="abn_yueai_loaderror">加载失败，请重试</string>
+    <string name="abn_yueai_emptydata">暂时没有任何数据</string>
+    <string name="abn_yueai_loading_click_retry">点击重试</string>
+    <string name="abn_yueai_loading_emptybtn">试试别的</string>
+    <string name="abn_yueai_sayhi_failed">打招呼失败，请重试</string>
+    <string name="abn_yueai_touch_left">上一页</string>
+    <string name="abn_yueai_touch_right">下一页</string>
+    <string name="abn_yueai_activity_list">活动列表</string>
+    <string name="abn_yueai_maintab_home">广场</string>
+    <string name="abn_yueai_maintab_msg">私信</string>
+    <string name="abn_yueai_maintab_shake">摇一摇</string>
+    <string name="abn_yueai_maintab_recommend">精选</string>
+    <string name="abn_yueai_maintab_mine">我的</string>
+    <string name="abn_yueai_mine_vipvaliddata_fmt">到期时间:%s</string>
+    <string name="abn_yueai_mine_vipvaliddate_fmt">有效期至:%s</string>
+    <string name="abn_yueai_pairfrag_searching">正在查找附近的人</string>
+    <string name="abn_yueai_pairfrag_searching_nomore">附近没有更多人了</string>
+
+
+    <string name="abn_yueai_fmt_pair_success_title">%s和你相互喜欢了对方</string>
+
+    <string name="abn_yueai_msg_tab_pm">私信</string>
+    <string name="abn_yueai_msg_tab_pair">配对</string>
+    <string name="abn_yueai_msg_tab_follow">关注</string>
+    <string name="abn_yueai_msg_tab_cancle_follow">取消关注</string>
+    <string name="abn_yueai_msg_tab_clean_pm">清空聊天记录</string>
+    <string name="abn_yueai_fmt_matchtime">配对于%s</string>
+    <string name="abn_yueai_fmt_likeme_info">%d岁|\%%s|\%%s</string>
+    <string name="abn_yueai_been_paired">已配对</string>
+    <string name="abn_yueai_have_a_newpair">您有一个新的配对！</string>
+    <string name="abn_yueai_no_chance_tolike">今天的喜欢机会已经用完了！</string>
+    <string name="abn_yueai_fmt_xx_likeyour">%s 喜欢了你</string>
+
+    <string name="abn_yueai_symbol_male">♂</string>
+    <string name="abn_yueai_symbol_female">♀</string>
+
+    <string name="abn_yueai_confirm">确定</string>
+    <string name="abn_yueai_cancel">取消</string>
+    <string name="abn_yueai_clear">清空</string>
+    <string name="abn_yueai_waitting">请稍后</string>
+    <string name="abn_yueai_complete">完成</string>
+    <string name="abn_yueai_save">保存</string>
+    <string name="abn_yueai_send">发送</string>
+    <string name="abn_yueai_submit">提交</string>
+    <string name="abn_yueai_on">开启</string>
+    <string name="abn_yueai_off">关闭</string>
+    <string name="abn_yueai_release_loadmore">释放加载更多</string>
+
+    <string name="abn_yueai_resgiter_invalid_phone">请输入有效的手机号码</string>
+
+    <string name="abn_yueai_hint_phonenum">请输入手机号码</string>
+    <string name="abn_yueai_hint_verifycode">请输入短信验证码</string>
+    <string name="abn_yueai_send_verifycode">发送验证码</string>
+    <string name="abn_yueai_resend_verifycode">重新发送</string>
+    <string name="abn_yueai_register_next">下一步</string>
+    <string name="abn_yueai_register_countdown">%d秒后重新发送</string>
+    <string name="abn_yueai_register_tips">温馨提示</string>
+    <string name="abn_yueai_privacy_tips">为了保障您的照片隐私，开启【照片雾化处理】后，头像及资料照片会模糊显示，只有会员可以查看</string>
+    <string name="abn_yueai_register_tips_desc">手机号码是实名认证的重要依据，也可作为您找回账号的唯一途径。请确保输入的手机号码的真实性</string>
+    <string name="abn_yueai_login">登录/注册</string>
+    <string name="abn_yueai_logout">退出登录</string>
+    <string name="abn_yueai_register">立即注册</string>
+    <string name="abn_yueai_need_login">当前操作需要登录后才能继续</string>
+
+    <string name="abn_yueai_upload_avatar_fail">头像上传失败，点此重试</string>
+    <string name="abn_yueai_hint_compinfo_nick">请输入昵称</string>
+    <string name="abn_yueai_hint_compinfo_sex">请选择性别(设置后不可更改)</string>
+    <string name="abn_yueai_hint_compinfo_birth">请选择出生日期</string>
+    <string name="abn_yueai_hint_compinfo_avatar">请上传您的头像</string>
+    <string name="abn_yueai_hint_compinfo_job">请选择你的职业</string>
+    <string name="abn_yueai_hint_compinfo_clausetips">注册成为会员即默认为同意以下</string>
+    <string name="abn_yueai_hint_compinfo_clause">《用户协议》</string>
+    <string name="abn_yueai_hint_no_declaration">这家伙很懒，什么也没留下~</string>
+
+    <string name="abn_yueai_hint_compinfo_seltags">选择和你相符的标签</string>
+    <string name="abn_yueai_hint_compinfo_seltags_sec">如果改变主意，以后可以随时修改</string>
+    <string name="abn_yueai_title_sex">性别</string>
+    <string name="abn_yueai_sex_male">男</string>
+    <string name="abn_yueai_sex_female">女</string>
+
+    <string name="abn_yueai_mine_likeme">喜欢我的人</string>
+    <string name="abn_yueai_mine_mylike">我喜欢的人%d</string>
+
+    <string name="abn_yueai_mine_item_vipservice">会员服务</string>
+    <string name="abn_yueai_mine_item_setting">应用设置</string>
+    <string name="abn_yueai_mine_item_privacy">隐私保护</string>
+    <string name="abn_yueai_mine_item_help">新手指南</string>
+    <string name="abn_yueai_mine_item_giftshop">礼物商城</string>
+
+    <string name="abn_yueai_setting_showme">向我显示</string>
+    <string name="abn_yueai_setting_age">年龄</string>
+    <string name="abn_yueai_setting_agerange">18-50+</string>
+    <string name="abn_yueai_setting_range">范围</string>
+    <string name="abn_yueai_setting_maxdistance">100km+</string>
+
+    <string name="abn_yueai_setting_appsetting">应用设置</string>
+    <string name="abn_yueai_setting_privacy">消息通知</string>
+    <string name="abn_yueai_setting_notifydetail">通知显示消息详情</string>
+    <string name="abn_yueai_setting_cache">清除缓存</string>
+    <string name="abn_yueai_setting_feedback">意见反馈</string>
+
+    <string name="abn_yueai_privacy_setting_tips">隐私保护设置</string>
+    <string name="abn_yueai_privacy_setting_picblur">照片雾化处理</string>
+    <string name="abn_yueai_privacy_setting_receivelimit">只接收会员发送的消息</string>
+
+
+    <string name="abn_yueai_wholikeme_howmuch_left">下列用户关注了我</string>
+    <string name="abn_yueai_browse_howmuch_left">下列用户看过我</string>
+    <string name="abn_yueai_wholikeme_howmuch_right">人喜欢了我</string>
+
+    <string name="abn_yueai_buyvip_bymonth">黄金会员(包月)</string>
+    <string name="abn_yueai_buyvip_byhalfyear">白金会员(半年)</string>
+    <string name="abn_yueai_buyvip_byyuar">钻石会员(一年)</string>
+    <string name="abn_yueai_buyvip_tipstitle">会员可享受以下服务：</string>
+    <string name="abn_yueai_buyvip_tips">1.随心所欲发消息（数量不限）\n2.无障碍看遍用户所有照片\n3.可与更多异性联络\n4.具有身份的会员标示</string>
+    <string name="abn_yueai_this_guangchang">这是广场\n所有单身男女都能在这找到</string>
+
+    <string name="abn_yueai_infoedit_hint_editinfo">点击编辑账户信息（如昵称、年龄、职业）</string>
+    <string name="abn_yueai_infoedit_hint_infodetail">账户详情：</string>
+    <string name="abn_yueai_infoedit_sub_nick">昵称</string>
+    <string name="abn_yueai_infoedit_sub_birth">生日</string>
+    <string name="abn_yueai_infoedit_sub_occupation">职业</string>
+
+    <string name="abn_yueai_detail_commontag_title">我们的共同点</string>
+    <string name="abn_yueai_detail_commontag_count">个共同兴趣</string>
+    <string name="abn_yueai_chat_no_send_permission">对方只接收%s以上的消息，升级我的会员级别</string>
+    <string name="abn_yueai_chat_fmt_send_gift" formatted="false">你送出了 %s x%d</string>
+    <string name="abn_yueai_chat_fmt_receive_gift" formatted="false">你收到了 %s x%d</string>
+    <string name="abn_yueai_chat_no_send_permission_highlight">升级我的会员级别</string>
+    <string name="abn_yueai_chat_infocard_tips">谢谢你喜欢了我，我们一起聊聊吧</string>
+
+    <string name="abn_yueai_chat_input_presstospeak">按住说话</string>
+    <string name="abn_yueai_chat_unknow_msgtype">当前版本暂不支持查看该消息</string>
+    <string name="abn_yueai_chat_record_move_to_cancel">手指上滑，取消发送</string>
+    <string name="abn_yueai_chat_record_release_to_cancel">松开手指，取消发送</string>
+    <string name="abn_yueai_chat_record_need_sdcard">发送语音需要sdcard支持</string>
+    <string name="abn_yueai_chat_record_failed">录音失败，请重试！</string>
+    <string name="abn_yueai_chat_record_nopermission">无录音权限</string>
+    <string name="abn_yueai_chat_record_too_short">录音时间太短</string>
+    <string name="abn_yueai_chat_record_send_failed">发送失败</string>
+    <string name="abn_yueai_chat_record_downloading">请等待语音加载完毕</string>
+    <string name="abn_yueai_chat_record_playfailed">播放失败</string>
+
+    <string name="abn_yueai_chat_extends_menu_pic">相册</string>
+    <string name="abn_yueai_chat_extends_menu_shot">拍照</string>
+    <string name="abn_yueai_chat_extends_menu_video">小视屏</string>
+    <string name="abn_yueai_chat_extends_menu_truewords">真心话大冒险</string>
+    <string name="abn_yueai_chat_extends_menu_gift">礼物</string>
+
+    <string name="abn_yueai_chat_video_touchload">轻触载入</string>
+    <string name="abn_yueai_selectquestion_tips">选择我感兴趣的话题</string>
+
+    <string name="abn_yueai_album_edit_photo">选择照片/拍照</string>
+    <string name="abn_yueai_album_edit_delete">删除</string>
+    <string name="abn_yueai_album_edit_reupload">重新上传</string>
+
+    <string name="abn_yueai_tag_edit_title_mytag">我的标签：</string>
+    <string name="abn_yueai_tag_edit_title_alltag">所有标签：</string>
+    <string name="abn_yueai_feedback_hint">请输入您想反馈给我们的话</string>
+    <string name="abn_yueai_feedback_tips">反馈问题、意见时，请留下您的手机号码等联系方式，非常感谢</string>
+
+    <string name="str_payresult_tips">如果您已经支付完毕,请选择\"我已成功支付\",如果需要更换其它方式付款,请选择\"更换支付方式</string>。
+    <string name="str_register_send_gift">恭喜您获得新手礼包  </string>。
+    <string name="str_vip_send_gift">赠送您  </string>。
+    <string name="str_vip_send_gift_libao">元礼包,前往礼物商城可查  </string>。
+    <string name="str_register_send_gift_secondline">送给心仪的TA吧!</string>
+    <string name="str_vip_send_gift_secondline">看您的礼品 。 </string>。
+
+    <string name="location_recv">[%1$s的位置]</string>
+    <string name="location_message">位置信息</string>
+    <string name="recording_video">录制视频</string>
+    <string name="location_prefix">[我的位置]</string>
+    <string name="picture">[图片]</string>
+    <string name="video">[视频]</string>
+    <string name="file">[文件]</string>
+    <string name="voice_prefix">[语音]</string>
+    <string name="voice_call">[语音通话]</string>
+    <string name="video_call">[视频通话]</string>
+    <string name="dynamic_expression">[动态表情]</string>
+    <string name="opposite_revoke_msg">对方撤回了一条消息</string>
+    <string name="notify_received_msg">你收到了一条消息</string>
+
+</resources>

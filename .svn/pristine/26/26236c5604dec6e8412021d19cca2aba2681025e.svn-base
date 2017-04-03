@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/abn_yueai_text_little_gray"/>
+            <corners android:radius="@dimen/dim_ailiulian_common_radius"/>
+            <stroke android:width="@dimen/dim_ailiulian_common_divider" android:color="@color/color_common_bordergray"/>
+        </shape>
+    </item>
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/abn_yueai_text_white"/>
+            <corners android:radius="@dimen/dim_ailiulian_common_radius"/>
+            <stroke android:width="@dimen/dim_ailiulian_common_divider" android:color="@color/abn_yueai_text_little_gray"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/abn_yueai_text_white"/>
+            <corners android:radius="@dimen/dim_ailiulian_common_radius"/>
+            <stroke android:width="@dimen/dim_ailiulian_common_divider" android:color="@color/color_common_bordergray"/>
+        </shape>
+    </item>
+</selector>

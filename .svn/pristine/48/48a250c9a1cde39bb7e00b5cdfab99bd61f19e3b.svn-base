@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:background="@drawable/abn_yueai_shape_round_white"
+              android:orientation="vertical">
+
+
+    <com.fatalsignal.view.RoundAngleImageView
+        android:id="@+id/tv_item_chat_opposite_infocard_image"
+        style="@style/AbnYueAiText.Normal.White"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/abn_yueai_selector_round_bordergray"
+        android:scaleType="centerCrop"
+        app:radius_LT="@dimen/dim_ailiulian_common_radius"
+        app:radius_RT="@dimen/dim_ailiulian_common_radius"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_ailiulian_common_margin_half"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tv_item_chat_opposite_infocard_name"
+            style="@style/AbnYueAiText.Normal.Black"
+            android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+            tools:text="省钱"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_item_infocard_age"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+            android:background="@drawable/abn_yueai_shape_round_red_h24"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dim_ailiulian_common_margin_half"
+            android:paddingRight="@dimen/dim_ailiulian_common_margin_half"
+            >
+
+            <ImageView
+                android:id="@+id/iv_item_infocard_sex"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="@drawable/abn_yueai_shape_circle_white"
+                tools:src="@mipmap/abn_yueai_ic_detail_female"
+                />
+
+            <TextView
+                android:id="@+id/tv_item_infocard_age"
+                style="@style/AbnYueAiText.Medium.White"
+                android:layout_marginLeft="@dimen/dim_ailiulian_common_margin_half"
+                tools:text="25岁"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_item_infocard_activetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+        android:layout_marginTop="@dimen/dim_ailiulian_common_margin_half"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tv_item_infocard_location"
+            style="@style/AbnYueAiText.Micro.Gray"
+            android:drawableLeft="@mipmap/abn_yueai_ic_card_pos"
+            android:drawablePadding="@dimen/dim_ailiulian_common_margin_half"
+            android:text="2km,"/>
+
+        <TextView
+            android:id="@+id/tv_item_infocard_activeTime"
+            style="@style/AbnYueAiText.Micro.Gray"
+
+            android:text="40分钟前活跃"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_item_chat_opposite_infocard_content"
+        style="@style/AbnYueAiText.Medium.Gray"
+        android:layout_marginBottom="@dimen/dim_ailiulian_common_margin"
+        android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+        android:layout_marginTop="@dimen/dim_ailiulian_common_margin_half"
+        tools:text="谢谢你喜欢了我，我们一起聊聊吧"
+        />
+</LinearLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="C:\Users\hubin\Desktop\ya_t\trunk\iapppay_nopay\src\main\jniLibs"><file name="armeabi/libentryexstd.so" path="C:\Users\hubin\Desktop\ya_t\trunk\iapppay_nopay\src\main\jniLibs\armeabi\libentryexstd.so"/></source></dataSet><dataSet config="release"><source path="C:\Users\hubin\Desktop\ya_t\trunk\iapppay_nopay\src\release\jniLibs"/></dataSet></merger>

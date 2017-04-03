@@ -1,0 +1,269 @@
+package com.aibinong.tantan.ui.widget;
+
+// _______________________________________________________________________________________________\
+//|                                                                                               |
+//| Created by yourfriendyang on 16/12/23.                                                                |
+//| yourfriendyang@163.com                                                                        |
+//|_______________________________________________________________________________________________|
+
+import android.annotation.TargetApi;
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.content.res.TypedArray;
+import android.graphics.Bitmap;
+import android.os.Build;
+import android.support.v4.widget.ContentLoadingProgressBar;
+import android.util.AttributeSet;
+import android.util.TypedValue;
+import android.view.View;
+import android.widget.FrameLayout;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import com.aibinong.tantan.R;
+import com.aibinong.tantan.constant.IntentExtraKey;
+import com.aibinong.tantan.events.BaseEvent;
+import com.aibinong.tantan.presenter.SayHiPresenter;
+import com.aibinong.tantan.ui.activity.UserDetailActivity;
+import com.aibinong.yueaiapi.db.SqlBriteUtil;
+import com.aibinong.yueaiapi.pojo.MemberEntity;
+import com.aibinong.yueaiapi.pojo.UserEntity;
+import com.aibinong.yueaiapi.utils.ConfigUtil;
+import com.aibinong.yueaiapi.utils.LocalStorage;
+import com.aibinong.yueaiapi.utils.LocalStorageKey;
+import com.aibinong.yueaiapi.utils.UserUtil;
+import com.bumptech.glide.BitmapRequestBuilder;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.bumptech.glide.load.resource.bitmap.CenterCrop;
+import com.fatalsignal.util.StringUtils;
+import com.jaydenxiao.guider.HighLightGuideView;
+import com.kogitune.activity_transition.ActivityTransitionLauncher;
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
+import butterknife.Bind;
+import butterknife.ButterKnife;
+import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
+
+public class ImgPlazaCard extends FrameLayout implements View.OnClickListener {
+    @Bind(R.id.iv_view_imgplaza_img)
+    ImageView mIvViewImgplazaImg;
+    @Bind(R.id.iv_view_imgplaza_levelsymbol)
+    ImageView mIvViewImgplazaLevelsymbol;
+    @Bind(R.id.tv_view_imgplaza_name)
+    TextView mTvViewImgplazaName;
+    @Bind(R.id.tv_view_imgplaza_location)
+    TextView mTvViewImgplazaLocation;
+    @Bind(R.id.ibtn_view_imgplaza_hi)
+    ImageButton mIbtnViewImgplazaHi;
+    @Bind(R.id.iv_view_imgplaza_vipsymbol)
+    ImageView mIvViewImgplazaVipsymbol;
+    @Bind(R.id.ll_view_imgplaza_info)
+    LinearLayout mLlViewImgplazaInfo;
+    @Bind(R.id.pb_view_imgplaza_hi)
+    ContentLoadingProgressBar mPbViewImgplazaHi;
+    private UserEntity mUserEntity;
+    private View mCardView;
+    private boolean mIsBigCard;
+
+    public ImgPlazaCard(Context context) {
+        super(context);
+        init(null);
+    }
+
+    public ImgPlazaCard(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        init(attrs);
+    }
+
+    public ImgPlazaCard(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        init(attrs);
+    }
+
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+    public ImgPlazaCard(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+        super(context, attrs, defStyleAttr, defStyleRes);
+        init(attrs);
+    }
+
+    private void init(AttributeSet attrs) {
+        if (attrs != null) {
+            TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.ImgPlazaCard);
+            if (a != null) {
+                mIsBigCard = a.getBoolean(R.styleable.ImgPlazaCard_bigCard, false);
+                a.recycle();
+            }
+        }
+        mCardView = inflate(getContext(), R.layout.abn_yueai_view_imgplaza_img, this);
+        ButterKnife.bind(this);
+        //大卡片信息条高一点
+        if (mIsBigCard) {
+            mIbtnViewImgplazaHi.setScaleX(1.2f);
+            mIbtnViewImgplazaHi.setScaleY(1.2f);
+            int btnPadding = getResources().getDimensionPixelOffset(R.dimen.dim_ailiulian_common_margin_half);
+            mLlViewImgplazaInfo.setPadding(mLlViewImgplazaInfo.getPaddingLeft(), btnPadding, mLlViewImgplazaInfo.getPaddingRight(), btnPadding);
+            mTvViewImgplazaName.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimensionPixelSize(R.dimen.abn_yueai_dimen_text_medium));
+        }
+
+        mCardView.setOnClickListener(this);
+        mIbtnViewImgplazaHi.setOnClickListener(this);
+        mPbViewImgplazaHi.hide();
+//        if (!UserUtil.isHelper(mUserEntity)) {  //看看是不是小助手
+//            //引导页是否展示过
+//            if (!LocalStorage.getInstance().getBoolean(
+//                    LocalStorageKey.KEY_STORAGE_SAYHI_GUIDE_SHOW, false)) {
+//                HighLightGuideView.builder((Activity) getContext()).
+//                        addHighLightGuidView(mIbtnViewImgplazaHi, R.mipmap.sayhi)
+//
+//                        .setHighLightStyle(HighLightGuideView.VIEWSTYLE_OVAL).
+//                        show();
+//                UserUtil.saveSayHiGudieShow(true);
+//            }
+//
+//        }
+
+    }
+    @Override
+    protected void onAttachedToWindow() {
+        super.onAttachedToWindow();
+        EventBus.getDefault().register(this);
+    }
+
+    @Override
+    protected void onDetachedFromWindow() {
+        EventBus.getDefault().unregister(this);
+        super.onDetachedFromWindow();
+    }
+
+
+    private void bindData() {
+        if (mUserEntity == null) {
+            return;
+        }
+        BitmapRequestBuilder<String, Bitmap> drawableRequestBuilder = Glide
+                .with(getContext())
+                .load(mUserEntity.getFirstPicture()).asBitmap()
+//                        .placeholder(R.mipmap.abn_yueai_ic_default_avatar)
+                .diskCacheStrategy(DiskCacheStrategy.SOURCE);
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
+            drawableRequestBuilder.transform(
+                    new CenterCrop(getContext()),
+                    new RoundedCornersTransformation(
+                            getContext(),
+                            getResources().getDimensionPixelOffset(R.dimen.dim_ailiulian_common_radius),
+                            0,
+                            RoundedCornersTransformation.CornerType.ALL
+                    )
+            );
+        } else {
+            if (mIsBigCard) {
+                drawableRequestBuilder.override(500, 500);
+            } else {
+                drawableRequestBuilder.override(300, 300);
+            }
+        }
+        drawableRequestBuilder.into(mIvViewImgplazaImg);
+
+
+        String nameStr = mUserEntity.nickname;
+        if (mIsBigCard) {
+            nameStr = String.format("%s｜%s", mUserEntity.nickname, mUserEntity.occupation);
+            //大卡片才需要显示vip标志和会员等级
+            if (mUserEntity.isVIP()) {
+                mIvViewImgplazaLevelsymbol.setVisibility(INVISIBLE);
+                mIvViewImgplazaVipsymbol.setVisibility(VISIBLE);
+                Glide
+                        .with(getContext())
+                        .load(R.mipmap.abn_yueai_ic_vip)
+                        .asBitmap()
+                        .transform(
+                                new RoundedCornersTransformation(
+                                        getContext()
+                                        , getResources().getDimensionPixelOffset(R.dimen.dim_ailiulian_common_radius)
+                                        , 0
+                                        , RoundedCornersTransformation.CornerType.TOP_LEFT)
+                        )
+                        .into(mIvViewImgplazaVipsymbol);
+            } else {
+                mIvViewImgplazaLevelsymbol.setVisibility(VISIBLE);
+                mIvViewImgplazaVipsymbol.setVisibility(INVISIBLE);
+                MemberEntity memberEntity = ConfigUtil.getInstance().getMemberByLevel(mUserEntity.memberLevel);
+                if (memberEntity != null) {
+                    Glide.with(getContext()).load(memberEntity.icon).diskCacheStrategy(DiskCacheStrategy.SOURCE).into(mIvViewImgplazaLevelsymbol);
+                } else {
+                    mIvViewImgplazaLevelsymbol.setImageBitmap(null);
+                }
+            }
+
+        } else {
+            mIvViewImgplazaLevelsymbol.setVisibility(INVISIBLE);
+            mIvViewImgplazaVipsymbol.setVisibility(INVISIBLE);
+        }
+        mTvViewImgplazaName.setText(nameStr);
+        String age_local = mUserEntity.age + "岁";
+        if (!StringUtils.isEmpty(mUserEntity.area)) {
+            age_local = String.format("%s｜%s", age_local, mUserEntity.area);
+        }
+        mTvViewImgplazaLocation.setText(age_local);
+
+
+        //判断是否已经打过招呼
+        if (SqlBriteUtil.getInstance().getUserDb().isSaiedHi(mUserEntity.id)) {
+            mIbtnViewImgplazaHi.setSelected(true);
+        } else {
+            mIbtnViewImgplazaHi.setSelected(false);
+        }
+    }
+
+    public void setUserInfo(UserEntity userInfo) {
+        mUserEntity = userInfo;
+        bindData();
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (v == mCardView) {
+            Intent intent = new Intent(getContext(), UserDetailActivity.class);
+            intent.putExtra(IntentExtraKey.INTENT_EXTRA_KEY_USERINFO, mUserEntity);
+            intent.putExtra(IntentExtraKey.INTENT_EXTRA_KEY_UUUID, mUserEntity.id);
+            ActivityTransitionLauncher.with((Activity) getContext()).from(mCardView).launch(intent);
+        } else if (v == mIbtnViewImgplazaHi) {
+            if (!mIbtnViewImgplazaHi.isSelected()) {
+                SayHiPresenter.getInstance().sayHi(mUserEntity);
+            }
+        }
+    }
+
+
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onEventReceived(BaseEvent<UserEntity> event) {
+        if (event.data != null && mUserEntity != null && event.data instanceof UserEntity && event.data.id.equals(mUserEntity.id)) {
+            if (BaseEvent.ACTION_SAYHI_FAILED.equals(event.action)) {
+                mPbViewImgplazaHi.hide();
+                mIbtnViewImgplazaHi.setVisibility(VISIBLE);
+            } else if (BaseEvent.ACTION_SAYHI_SUCCESS.equals(event.action)) {
+                mPbViewImgplazaHi.hide();
+                mIbtnViewImgplazaHi.setVisibility(VISIBLE);
+                mIbtnViewImgplazaHi.setSelected(true);
+            } else if (BaseEvent.ACTION_SAYHI_START.equals(event.action)) {
+                mIbtnViewImgplazaHi.setVisibility(INVISIBLE);
+                mPbViewImgplazaHi.show();
+            } else if (event.action.equals(BaseEvent.ACTION_FOLLOW_SUCCESS)) {
+                if (mUserEntity != null) {
+                    mUserEntity.follow = 1;
+                }
+            } else if (event.action.equals(BaseEvent.ACTION_UNFOLLOW_SUCCESS)) {
+                if (mUserEntity != null) {
+                    mUserEntity.follow = 0;
+                }
+            }
+        }
+    }
+}

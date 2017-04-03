@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dim_ailiulian_common_divider_wide"
+    android:background="@drawable/abn_yueai_common_ripple"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/dim_ailiulian_common_margin"
+    >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.fatalsignal.view.RoundAngleImageView
+            android:layout_width="@dimen/abn_yueai_userlist_avatar_size"
+            android:layout_height="@dimen/abn_yueai_userlist_avatar_size"
+            android:layout_marginRight="@dimen/abn_yueai_userlist_badge_size_half"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/temp_avatar"
+            app:isCircle="true"/>
+
+        <com.aibinong.tantan.ui.widget.FuncBadgeView
+            android:id="@+id/fbv_item_userlist_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                style="@style/AbnYueAiText.Normal.Black"
+                android:text="名字"
+                android:textStyle="bold"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_ailiulian_common_margin_half"
+                android:src="@mipmap/abn_yueai_ic_sex_female"
+                android:tint="@color/abn_yueai_color_blue_primary"
+                />
+
+            <TextView
+                style="@style/AbnYueAiText.Micro.Gray"
+                android:layout_width="0dp"
+                android:layout_weight="1.0"
+                android:gravity="right"
+                android:text="昨天"
+                />
+        </LinearLayout>
+
+        <TextView
+            style="@style/AbnYueAiText.Medium.Gray"
+            android:layout_marginTop="@dimen/dim_ailiulian_common_margin"
+            android:text="32岁|狮子座|演员"
+            />
+    </LinearLayout>
+</LinearLayout>

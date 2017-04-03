@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="C:\Users\hubin\Desktop\ya_t\trunk\DanmakuFlameMaster\src\main\assets"/><source path="C:\Users\hubin\Desktop\ya_t\trunk\DanmakuFlameMaster\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="C:\Users\hubin\Desktop\ya_t\trunk\DanmakuFlameMaster\src\debug\assets"/></dataSet></merger>

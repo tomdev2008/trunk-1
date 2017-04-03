@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/abn_yueai_common_ripple"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/dim_ailiulian_common_margin"
+    >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.fatalsignal.view.RoundAngleImageView
+            android:id="@+id/riv_item_pmlist_avatar"
+            android:layout_width="@dimen/abn_yueai_userlist_avatar_size"
+            android:layout_height="@dimen/abn_yueai_userlist_avatar_size"
+            android:layout_marginRight="@dimen/dim_ailiulian_common_margin_half"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/abn_yueai_ic_default_avatar"
+            app:isCircle="true"/>
+
+        <com.aibinong.tantan.ui.widget.FuncBadgeView
+            android:id="@+id/fbv_item_pmlist_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+        android:layout_weight="1.0"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/tv_item_pmlist_name"
+                    style="@style/AbnYueAiText.Normal.Black"
+                    tools:text="名字"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_item_pmlist_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim_ailiulian_common_margin_half"
+                    android:src="@mipmap/abn_yueai_ic_sex_female"
+                    android:tint="@color/abn_yueai_color_blue_primary"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_item_pmlist_memberlevel"
+                    android:layout_width="@dimen/abn_yueai_member_level_iconsize_small"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+                    android:layout_marginRight="@dimen/dim_ailiulian_common_margin_half"
+                    android:adjustViewBounds="true"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_item_pmlist_lastchattime"
+                style="@style/AbnYueAiText.Micro.Gray"
+                android:textColor="@color/abn_yueai_text_little_gray"
+                tools:text="昨天"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_ailiulian_common_margin_half"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tv_item_pmlist_lastmsg"
+                style="@style/AbnYueAiText.Medium.Gray"
+                android:layout_width="0dp"
+                android:layout_weight="1.0"
+                android:singleLine="true"
+                tools:text="最后一条信息"
+                />
+
+            <TextView
+                android:id="@+id/tv_item_pmlist_isPaired"
+                style="@style/AbnYueAiText.Micro.Red"
+                android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+                android:text="@string/abn_yueai_been_paired"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_item_pmlist_sayhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+        >
+
+        <Button
+            android:id="@+id/btn_item_pmlist_sayhi"
+            style="@style/AbnYueAiButton.CommonMicro"
+            android:background="@drawable/abn_yueai_selector_round_red_gradient"
+            android:drawableLeft="@drawable/abn_yueai_selector_icon_btn_hi"
+            android:drawablePadding="@dimen/dim_ailiulian_common_margin_half"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dim_ailiulian_common_margin_half"
+            android:paddingLeft="@dimen/dim_ailiulian_common_margin"
+            android:paddingRight="@dimen/dim_ailiulian_common_margin"
+            android:paddingTop="@dimen/dim_ailiulian_common_margin_half"
+            android:text="打招呼"
+            android:textColor="@drawable/abn_yueai_selector_color_text_white"
+            />
+
+        <android.support.v4.widget.ContentLoadingProgressBar
+            android:id="@+id/pb_view_pmlist_hi"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:indeterminateOnly="true"/>
+    </FrameLayout>
+</LinearLayout>

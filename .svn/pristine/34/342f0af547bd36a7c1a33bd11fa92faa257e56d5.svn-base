@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:app="http://schemas.android.com/apk/res-auto"
+          xmlns:tools="http://schemas.android.com/tools"
+          android:id="@+id/tv_item_chat_opposite_text_content"
+          style="@style/AbnYueAiText.Normal.Black"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/abn_yueai_selector_round_white"
+          android:clipChildren="false"
+          android:clipToPadding="false"
+          android:padding="@dimen/dim_ailiulian_common_margin_double"
+          tools:text="你好美女，很高兴认识你，咱俩还蛮有缘分的，有时间聊一下吗"
+    />

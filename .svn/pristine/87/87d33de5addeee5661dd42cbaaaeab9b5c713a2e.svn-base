@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <include
+        layout="@layout/abn_yueai_chat_input_primary"
+        />
+
+    <com.aibinong.tantan.ui.widget.chat.EaseChatExtendMenu
+        android:id="@+id/abn_yueai_extendMenu_chat_input_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dim_ailiulian_common_margin"
+        android:paddingTop="@dimen/dim_ailiulian_common_margin_double"
+        android:visibility="gone"
+        />
+
+    <com.aibinong.tantan.ui.widget.chat.emojicon.EaseEmojiconMenu
+        android:id="@+id/abn_yueai_emoji_chat_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <com.aibinong.tantan.ui.widget.chat.EaseChatGiftMenu
+        android:id="@+id/abn_yueai_chat_giftmenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+</LinearLayout>

@@ -1,0 +1,74 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .DS_Store
+* .idea/
+* .idea/.name
+* .idea/compiler.xml
+* .idea/copyright/
+* .idea/copyright/profiles_settings.xml
+* .idea/encodings.xml
+* .idea/gradle.xml
+* .idea/libraries/
+* .idea/libraries/BaiduLBS_Android.xml
+* .idea/libraries/HwPush_SDK_V2705_nomap.xml
+* .idea/libraries/MiPush_SDK_Client_2_2_19.xml
+* .idea/libraries/alipaySdk_20160516.xml
+* .idea/libraries/android_support_v4.xml
+* .idea/libraries/bolts_tasks_1_4_0.xml
+* .idea/libraries/glide_3_6_1.xml
+* .idea/libraries/google_play_services.xml
+* .idea/libraries/multidex_1_0_1.xml
+* .idea/libraries/multidex_instrumentation_1_0_1.xml
+* .idea/libraries/org_apache_http_legacy.xml
+* .idea/libraries/parse_android_1_13_0.xml
+* .idea/libraries/redpacket_3_0_1.xml
+* .idea/libraries/umeng_analytics_v5_2_4.xml
+* .idea/libraries/umeng_update_v2_6_0_1.xml
+* .idea/libraries/volley_1_0_19.xml
+* .idea/misc.xml
+* .idea/modules.xml
+* .idea/runConfigurations.xml
+* .idea/workspace.xml
+* LICENSE
+* README.md
+* build.xml
+* copyright.txt
+* proguard-project.txt
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => easeUIDemo_CN/src/main/AndroidManifest.xml
+* jni/ => easeUIDemo_CN/src/main/jni/
+* libs/android-support-multidex.jar => easeUIDemo_CN/libs/android-support-multidex.jar
+* libs/bolts-tasks-1.4.0.jar => easeUIDemo_CN/libs/bolts-tasks-1.4.0.jar
+* libs/parse-android-1.13.0.jar => easeUIDemo_CN/libs/parse-android-1.13.0.jar
+* libs/umeng-analytics-v5.2.4.jar => easeUIDemo_CN/libs/umeng-analytics-v5.2.4.jar
+* libs/umeng-update-v2.6.0.1.jar => easeUIDemo_CN/libs/umeng-update-v2.6.0.1.jar
+* lint.xml => easeUIDemo_CN/lint.xml
+* res/ => easeUIDemo_CN/src/main/res/
+* src/ => easeUIDemo_CN/src/main/java/
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

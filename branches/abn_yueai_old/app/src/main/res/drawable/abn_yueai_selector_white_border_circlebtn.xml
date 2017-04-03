@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/dim_ailiulian_common_btnheight_large_half" />
+            <stroke android:width="@dimen/dim_ailiulian_common_divider_wide" android:color="@color/abn_yueai_text_white_sel" />
+        </shape>
+    </item>
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/dim_ailiulian_common_btnheight_large_half" />
+            <stroke android:width="@dimen/dim_ailiulian_common_divider_wide" android:color="@color/abn_yueai_text_white_sel" />
+        </shape>
+    </item>
+    <item android:state_checked="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/dim_ailiulian_common_btnheight_large_half" />
+            <stroke android:width="@dimen/dim_ailiulian_common_divider_wide" android:color="@color/abn_yueai_text_white_sel" />
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/dim_ailiulian_common_btnheight_large_half" />
+            <stroke android:width="@dimen/dim_ailiulian_common_divider_wide" android:color="@color/abn_yueai_text_white" />
+        </shape>
+    </item>
+</selector>

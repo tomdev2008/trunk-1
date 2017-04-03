@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_activity_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/abn_yueai_dimen_main_like_width"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dim_ailiulian_common_margin_half">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dim_ailiulian_common_btnheight_40">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/AbnYueAiText"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="标题"
+            android:textSize="@dimen/normal_text_size_big" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/AbnYueAiText"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="正文"
+            android:textSize="@dimen/normal_text_size" />
+    </LinearLayout>
+
+
+</RelativeLayout>

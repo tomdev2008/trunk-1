@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+<com.aibinong.tantan.ui.widget.SwipeMenuLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:paddingBottom="1dp"
+    app:ios="false"
+    app:leftSwipe="true"
+    app:swipeEnable="true">
+    <com.aibinong.tantan.ui.widget.ListUserInfoView
+        android:id="@+id/listuseinfo_item_pmlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <!-- 以下都是侧滑菜单的内容依序排列 -->
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="@dimen/abn_yueai_dimen_button_delete_width"
+        android:layout_height="match_parent"
+        android:background="@color/red_ff4a57"
+        android:text="删除"
+        android:textColor="@android:color/white"/>
+</com.aibinong.tantan.ui.widget.SwipeMenuLayout>
+
+</FrameLayout>

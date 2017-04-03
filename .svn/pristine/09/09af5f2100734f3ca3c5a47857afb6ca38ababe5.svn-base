@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/abn_yueai_common_toolbar"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.aibinong.tantan.ui.widget.EmptyView
+            android:id="@+id/empty_vip_cert"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ScrollView
+            android:id="@+id/scroll_vip_cert"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@mipmap/abn_yueai_bg_vip_pricelabel_sel"/>
+
+                <Button
+                    android:id="@+id/btn_vip_cert_applyfor"
+                    style="@style/AbnYueAiButton.CommonLarge"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/abn_yueai_select_large_redbtn_bg"
+                    android:enabled="false"
+                    android:text="免费申请成为尊贵VIP"
+                    />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</LinearLayout>

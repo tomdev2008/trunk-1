@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/iv_item_chat_opposite_voice_content"
+        style="@style/AbnYueAiText.Normal.Black"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dim_ailiulian_common_margin"
+        android:layout_weight="1.0"
+        android:background="@drawable/abn_yueai_selector_round_bordergray"
+        android:paddingBottom="@dimen/dim_ailiulian_common_margin_double"
+        android:paddingLeft="@dimen/dim_ailiulian_common_margin_quard"
+        android:paddingRight="@dimen/dim_ailiulian_common_margin_quard"
+        android:paddingTop="@dimen/dim_ailiulian_common_margin_double"
+        android:tint="@color/abn_yueai_text_gray"
+        android:src="@drawable/ease_chatfrom_voice_playing"
+        />
+
+    <TextView
+        android:id="@+id/tv_item_chat_opposite_voice_voicelength"
+        style="@style/AbnYueAiText.Micro.Gray"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/dim_ailiulian_common_margin"
+        tools:text="9"
+        />
+
+    <View
+        android:id="@+id/view_item_chat_opposite_voice_new"
+        android:layout_width="@dimen/dim_ailiulian_common_margin"
+        android:layout_height="@dimen/dim_ailiulian_common_margin"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/abn_yueai_shape_circle_red"
+        />
+</LinearLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/abn_yueai_common_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dim_ailiulian_common_margin_sextuple"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/abn_yueai_ic_register_phone"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+                android:hint="@string/abn_yueai_hint_phonenum">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edit_register_phone"
+                    style="@style/AbnYueAiEdit.Resgiter"
+                    android:layout_width="match_parent"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:padding="@dimen/dim_ailiulian_common_margin_half"
+                    android:textColorHint="@color/abn_yueai_text_little_gray"
+                    app:met_hideUnderline="false"
+                    app:met_maxCharacters="11"
+                    tools:background="@null"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_ailiulian_common_margin_quard"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/abn_yueai_ic_register_code"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+                android:layout_weight="1.0">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edit_register_verifycode"
+                    style="@style/AbnYueAiEdit.Resgiter"
+                    android:layout_width="match_parent"
+                    android:hint="@string/abn_yueai_hint_verifycode"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:padding="@dimen/dim_ailiulian_common_margin_half"
+                    android:textColorHint="@color/abn_yueai_text_little_gray"
+                    app:met_hideUnderline="false"
+                    app:met_maxCharacters="4"
+                    tools:background="@null"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_register_sendsms"
+                style="@style/AbnYueAiText.Micro.Red"
+                android:background="@mipmap/abn_yueai_bg_register_send"
+                android:gravity="center"
+                android:minHeight="@dimen/dim_ailiulian_common_margin_triple"
+                android:text="@string/abn_yueai_send_verifycode"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_register_next"
+            style="@style/AbnYueAiText.Big.White"
+            android:layout_marginTop="@dimen/dim_ailiulian_common_margin_quard"
+            android:background="@mipmap/abn_yueai_ic_register_btnbg"
+            android:text="@string/abn_yueai_register_next"/>
+
+        <LinearLayout
+            android:id="@+id/ll_register_clause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_ailiulian_common_margin_double"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/AbnYueAiText.Medium.Gray"
+                android:text="@string/abn_yueai_hint_compinfo_clausetips"/>
+
+            <TextView
+                android:id="@+id/tv_completeinfo_clause"
+                style="@style/AbnYueAiText.Medium.Red"
+                android:text="@string/abn_yueai_hint_compinfo_clause"
+                android:textStyle="italic"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_register_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_ailiulian_common_margin_double"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/AbnYueAiText.Normal.Black"
+
+                android:text="@string/abn_yueai_register_tips"/>
+
+            <TextView
+                style="@style/AbnYueAiText.Medium.Gray"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dim_ailiulian_common_margin"
+                android:text="@string/abn_yueai_register_tips_desc"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

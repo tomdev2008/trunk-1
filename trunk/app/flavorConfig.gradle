@@ -1,0 +1,81 @@
+class DuobaoFlavor {
+    public String packageName;
+    public String clientId;
+    public Map<String, String> getuiConfig;
+    public Map<String, String> umengConfig;
+    public String urlScheme;
+    public int versionCode;
+    public String versionName;
+    public String appName;
+    public String description;
+    public String environment;
+
+    DuobaoFlavor(String packageName,
+                 String clientId,
+                 Map<String, String> getuiConfig,
+                 Map<String, String> umengConfig,
+                 String scheme,
+                 int versionCode,
+                 String versionName,
+                 String appName,
+                 String desc,
+                 String environment
+    ) {
+        this.packageName = packageName
+        this.clientId = clientId
+        this.getuiConfig = getuiConfig
+        this.umengConfig = umengConfig
+        this.urlScheme = scheme;
+        this.versionCode = versionCode;
+        this.versionName = versionName;
+        this.appName = appName;
+        this.description = desc;
+        this.environment = environment;
+    }
+}
+
+ext {
+
+    duobaoFlavorMap = new HashMap<String, DuobaoFlavor>();
+
+
+    DuobaoFlavor YA001 = new DuobaoFlavor(
+            "com.yueai.ya001",
+            "AYA001",
+            [
+                    GETUI_APP_ID    : "KfDDuCbptD95CnraQHslyA",
+                    GETUI_APP_KEY   : "IWmeHfJW3z6fuUtYHFtYS6",
+                    GETUI_APP_SECRET: "X2gf4eVcch6dgk4vsyITi5"
+            ],
+            [
+                    UMENG_APP_KEY: "586dbac145297d3af1000af2"
+            ],
+            "YA001",
+            1,
+            "1.5",
+            "魅惑",
+            "约爱YA001",
+            "release"
+    );
+    duobaoFlavorMap.put("YA001", YA001)
+
+    DuobaoFlavor YA001_Debug = new DuobaoFlavor(
+            "com.yueai.ya001.debug",
+            "AYA001",
+            [
+                    GETUI_APP_ID    : "L66E33vyaPAJIWOZYqCOG1",
+                    GETUI_APP_KEY   : "Bm1xiJcT2076cYivDs8Lp5",
+                    GETUI_APP_SECRET: "Av3xOXH81W8dxWuoWurFp9"
+            ],
+            [
+                    UMENG_APP_KEY: "586dbac145297d3af1000af2"
+            ],
+            "AYA001",
+            1,
+            "1.5",
+            "魅惑",
+            "约爱YA001",
+            "debug"
+    );
+    duobaoFlavorMap.put("YA001_Debug", YA001_Debug)
+}

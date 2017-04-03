@@ -1,0 +1,62 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AbnYueAiAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/abn_yueai_color_red_primary</item>
+        <item name="colorPrimaryDark">@color/abn_yueai_color_red_primaryDark</item>
+
+        <!--<item name="windowMinWidthMajor">65%</item>-->
+        <!--<item name="windowMinWidthMinor">65%</item>-->
+
+        <item name="colorAccent">@color/abn_yueai_color_red_second</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/abn_yueai_color_windowbg</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:listDivider">@mipmap/abn_yueai_list_divider</item>
+        <item name="actionBarSize">@dimen/dim_actionbar_height</item>
+
+    </style>
+
+    <style name="AbnYueAiAppTheme.SwipeBack.TranBg" parent="AbnYueAiAppTheme.SwipeBack">
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/SlideRightAnimation</item>
+    </style>
+
+    <style name="AbnYueAiAppTheme.SwipeBack.Resgiter" parent="AbnYueAiAppTheme.SwipeBack">
+        <item name="colorControlNormal">@color/abn_yueai_text_little_gray</item>
+        <item name="colorControlActivated">@color/abn_yueai_text_gray</item>
+        <item name="android:windowAnimationStyle">@style/SlideRightAnimation</item>
+    </style>
+
+    <style name="AbnYueAiAppTheme.SwipeBack" parent="AbnYueAiAppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/SlideRightAnimation</item>
+
+    </style>
+
+
+    <style name="popwin_anim_style">
+        <item name="android:windowEnterAnimation">@anim/anim_pop_web_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_pop_web_out</item>
+    </style>
+
+    <style
+        name="selectorDialog"
+        parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+</resources>

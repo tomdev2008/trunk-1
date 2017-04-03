@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/ibtn_dialog_i_know_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="?android:attr/selectableItemBackground"
+        android:src="@mipmap/dialog_close" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/abn_yueai_shape_round_white"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/abn_yueai_dimen_button_delete_width"
+                android:layout_alignBottom="@+id/iv_icon"
+                android:layout_marginTop="@dimen/dim_ailiulian_common_btnwidth_130"
+                android:background="@mipmap/abn_ya_gift_register_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/dim_ailiulian_common_btnheight_40"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/ll_gift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/str_register_send_gift" />
+
+                    <TextView
+                        android:id="@+id/tv_gift"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/ll_gift"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/abn_yueai_color_red_dark"
+                        android:text="@string/str_register_send_gift_secondline" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_gift"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dim_ailiulian_common_radius_maincard"
+                    android:text="@string/str_register_send_gift_secondline" />
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@mipmap/abn_ya_gift_regiester" />
+
+        </FrameLayout>
+
+        <TextView
+            android:textColor="@color/abn_yueai_color_red_dark"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_dialog_i_know"
+            android:paddingLeft="@dimen/abn_yueai_userlist_badge_size"
+            android:paddingRight="@dimen/abn_yueai_userlist_badge_size"
+            android:paddingBottom="@dimen/dim_ailiulian_common_radius_maincard"
+            android:paddingTop="@dimen/dim_ailiulian_common_radius_maincard"
+            android:background="@drawable/abn_ya_dialog_gift_shape"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dim_aliulian_common_avatar_size_middle_half"
+            android:text="我知道了" />
+    </LinearLayout>
+</LinearLayout>

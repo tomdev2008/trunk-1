@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fl_chat_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.aibinong.tantan.ui.widget.chat.ChatInputMenu
+            android:id="@+id/chatinput_chat_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_chat_bottom_nochance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dim_ailiulian_common_margin_half"
+            android:background="@drawable/abn_yueai_selector_round_red_gradient"
+            android:orientation="vertical"
+            android:padding="@dimen/dim_ailiulian_common_margin"
+            android:visibility="gone"
+            >
+
+            <TextView
+                style="@style/AbnYueAiText.Normal.White"
+                android:layout_gravity="center"
+                android:drawableLeft="@mipmap/abn_yueai_ic_hi"
+                android:drawablePadding="@dimen/dim_ailiulian_common_margin"
+                android:gravity="center"
+                android:text="回复并索要联系方式"
+                />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/fl_chat_bottom"
+        >
+
+        <ImageView
+            android:id="@+id/iv_chat_listbg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_common_translucent_white_50"
+            />
+
+        <!-- <in.srain.cube.views.ptr.PtrClassicFrameLayout
+             android:id="@+id/rotate_header_list_view_frame"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             cube_ptr:ptr_duration_to_close="200"
+             cube_ptr:ptr_duration_to_close_header="1000"
+             cube_ptr:ptr_keep_header_when_refresh="true"
+             cube_ptr:ptr_pull_to_fresh="false"
+             cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+             cube_ptr:ptr_resistance="1.7">-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_msg_chat_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+
+            />
+        <!--</in.srain.cube.views.ptr.PtrClassicFrameLayout>-->
+    </FrameLayout>
+
+    <com.aibinong.tantan.ui.widget.chat.EaseVoiceRecorderView
+        android:id="@+id/recorderView_msg_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>

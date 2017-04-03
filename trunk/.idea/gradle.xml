@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/DanmakuFlameMaster" />
+            <option value="$PROJECT_DIR$/HeaderAndFooterRecyclerViewLibrary" />
+            <option value="$PROJECT_DIR$/MaskLibrary" />
+            <option value="$PROJECT_DIR$/MaterialBadgeLib" />
+            <option value="$PROJECT_DIR$/MediaPickerLibrary" />
+            <option value="$PROJECT_DIR$/SwipeCardsViewLibrary" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/easeUIDemo_CN" />
+            <option value="$PROJECT_DIR$/easemobcore" />
+            <option value="$PROJECT_DIR$/easeui" />
+            <option value="$PROJECT_DIR$/iapppay_nopay" />
+            <option value="$PROJECT_DIR$/nineOldLib" />
+            <option value="$PROJECT_DIR$/nowpaylib" />
+            <option value="$PROJECT_DIR$/ptrlib" />
+            <option value="$PROJECT_DIR$/redpacketlibrary" />
+            <option value="$PROJECT_DIR$/shimmer-android" />
+            <option value="$PROJECT_DIR$/videorecorder" />
+            <option value="$PROJECT_DIR$/viewPagerIndicatorlibrary" />
+            <option value="$PROJECT_DIR$/yangcommonlib" />
+            <option value="$PROJECT_DIR$/yueaiapi" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

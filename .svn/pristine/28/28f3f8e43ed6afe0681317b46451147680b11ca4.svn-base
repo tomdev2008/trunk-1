@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AbnYueAiButton" parent="@style/AbnYueAiText.Normal.Gray">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">@dimen/dim_ailiulian_common_margin_triple</item>
+        <item name="android:minWidth">@dimen/dim_ailiulian_common_margin_triple</item>
+    </style>
+
+    <style name="AbnYueAiButton.CommonLarge">
+        <item name="android:textSize">@dimen/abn_yueai_dimen_text_normal</item>
+        <item name="android:textColor">@drawable/abn_yueai_selector_color_text_white</item>
+        <item name="android:minHeight">@dimen/dim_ailiulian_common_btnheight</item>
+        <item name="android:layout_width">@dimen/abn_yueai_dimen_large_redbtn_width_withshadow
+        </item>
+    </style>
+
+    <style name="AbnYueAiButton.Medium">
+        <item name="android:textSize">@dimen/abn_yueai_dimen_text_normal</item>
+        <item name="android:textColor">@drawable/abn_yueai_selector_color_text_white</item>
+        <item name="android:background">@drawable/abn_yueai_selector_redbtn_small</item>
+    </style>
+
+    <style name="AbnYueAiButton.CommonMicro">
+        <item name="android:textSize">@dimen/abn_yueai_dimen_text_medium</item>
+        <item name="android:textColor">@drawable/abn_yueai_selector_color_text_white</item>
+        <item name="android:minHeight">@dimen/dim_ailiulian_common_margin_triple</item>
+    </style>
+</resources>

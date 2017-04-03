@@ -1,0 +1,66 @@
+class DuobaoFlavor {
+    public String packageName;
+    public String packageNameDebug;
+    public String clientId;
+    public Map<String, String> getuiConfig;
+    public Map<String, String> getuiConfigDebug;
+    public Map<String, String> umengConfig;
+    public String urlScheme;
+    public int versionCode;
+    public String versionName;
+    public String description;
+
+    DuobaoFlavor(String packageName,
+                 String packageNameDebug,
+                 String clientId,
+                 Map<String, String> getuiConfig,
+                 Map<String, String> getuiConfigDebug,
+                 Map<String, String> umengConfig,
+                 String scheme,
+                 int versionCode,
+                 String versionName,
+                 String desc
+    ) {
+        this.packageName = packageName
+        this.packageNameDebug = packageNameDebug
+        this.clientId = clientId
+        this.getuiConfig = getuiConfig
+        this.getuiConfigDebug = getuiConfigDebug
+        this.umengConfig = umengConfig
+        this.urlScheme = scheme;
+        this.versionCode = versionCode;
+        this.versionName = versionName;
+        this.description = desc;
+    }
+}
+
+ext {
+
+    duobaoFlavorMap = new HashMap<String, DuobaoFlavor>();
+
+
+    DuobaoFlavor AIM002 = new DuobaoFlavor(
+            "com.aibinong.aim002",
+            "com.aibinong.aim002debug",
+            "AIM002",
+            [
+                    GETUI_APP_ID    : "tgH6m39mFV6NVA0gOQ9Lp2",
+                    GETUI_APP_KEY   : "Zv22Br4fG19cpnuRpLlA62",
+                    GETUI_APP_SECRET: "oAq7g4CNyRAussua91llI1"
+            ],
+            [
+                    GETUI_APP_ID    : "DxWfXDHJzC83twNIoUcda3",
+                    GETUI_APP_KEY   : "RYrbwgbUiN6rnUXdlkOop6",
+                    GETUI_APP_SECRET: "2owlbF47kM7CtmV2jN0KS9"
+            ],
+            [
+                    UMENG_APP_KEY: "585a4b46734be4745b001d07"
+            ],
+            "AIM002",
+            1,
+            "1.0",
+            "直接约"
+    );
+    duobaoFlavorMap.put("AIM002", AIM002)
+
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="180dp"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:clipChildren="false"
+              android:clipToPadding="false"
+              android:orientation="horizontal"
+              android:paddingLeft="@dimen/dim_ailiulian_common_margin_half"
+    >
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:orientation="vertical"
+        android:weightSum="2.0"
+
+        >
+
+        <com.aibinong.tantan.ui.widget.ImgPlazaCard
+            android:id="@id/abn_yueai_imgplaza_item_img1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:scaleType="centerCrop"
+            />
+
+        <com.aibinong.tantan.ui.widget.ImgPlazaCard
+            android:id="@id/abn_yueai_imgplaza_item_img3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:scaleType="centerCrop"
+            />
+    </LinearLayout>
+
+    <com.aibinong.tantan.ui.widget.ImgPlazaCard
+        android:id="@id/abn_yueai_imgplaza_item_img2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2.0"
+        app:bigCard="true"
+        android:scaleType="centerCrop"/>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/abn_yueai_common_toolbar"
+        />
+
+    <EditText
+        android:id="@+id/edit_feedback_content"
+        style="@style/AbnYueAiEdit.Resgiter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dim_ailiulian_common_margin"
+        android:background="@drawable/abn_yueai_shape_round_white"
+        android:gravity="top"
+        android:hint="@string/abn_yueai_feedback_hint"
+        android:lines="6"
+        android:padding="@dimen/dim_ailiulian_common_margin"
+        />
+
+    <TextView
+        style="@style/AbnYueAiText.Medium.Gray"
+        android:layout_marginLeft="@dimen/dim_ailiulian_common_margin_double"
+        android:layout_marginRight="@dimen/dim_ailiulian_common_margin_double"
+        android:text="@string/abn_yueai_feedback_tips"
+        />
+
+    <Button
+        android:id="@+id/btn_feedback_submit"
+        style="@style/AbnYueAiButton.CommonLarge"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dim_ailiulian_common_margin"
+        android:background="@drawable/abn_yueai_selector_redbtn_large"
+        android:text="@string/abn_yueai_submit"
+        />
+</LinearLayout>

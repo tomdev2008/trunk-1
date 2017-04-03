@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fatalsignal.view.RoundAngleImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_item_chat_self_image_content"
+    style="@style/AbnYueAiText.Normal.White"
+    android:layout_width="210dp"
+    android:adjustViewBounds="true"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:background="@drawable/abn_yueai_selector_round_bordergray"
+    android:scaleType="centerCrop"
+    app:radius="@dimen/dim_ailiulian_common_radius"
+    />

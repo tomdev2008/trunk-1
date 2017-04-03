@@ -1,0 +1,284 @@
+package com.aibinong.tantan.ui.fragment.message;
+
+// _______________________________________________________________________________________________\
+//|                                                                                               |
+//| Created by yourfriendyang on 16/10/26.                                                                |
+//| yourfriendyang@163.com                                                                        |
+//|_______________________________________________________________________________________________|
+
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v4.content.LocalBroadcastManager;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.aibinong.tantan.R;
+import com.aibinong.tantan.broadcast.LocalBroadCastConst;
+import com.aibinong.tantan.presenter.FollowPresenter;
+import com.aibinong.tantan.presenter.message.FollowListPresenter;
+import com.aibinong.tantan.ui.adapter.message.FollowListAdapter;
+import com.aibinong.tantan.ui.adapter.message.PMListAdapter;
+import com.aibinong.tantan.ui.fragment.FragmentBase;
+import com.aibinong.tantan.ui.fragment.MsgFragment;
+import com.aibinong.tantan.ui.widget.EmptyView;
+import com.aibinong.tantan.ui.widget.LoadingFooter;
+import com.aibinong.tantan.util.RecyclerViewStateUtils;
+import com.aibinong.yueaiapi.apiInterface.ISearchList;
+import com.aibinong.yueaiapi.db.SqlBriteUtil;
+import com.aibinong.yueaiapi.pojo.Page;
+import com.aibinong.yueaiapi.pojo.UserEntity;
+import com.aibinong.yueaiapi.utils.LocalStorageKey;
+import com.cundong.recyclerview.EndlessRecyclerOnScrollListener;
+import com.cundong.recyclerview.HeaderAndFooterRecyclerViewAdapter;
+
+import java.util.ArrayList;
+
+import butterknife.Bind;
+import butterknife.ButterKnife;
+import in.srain.cube.views.ptr.PtrClassicFrameLayout;
+import in.srain.cube.views.ptr.PtrDefaultHandler;
+import in.srain.cube.views.ptr.PtrFrameLayout;
+
+public class FollowListFragment extends FragmentBase implements ISearchList, PMListAdapter.onSwipeListener {
+    public static final String TAG = "FollowListFragment";
+    @Bind(R.id.emptyview_msg_pairlist)
+    EmptyView mEmptyviewMsgPairlist;
+    @Bind(R.id.recycler_msg_pairlist)
+    RecyclerView mRecyclerMsgPairlist;
+    @Bind(R.id.rotate_header_list_view_frame)
+    PtrClassicFrameLayout mRotateHeaderListViewFrame;
+    private View mContentView;
+    private FollowListPresenter mFollowListPresenter;
+    private FollowListAdapter mFollowListAdapter;
+    private FLLocalBroadCastReceiver mFLLocalBroadCastReceiver;
+    LocalBroadcastManager broadcastManager;
+    private LinearLayoutManager linearLayoutManager;
+
+    public static FollowListFragment newInstance() {
+        FollowListFragment fragment = new FollowListFragment();
+        return fragment;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        mFollowListPresenter = new FollowListPresenter();
+        mFollowListAdapter = new FollowListAdapter();
+        mFollowListAdapter.setOnDelListener(this);
+
+        mFLLocalBroadCastReceiver = new FLLocalBroadCastReceiver();
+        IntentFilter intentFilter = new IntentFilter();
+        intentFilter.addAction(LocalBroadCastConst.LocalBroadIntentAction_onFllowActivityChange);
+        broadcastManager = LocalBroadcastManager.getInstance(getActivity());
+        broadcastManager.registerReceiver(mFLLocalBroadCastReceiver, intentFilter);
+    }
+
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        mContentView = inflater.inflate(R.layout.abn_yueai_frag_msg_pairlist, container, false);
+        ButterKnife.bind(this, mContentView);
+        setupView(savedInstanceState);
+        return mContentView;
+    }
+
+    @Override
+    protected void setupView(@Nullable Bundle savedInstanceState) {
+        linearLayoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);
+        mRecyclerMsgPairlist.setLayoutManager(linearLayoutManager);
+
+
+        mRecyclerMsgPairlist.setAdapter(new HeaderAndFooterRecyclerViewAdapter(mFollowListAdapter));
+        mRecyclerMsgPairlist.addItemDecoration(new DividerItemDecoration(getActivity(), DividerItemDecoration.VERTICAL_LIST));
+        mRotateHeaderListViewFrame.setPtrHandler(new PtrDefaultHandler() {
+                                                     @Override
+                                                     public void onRefreshBegin(PtrFrameLayout frame) {
+                                                         mFollowListPresenter.follow_list(FollowListFragment.this, true);
+                                                     }
+
+                                                     @Override
+                                                     public boolean checkCanDoRefresh(PtrFrameLayout frame, View content, View header) {
+                                                         return super.checkCanDoRefresh(frame, mRecyclerMsgPairlist, header);
+                                                     }
+                                                 }
+
+        );
+        mRecyclerMsgPairlist.addOnScrollListener(new EndlessRecyclerOnScrollListener() {
+
+            @Override
+            public void onLoadNextPage(View view) {
+                super.onLoadNextPage(view);
+
+                LoadingFooter.State state = RecyclerViewStateUtils.getFooterViewState(mRecyclerMsgPairlist);
+                if (state == LoadingFooter.State.Loading) {
+                    return;
+                }
+                if (state == LoadingFooter.State.TheEnd) {
+                    return;
+                }
+                RecyclerViewStateUtils.setFooterViewState(getActivity(), mRecyclerMsgPairlist, mRecyclerMsgPairlist.getAdapter().getItemCount() <= 0, LoadingFooter.State.Loading, null);
+                //加载更多
+                mFollowListPresenter.follow_list(FollowListFragment.this, false);
+
+            }
+        });
+        postDelayLoad(new Runnable() {
+            @Override
+            public void run() {
+                mFollowListPresenter.follow_list(FollowListFragment.this, true);
+            }
+        });
+    }
+
+/*
+
+    @Override
+    public void onSayHiSended(final String userId) {
+        getActivity().runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                mFollowListAdapter.onSayHiSended(userId);
+                showToast("打招呼成功");
+            }
+        });
+    }
+
+    @Override
+    public void onSayHiFailed(final String userId) {
+        getActivity().runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                mFollowListAdapter.onSayHiFailed(userId);
+                showToast("打招呼失败");
+            }
+        });
+    }
+
+
+    @Override
+    public void onNotLogin() {
+        askForLogin();
+    }
+*/
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        mFLLocalBroadCastReceiver = new FLLocalBroadCastReceiver();
+        IntentFilter intentFilter = new IntentFilter();
+        intentFilter.addAction(LocalBroadCastConst.LocalBroadIntentAction_onFllowActivityChange);
+        intentFilter.addAction(LocalBroadCastConst.LocalBroadIntentAction_onHomeDateFlush);
+        broadcastManager = LocalBroadcastManager.getInstance(getActivity());
+        broadcastManager.registerReceiver(mFLLocalBroadCastReceiver, intentFilter);
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        ButterKnife.unbind(this);
+        if (mFLLocalBroadCastReceiver != null) {
+            broadcastManager.unregisterReceiver(mFLLocalBroadCastReceiver);
+            mFLLocalBroadCastReceiver = null;
+        }
+    }
+
+
+    @Override
+    public void onListStart() {
+        if (mFollowListAdapter.getItemCount() <= 0) {
+            mEmptyviewMsgPairlist.startLoading();
+        }
+    }
+
+    @Override
+    public void onListFailed(Throwable e) {
+        if (mFollowListAdapter.getItemCount() <= 0) {
+            mEmptyviewMsgPairlist.loadingFailed(e.getMessage());
+        } else {
+            if (mEmptyviewMsgPairlist!=null){
+                mEmptyviewMsgPairlist.loadingComplete();
+            }
+
+        }
+        mRotateHeaderListViewFrame.refreshComplete();
+        RecyclerViewStateUtils.setFooterViewState(getActivity(), mRecyclerMsgPairlist, mFollowListAdapter.getItemCount() <= 0, LoadingFooter.State.NetWorkError, null, e.getMessage());
+    }
+
+    @Override
+    public void onListSuccess(ArrayList<UserEntity> userEntities, Page page) {
+        if (page.toPage <= 1) {
+            int oldSize = mFollowListAdapter.getItemCount();
+            mFollowListAdapter.getUsersList().clear();
+//            mFollowListAdapter.notifyItemRangeRemoved(0, oldSize);
+            mFollowListAdapter.notifyDataSetChanged();
+        }
+        if (userEntities.size() > 0) {
+            int oldSize = mFollowListAdapter.getItemCount();
+            mFollowListAdapter.getUsersList().clear();
+            mFollowListAdapter.getUsersList().addAll(userEntities);
+            mFollowListAdapter.notifyDataSetChanged();
+//            mFollowListAdapter.notifyItemRangeInserted(oldSize, userEntities.size());
+        }
+        RecyclerViewStateUtils.setFooterViewState(getActivity(), mRecyclerMsgPairlist, mFollowListAdapter.getItemCount() <= 0, page.noMore() ? LoadingFooter.State.TheEnd : LoadingFooter.State.Normal, null);
+
+        if (mFollowListAdapter.getItemCount() <= 0) {
+            mEmptyviewMsgPairlist.emptyData();
+        } else {
+            if (mEmptyviewMsgPairlist !=null){
+                mEmptyviewMsgPairlist.loadingComplete();
+            }
+
+        }
+        mRotateHeaderListViewFrame.refreshComplete();
+    }
+
+    @Override
+    public void onDel(int pos) {
+
+
+        if (pos > 0 && pos < mFollowListAdapter.getItemCount()) {
+            final UserEntity mCurrentUserEntity = mFollowListAdapter.mUsersList.get(pos - 1);
+            mFollowListAdapter.mUsersList.remove(pos - 1);
+//            mFollowListAdapter.notifyItemRemoved(pos);//推荐用这个
+            //如果删除时，不使用mAdapter.notifyItemRemoved(pos)，则删除没有动画效果，
+            //且如果想让侧滑菜单同时关闭，需要同时调用 ((CstSwipeDelMenu) holder.itemView).quickClose();
+            mFollowListAdapter.notifyDataSetChanged();
+            postDelayLoad(new Runnable() {
+                @Override
+                public void run() {
+                    if (mCurrentUserEntity != null) {
+                        FollowPresenter.getInstance().unfollow(mCurrentUserEntity);
+                    }
+                }
+            });
+            SqlBriteUtil.getInstance().getUserDb().isSaiedHi(mCurrentUserEntity.id);
+        }
+    }
+
+    class FLLocalBroadCastReceiver extends BroadcastReceiver {
+
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            Log.e(TAG, "onReceive: =============foll");
+            final String uid = intent.getStringExtra(LocalStorageKey.KEY_STORAGE_UUID);
+            mFollowListPresenter.follow_list(FollowListFragment.this, true);
+            mFollowListAdapter.notifyDataSetChanged();
+            boolean saiedHi = SqlBriteUtil.getInstance().getUserDb().isSaiedHi(uid);
+            mFollowListAdapter.setSayHiState(saiedHi);
+        }
+    }
+}

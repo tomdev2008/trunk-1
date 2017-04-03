@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+    <com.fatalsignal.view.RoundAngleImageView
+        android:id="@+id/riv_danmu_pair_src_avatar"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@mipmap/abn_yueai_ic_default_avatar"
+        app:isCircle="true"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:background="@drawable/abn_yueai_shape_danmu_pair_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/dim_ailiulian_common_margin_double"
+        >
+
+        <com.fatalsignal.view.RoundAngleImageView
+            android:id="@+id/riv_danmu_pair_target_avatar"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@mipmap/abn_yueai_ic_default_avatar"
+            app:isCircle="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_danmu_pair_content"
+            style="@style/AbnYueAiText.Normal.White"
+            android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+            android:text="恭喜"
+            />
+    </LinearLayout>
+</LinearLayout>

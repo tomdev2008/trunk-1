@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/abn_yueai_common_ripple"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:paddingBottom="@dimen/dim_ailiulian_common_margin_half"
+              android:paddingLeft="@dimen/dim_ailiulian_common_margin"
+              android:paddingRight="@dimen/dim_ailiulian_common_margin"
+              android:paddingTop="@dimen/dim_ailiulian_common_margin_half"
+    >
+
+
+    <TextView
+        android:id="@+id/tv_item_selectquestion_child_text"
+        style="@style/AbnYueAiText.Medium.Gray"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="34dp"
+        tools:text="@string/abn_yueai_setting_appsetting"
+        />
+
+</LinearLayout>

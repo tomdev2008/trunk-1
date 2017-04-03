@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    tools:background="@color/abn_yueai_text_white"
+    >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/abn_yueai_chat_bottominput_height"
+        android:layout_gravity="bottom"
+        >
+
+        <ImageButton
+            android:id="@+id/ibtn_chat_input_primary_switchvoice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:paddingLeft="@dimen/dim_ailiulian_common_margin"
+            android:paddingRight="@dimen/dim_ailiulian_common_margin"
+            android:src="@drawable/abn_yueai_selector_chatinput_voice"
+            android:visibility="visible"/>
+
+        <ImageButton
+            android:id="@+id/ibtn_chat_input_primary_switchkeyboard"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:paddingLeft="@dimen/dim_ailiulian_common_margin"
+            android:paddingRight="@dimen/dim_ailiulian_common_margin"
+            android:src="@drawable/abn_yueai_selector_chatinput_keyboard"
+            android:visibility="visible"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dim_ailiulian_common_margin"
+            android:paddingTop="@dimen/dim_ailiulian_common_margin"
+            >
+
+            <EditText
+                android:id="@+id/edit_chat_input_primary_input"
+                style="@style/AbnYueAiText.Normal.Red"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1.0"
+                android:background="@drawable/abn_yueai_bg_input"
+                android:maxLines="4"
+                android:minHeight="@dimen/abn_yueai_chat_bottominput_coreheight"
+                android:imeOptions="actionSend"
+                tools:background="@mipmap/abn_yueai_bg_input_sel"
+                />
+
+            <ImageButton
+                android:id="@+id/ibtn_chat_input_primary_switchface"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/abn_yueai_chat_bottominput_coreheight"
+                android:layout_gravity="bottom"
+                android:background="@null"
+                android:paddingLeft="@dimen/dim_ailiulian_common_margin"
+                android:paddingRight="@dimen/dim_ailiulian_common_margin_half"
+                android:src="@drawable/abn_yueai_selector_chatinput_biaoqing"
+
+                />
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/abn_yueai_chat_bottominput_height">
+
+            <Button
+                android:id="@+id/btn_chat_input_primary_press_speak"
+                style="@style/AbnYueAiText.Normal.White"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@mipmap/abn_yueai_bg_input_sel"
+                android:minHeight="@dimen/dim_ailiulian_common_btnheight_small"
+                android:text="@string/abn_yueai_chat_input_presstospeak"
+                tools:visibility="invisible"
+                />
+        </FrameLayout>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/abn_yueai_chat_bottominput_height"
+        android:layout_gravity="bottom"
+        android:clipChildren="false"
+        android:paddingRight="@dimen/dim_ailiulian_common_margin_half"
+        >
+
+        <Button
+            android:id="@+id/btn_chat_input_primary_send"
+            style="@style/AbnYueAiButton.CommonMicro"
+            android:layout_width="44dp"
+            android:layout_height="@dimen/abn_yueai_chat_bottominput_coreheight"
+            android:layout_gravity="center"
+            android:background="@drawable/abn_yueai_selector_round_red_gradient"
+            android:gravity="center"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:text="@string/abn_yueai_send"
+            />
+
+        <ImageButton
+            android:id="@+id/ibtn_chat_input_primary_switchmore"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:paddingLeft="@dimen/dim_ailiulian_common_margin_double"
+            android:paddingRight="@dimen/dim_ailiulian_common_margin_half"
+            android:src="@drawable/abn_yueai_selector_chatinput_addmore"
+            />
+
+
+    </FrameLayout>
+</LinearLayout>

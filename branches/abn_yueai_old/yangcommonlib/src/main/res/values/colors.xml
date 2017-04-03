@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--各式透明-->
+    <color name="color_common_translucent_black_10">#19000000</color>
+    <color name="color_common_translucent_black_20">#33000000</color>
+    <color name="color_common_translucent_black_40">#66000000</color>
+    <color name="color_common_translucent_black_60">#99000000</color>
+    <color name="color_common_translucent_black_80">#CC000000</color>
+    <color name="color_common_translucent_white_20">#33ffffff</color>
+    <color name="color_common_translucent_white_30">#4Dffffff</color>
+    <color name="color_common_translucent_white_40">#66ffffff</color>
+    <color name="color_common_translucent_white_50">#80ffffff</color>
+    <color name="color_common_translucent_white_60">#99ffffff</color>
+    <color name="color_common_translucent_white_80">#CCffffff</color>
+</resources>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/abn_yueai_common_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_vip_buymonth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_ailiulian_common_margin_double"
+        android:background="@drawable/abn_yueai_common_ripple"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dim_ailiulian_common_margin"
+        android:paddingLeft="@dimen/dim_ailiulian_common_margin_double"
+        android:paddingRight="@dimen/dim_ailiulian_common_margin_double"
+        android:paddingTop="@dimen/dim_ailiulian_common_margin"
+        >
+
+        <TextView
+            style="@style/AbnYueAiText.Normal.Black"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:text="@string/abn_yueai_buyvip_bymonth"
+            />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/abn_yueai_selector_vipprice_bg"
+                android:checked="true"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <CheckedTextView
+                    style="@style/AbnYueAiText.Normal"
+                    android:text="30"
+                    android:checked="true"
+                    android:textColor="@drawable/abn_yueai_selector_color_deepgray_white"
+                    android:textStyle="bold"
+                    />
+
+                <CheckedTextView
+                    android:checked="true"
+                    style="@style/AbnYueAiText.Micro"
+                    android:text="元"
+                    android:textColor="@drawable/abn_yueai_selector_color_deepgray_white"
+                    />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_vip_buyhalfyear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_ailiulian_common_divider"
+        android:background="@drawable/abn_yueai_common_ripple"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dim_ailiulian_common_margin"
+        android:paddingLeft="@dimen/dim_ailiulian_common_margin_double"
+        android:paddingRight="@dimen/dim_ailiulian_common_margin_double"
+        android:paddingTop="@dimen/dim_ailiulian_common_margin"
+        >
+
+        <TextView
+            style="@style/AbnYueAiText.Normal.Black"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:text="@string/abn_yueai_buyvip_byhalfyear"
+            />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/abn_yueai_selector_vipprice_bg"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <CheckedTextView
+                    style="@style/AbnYueAiText.Normal"
+                    android:text="30"
+                    android:textColor="@drawable/abn_yueai_selector_color_deepgray_white"
+                    android:textStyle="bold"
+                    />
+
+                <CheckedTextView
+                    style="@style/AbnYueAiText.Micro"
+                    android:text="元"
+                    android:textColor="@drawable/abn_yueai_selector_color_deepgray_white"
+                    />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_vip_buyyear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_ailiulian_common_divider"
+        android:background="@drawable/abn_yueai_bg_whiteitem_shadow"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dim_ailiulian_common_margin"
+        android:paddingLeft="@dimen/dim_ailiulian_common_margin_double"
+        android:paddingRight="@dimen/dim_ailiulian_common_margin_double"
+        android:paddingTop="@dimen/dim_ailiulian_common_margin"
+        tools:background="@drawable/abn_yueai_common_ripple"
+        >
+
+        <TextView
+            style="@style/AbnYueAiText.Normal.Black"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:text="@string/abn_yueai_buyvip_byyuar"
+            />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/abn_yueai_selector_vipprice_bg"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <CheckedTextView
+                    style="@style/AbnYueAiText.Normal"
+                    android:text="30"
+                    android:textColor="@drawable/abn_yueai_selector_color_deepgray_white"
+                    android:textStyle="bold"
+                    />
+
+                <CheckedTextView
+                    style="@style/AbnYueAiText.Micro"
+                    android:text="元"
+                    android:textColor="@drawable/abn_yueai_selector_color_deepgray_white"
+                    />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        style="@style/AbnYueAiText.Normal.Black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dim_ailiulian_common_margin_quard"
+        android:text="@string/abn_yueai_buyvip_tipstitle"
+        android:id="@+id/textView"/>
+
+    <TextView
+        style="@style/AbnYueAiText.Medium.Gray"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dim_ailiulian_common_margin_double"
+        android:lineSpacingMultiplier="1.5"
+        android:text="@string/abn_yueai_buyvip_tips"
+        />
+
+    <Button
+        style="@style/AbnYueAiButton.CommonLarge"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dim_ailiulian_common_margin_double"
+        android:background="@mipmap/abn_yueai_ic_register_btnbg"
+        android:text="@string/abn_yueai_register_next"
+        />
+</LinearLayout>

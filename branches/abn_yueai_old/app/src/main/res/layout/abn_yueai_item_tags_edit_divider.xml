@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/dim_ailiulian_common_margin_half"
+              android:paddingLeft="@dimen/dim_ailiulian_common_margin"
+              android:paddingRight="@dimen/dim_ailiulian_common_margin"
+              android:paddingTop="@dimen/dim_ailiulian_common_margin"
+    >
+
+    <TextView
+        android:id="@+id/tv_item_tags_edit_divider_title"
+        style="@style/AbnYueAiText.Normal.Gray"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_ailiulian_common_divider"
+        android:background="@color/color_common_bordergray"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_ailiulian_common_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dim_ailiulian_common_margin_half"
+            android:src="@mipmap/abn_yueai_ic_detail_tag"/>
+
+        <TextView
+            android:id="@+id/tv_item_tags_edit_count"
+            style="@style/AbnYueAiText.Micro.Red"
+            android:text="3"/>
+
+        <TextView
+            style="@style/AbnYueAiText.Micro.Gray"
+            android:text="个标签"/>
+
+        <TextView
+            android:id="@+id/tv_item_tags_edit_limit_tips"
+            style="@style/AbnYueAiText.Micro.Gray"
+            android:text="(最多可选10个)"/>
+    </LinearLayout>
+</LinearLayout>

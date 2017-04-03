@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/abn_yueai_text_white"
+              android:orientation="vertical"
+              android:padding="@dimen/dim_ailiulian_common_margin_double">
+
+    <TextView
+       android:layout_gravity="center_horizontal"
+        style="@style/AbnYueAiText.Big.Black"
+        android:text="@string/abn_yueai_title_sex"/>
+
+
+   <RadioGroup
+       android:id="@+id/rg_glender"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <RadioButton
+           android:layout_marginTop="@dimen/dim_ailiulian_common_radius_maincard"
+           android:paddingLeft="@dimen/abn_yueai_dimen_video_thumb"
+           android:text="@string/abn_yueai_sex_male"
+           android:id="@+id/rbtn_dialog_select_sex_male"
+           android:layout_width="wrap_content"
+           android:background="@drawable/abn_yueai_common_ripple"
+           android:layout_height="wrap_content"/>
+       <RadioButton
+           android:background="@drawable/abn_yueai_common_ripple"
+           android:layout_marginTop="@dimen/dim_ailiulian_common_radius_maincard"
+           android:id="@+id/rbtn_dialog_select_sex_female"
+           android:paddingLeft="@dimen/abn_yueai_dimen_video_thumb"
+           android:layout_width="wrap_content"
+           android:text="@string/abn_yueai_sex_female"
+           android:layout_height="wrap_content"/>
+   <!-- <LinearLayout
+        android:id="@+id/ll_dialog_select_sex_male"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/abn_yueai_common_ripple"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dim_ailiulian_common_margin">
+
+        <TextView
+            style="@style/AbnYueAiText.Normal.Gray"
+            android:layout_margin="@dimen/dim_ailiulian_common_margin_half"
+            android:text="@string/abn_yueai_symbol_male"/>
+
+        <TextView
+            style="@style/AbnYueAiText.Normal.Gray"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:text="@string/abn_yueai_sex_male"/>
+
+        <RadioButton
+            android:id="@+id/rbtn_dialog_select_sex_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_ailiulian_common_divider"
+        android:background="@color/color_common_bordergray"/>
+
+    <LinearLayout
+        android:id="@+id/ll_dialog_select_sex_female"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/abn_yueai_common_ripple"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dim_ailiulian_common_margin">
+
+        <TextView
+            style="@style/AbnYueAiText.Normal.Gray"
+            android:layout_margin="@dimen/dim_ailiulian_common_margin_half"
+            android:text="@string/abn_yueai_symbol_female"/>
+
+        <TextView
+            style="@style/AbnYueAiText.Normal.Gray"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:text="@string/abn_yueai_sex_female"/>
+
+        <RadioButton
+            android:id="@+id/rbtn_dialog_select_sex_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>-->
+   </RadioGroup>
+</LinearLayout>

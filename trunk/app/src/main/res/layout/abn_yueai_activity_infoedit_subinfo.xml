@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/abn_yueai_common_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        style="@style/AbnYueAiText.Normal.Gray"
+        android:layout_margin="@dimen/dim_ailiulian_common_margin_double"
+        android:text="@string/abn_yueai_infoedit_hint_infodetail"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/abn_yueai_bg_whiteitem_shadow"
+        android:orientation="vertical"
+        android:padding="@dimen/dim_ailiulian_common_margin_double"
+        tools:background="@null"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                style="@style/AbnYueAiText.Normal.Black"
+                android:text="@string/abn_yueai_infoedit_sub_nick"
+                />
+
+            <com.aibinong.tantan.ui.widget.AIEditText
+                android:id="@+id/edit_infoedit_sub_nick"
+                style="@style/AbnYueAiEdit.EditInfo"
+                android:layout_width="match_parent"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="@string/abn_yueai_hint_compinfo_nick"
+                android:maxLength="8"
+                android:padding="@dimen/dim_ailiulian_common_margin"
+                android:singleLine="true"
+                android:textColorHint="@color/abn_yueai_text_gray"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_ailiulian_common_divider"
+            android:background="@color/color_common_bordergray"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_infoedit_sub_birth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_ailiulian_common_margin_double"
+            android:background="@drawable/abn_yueai_common_ripple"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                style="@style/AbnYueAiText.Normal.Black"
+                android:text="@string/abn_yueai_infoedit_sub_birth"
+                />
+
+            <TextView
+                android:id="@+id/tv_infoedit_sub_birth"
+                style="@style/AbnYueAiEdit.EditInfo"
+                android:layout_width="match_parent"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="@string/abn_yueai_hint_compinfo_birth"
+                android:padding="@dimen/dim_ailiulian_common_margin"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_ailiulian_common_divider"
+            android:background="@color/color_common_bordergray"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_infoedit_sub_occupation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_ailiulian_common_margin_double"
+            android:background="@drawable/abn_yueai_common_ripple"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                style="@style/AbnYueAiText.Normal.Black"
+                android:text="@string/abn_yueai_infoedit_sub_occupation"
+                />
+
+            <TextView
+                android:id="@+id/tv_infoedit_sub_occupation"
+                style="@style/AbnYueAiEdit.EditInfo"
+                android:layout_width="match_parent"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="@string/abn_yueai_hint_compinfo_job"
+                android:padding="@dimen/dim_ailiulian_common_margin"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <ImageButton
+        android:id="@+id/ibtn_dialog_select_sayhi_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="?android:attr/selectableItemBackground"
+        android:src="@mipmap/dialog_close"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/abn_yueai_shape_round_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="123dp"
+            android:background="@mipmap/dialog_close"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_dialog_commoncard_title"
+                style="@style/AbnYueAiText.Big.Red"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dim_ailiulian_common_margin"
+                android:layout_marginRight="@dimen/dim_ailiulian_common_margin"
+                android:layout_marginTop="@dimen/dim_ailiulian_common_margin_double"
+                tools:text="这是标题"
+                />
+
+            <TextView
+                android:id="@+id/tv_dialog_commoncard_message"
+                style="@style/AbnYueAiText.Medium.Gray"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dim_ailiulian_common_margin_double"
+                android:paddingRight="@dimen/dim_ailiulian_common_margin_double"
+                android:textColor="@color/abn_yueai_text_deep_gray"
+                tools:text="这是对话框先生爹内容这是对话框先生爹内容这是对话框先生爹内容这是对话框先生爹内容"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_dialog_commoncard_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/btn_dialog_commoncard_left"
+                style="@style/AbnYueAiButton.Medium"
+                android:layout_width="120dp"
+                android:layout_height="56dp"
+                android:text="取消"
+                android:textSize="@dimen/abn_yueai_dimen_text_medium"
+                />
+
+            <Button
+                android:id="@+id/btn_dialog_commoncard_right"
+                style="@style/AbnYueAiButton.Medium"
+                android:layout_width="120dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="@dimen/dim_ailiulian_common_margin_double"
+                android:text="打招呼"
+                android:textSize="@dimen/abn_yueai_dimen_text_medium"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

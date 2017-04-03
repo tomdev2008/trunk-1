@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="abn_yueai_color_danmu_pink">#ffff4d9b</color>
+    <color name="abn_yueai_color_red_primary">#fffe388e</color>
+    <color name="abn_yueai_color_red_dark">#ffef2567</color>
+    <color name="abn_yueai_color_red_primaryDark">#e2196b</color>
+    <color name="abn_yueai_color_red_second">#ffff8571</color>
+    <color name="abn_yueai_color_red_secondDark">#e66546</color>
+    <color name="color_aliulian_light_red">#fffe3638</color>
+    <color name="abn_yueai_color_blue_primary">#ff35e2f2</color>
+    <color name="abn_yueai_color_blue_second">#ff63de9b</color>
+
+    <color name="abn_yueai_color_windowbg_pink">#fffbf2f3</color>
+    <color name="abn_yueai_color_windowbg">#fff4f4f4</color>
+
+    <color name="abn_yueai_text_black">#ff333333</color>
+    <color name="abn_yueai_text_black_sel">#ff666666</color>
+    <color name="abn_yueai_text_deep_gray">#ff666666</color>
+    <color name="abn_yueai_text_deep_gray_sel">#ff333333</color>
+    <color name="abn_yueai_text_gray">#ff999999</color>
+    <color name="abn_yueai_text_gray_sel">#ff666666</color>
+    <color name="abn_yueai_text_little_gray">#ffcccccc</color>
+    <color name="abn_yueai_text_little_gray_sel">#ff999999</color>
+    <color name="abn_yueai_text_white">#ffffffff</color>
+    <color name="abn_yueai_text_white_sel">#ffcccccc</color>
+
+    <color name="abn_yueai_text_input_hint">#ffd8d8d8</color>
+
+    <color name="color_common_bordergray">#ffeeeeee</color>
+    <color name="color_common_bordergray_little">#fff3f3f3</color>
+    <!--
+        <color name="abn_yueai_color_orange">#ffff7858</color>
+        <color name="abn_yueai_color_orange_sel">#e96546</color>
+    -->
+
+    <color name="color_common_translucent_black_10">#19000000</color>
+    <color name="color_common_translucent_black_20">#33000000</color>
+    <color name="color_common_translucent_black_40">#66000000</color>
+    <color name="color_common_translucent_black_60">#99000000</color>
+    <color name="color_common_translucent_black_80">#CC000000</color>
+    <color name="color_common_translucent_white_20">#33ffffff</color>
+    <color name="color_common_translucent_white_30">#4Dffffff</color>
+    <color name="color_common_translucent_white_40">#66ffffff</color>
+    <color name="color_common_translucent_white_50">#80ffffff</color>
+    <color name="color_common_translucent_white_60">#99ffffff</color>
+    <color name="color_common_translucent_white_80">#CCffffff</color>
+
+</resources>

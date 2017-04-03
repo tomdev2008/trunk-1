@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@drawable/abn_yueai_selector_main_likebtn"
+           android:orientation="vertical"
+           android:padding="12dp"
+           android:src="@mipmap/abn_yueai_ic_main_like"
+    >
+
+</ImageView>

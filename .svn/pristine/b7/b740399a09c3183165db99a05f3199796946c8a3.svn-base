@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape
+            android:shape="rectangle">
+            <corners android:radius="@dimen/dim_ailiulian_common_margin"/>
+            <gradient
+                android:endColor="@color/abn_yueai_color_red_secondDark"
+                android:gradientRadius="1000"
+                android:startColor="@color/abn_yueai_color_red_primaryDark"
+                android:type="linear"/>
+        </shape>
+    </item>
+    <item android:state_checked="true">
+        <shape
+            android:shape="rectangle">
+            <corners android:radius="@dimen/dim_ailiulian_common_margin"/>
+            <gradient
+                android:endColor="@color/abn_yueai_color_red_secondDark"
+                android:gradientRadius="1000"
+                android:startColor="@color/abn_yueai_color_red_primaryDark"
+                android:type="linear"/>
+        </shape>
+    </item>
+    <item android:state_selected="true">
+        <shape
+            android:shape="rectangle">
+            <corners android:radius="@dimen/dim_ailiulian_common_margin"/>
+            <gradient
+                android:endColor="@color/abn_yueai_color_red_secondDark"
+                android:gradientRadius="1000"
+                android:startColor="@color/abn_yueai_color_red_primaryDark"
+                android:type="linear"/>
+        </shape>
+    </item>
+    <item>
+        <shape
+            android:shape="rectangle">
+            <corners android:radius="@dimen/dim_ailiulian_common_margin"/>
+            <gradient
+                android:endColor="@color/abn_yueai_color_red_second"
+                android:gradientRadius="1000"
+                android:startColor="@color/abn_yueai_color_red_primary"
+                android:type="linear"/>
+        </shape>
+    </item>
+</selector>

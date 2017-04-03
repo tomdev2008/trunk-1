@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_item_chat_opposite_question_content"
+        style="@style/AbnYueAiText.Normal.Black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/abn_yueai_selector_round_bordergray"
+        android:padding="@dimen/dim_ailiulian_common_margin_double"
+        tools:text="你好美女，很高兴认识你，咱俩还蛮有缘分的，有时间聊一下吗"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_item_chat_opposite_question_answers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_ailiulian_common_margin_half"
+        android:background="@drawable/abn_yueai_selector_round_tran_10"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dim_ailiulian_common_margin_half"
+        android:paddingLeft="@dimen/dim_ailiulian_common_margin"
+        android:paddingRight="@dimen/dim_ailiulian_common_margin"
+        android:paddingTop="@dimen/dim_ailiulian_common_margin_half"
+        >
+
+    </LinearLayout>
+</LinearLayout>
